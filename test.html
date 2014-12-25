@@ -22,84 +22,90 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
+
   </head>
 
-<table class="table table-condensed" style="border-collapse:collapse;">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Date</th>
-            <th>Description</th>
-            <th>Credit</th>
-            <th>Debit</th>
-            <th>Balance</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr data-toggle="collapse" data-target=".demo1">
-            <td>1</td>
-            <td>05 May 2013</td>
-            <td>Credit Account</td>
-            <td class="text-success">$150.00</td>
-            <td class="text-error"></td>
-            <td class="text-success">$150.00</td>
-        </tr>
-        <tr>
-            <td class="hiddenRow">
-                <div class="collapse demo1">Demo1</div>
-            </td>
-            <td class="hiddenRow">
-                <div class="collapse demo1">Demo1</div>
-            </td>
-            <td class="hiddenRow">
-                <div class="collapse demo1">Demo1</div>
-            </td>
-            <td class="hiddenRow">
-                <div class="collapse demo1">Demo1</div>
-            </td>
-            <td class="hiddenRow">
-                <div class="collapse demo1">Demo1</div>
-            </td>
-            <td class="hiddenRow">
-                <div class="collapse demo1">Demo1</div>
-            </td>
-        </tr>
-        <tr data-toggle="collapse" data-target="#demo2">
-            <td>2</td>
-            <td>05 May 2013</td>
-            <td>Credit Account</td>
-            <td class="text-success">$11.00</td>
-            <td class="text-error"></td>
-            <td class="text-success">$161.00</td>
-        </tr>
-        <tr>
-            <td colspan="6" class="hiddenRow">
-                <div id="demo2" class="collapse">Demo2</div>
-            </td>
-        </tr>
-        <tr data-toggle="collapse" data-target="#demo3">
-            <td>3</td>
-            <td>05 May 2013</td>
-            <td>Credit Account</td>
-            <td class="text-success">$500.00</td>
-            <td class="text-error"></td>
-            <td class="text-success">$661.00</td>
-        </tr>
-        <tr>
-            <td colspan="6" class="hiddenRow">
-                <div id="demo3" class="collapse">Demo3</div>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<div class="container">
+	<div class="row">
+		<h2>Carousel with text and transition timer.</h2>
+	</div>
+    
+    <div class="row">
+        <!-- The carousel -->
+        <div id="transition-timer-carousel" class="carousel slide transition-timer-carousel" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#transition-timer-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#transition-timer-carousel" data-slide-to="1"></li>
+				<li data-target="#transition-timer-carousel" data-slide-to="2"></li>
+				<li data-target="#transition-timer-carousel" data-slide-to="3"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" style="width: auto; height: 225px; max-height: 225px;">
+				<div class="item active">
+                    <img src="images/gallery0.jpg" />
+                    <div class="carousel-caption">
+                        <h1 class="carousel-caption-header">Slide 1</h1>
+                        <p class="carousel-caption-text hidden-sm hidden-xs">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim aliquet rutrum. Praesent vitae ante in nisi condimentum egestas. Aliquam.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img src="images/gallery1.jpg" />
+                    <div class="carousel-caption">
+                        <h1 class="carousel-caption-header">Slide 2</h1>
+                        <p class="carousel-caption-text hidden-sm hidden-xs">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim aliquet rutrum. Praesent vitae ante in nisi condimentum egestas. Aliquam.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img src="images/gallery2.jpg" />
+                    <div class="carousel-caption">
+                        <h1 class="carousel-caption-header">Slide 3</h1>
+                        <p class="carousel-caption-text hidden-sm hidden-xs">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim aliquet rutrum. Praesent vitae ante in nisi condimentum egestas. Aliquam.
+                        </p>
+                    </div>
+                </div>
+				<div class="item">
+                    <img src="images/gallery3.jpg" />
+                    <div class="carousel-caption">
+                        <h1 class="carousel-caption-header">Slide 4</h1>
+                        <p class="carousel-caption-text hidden-sm hidden-xs">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim aliquet rutrum. Praesent vitae ante in nisi condimentum egestas. Aliquam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#transition-timer-carousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#transition-timer-carousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+            
+            <!-- Timer "progress bar" -->
+            <hr class="transition-timer-carousel-progress-bar animate" />
+		</div>
+    </div>
+</div>
+  
+  
+  
+  
   
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
