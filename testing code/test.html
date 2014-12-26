@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Christo Landry">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/flippant.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+	<style type="text/css">
+    .container { margin-top: 2em; }
+
+    h1 span {
+      animation: flipper 3s ease-in 4s infinite;
+      -moz-animation: flipper 3s ease-in 4s infinite;
+      -webkit-animation: flipper 3s ease-in 4s infinite;
+
+      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      display: inline-block;
+    }
+
+    @-webkit-keyframes flipper {
+      0% {
+        -webkit-transform: perspective(300px) rotateY(0deg);
+      }
+      15%, 100% {
+        -webkit-transform: perspective(300px) rotateY(360deg);
+      }
+    }
+    @-moz-keyframes flipper {
+      0% {
+        -moz-transform: perspective(300px) rotateY(0deg);
+      }
+      15%, 100% {
+        -moz-transform: perspective(300px) rotateY(360deg);
+      }
+    }
+    @keyframes flipper {
+      0% {
+        transform: perspective(300px) rotateY(0deg);
+      }
+      15%, 100% {
+        transform: perspective(300px) rotateY(360deg);
+      }
+    }
+  </style>
+  </head>
+
+   <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Flippant.<span>js</span></h1>
+        <p>
+          A mini js+css library for flipping things over.
+          <!-- <small class="muted">Bring Your Own Back.</small> -->
+        </p>
+
+        <p>Try it out on the buttons below</p>
+
+        <p>Get the code at <a href="https://github.com/mintchaos/flippant.js">github.com/mintchaos/flippant.js</a>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btnflip btn" href="#">Modal &raquo;</a> <a class="btnflip btn card" href="#">Card &raquo;</a></p>
+        </div>
+        <div class="span4 flippant">
+          <h2>Heading</h2>
+          <p>Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec Donec </p>
+          <p><a class="btn btnflip" href="#">Modal &raquo;</a> <a class="btnflip btn card" href="#">Card &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>Heading</h2>
+          <p>Three Three ThreeThree Three ThreeThree Three ThreeThree Three ThreeThree Three ThreeThree Three ThreeThree Three ThreeThree Three Three</p>
+          <p><a class="btn btnflip" href="#">Modal &raquo;</a> <a class="btnflip btn card" href="#">Card &raquo;</a></p>
+        </div>
+      </div>
+	 </div>
+  
+  
+  
+  
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/flippant.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
