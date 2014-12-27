@@ -41,7 +41,7 @@ $(window).resize(function() {
 			small=0;
 			large=0;
 			if(large < 2) {
-				$('.medium').prepend("screen is MEDIUM")
+				$('.medium').prepend("screen is MEDIUM");
 				$('.small').empty();
 				$('.large').empty();
 			}
@@ -50,9 +50,9 @@ $(window).resize(function() {
 				small=0;
 				medium=0;
 				if(large < 2) {
-					$('.large').prepend("screen is LARGE")
+					$('.large').prepend("screen is LARGE");
 					$('.small').empty();
-					$('.medium).empty();
+					$('.medium').empty();
 				}
 			}
 };
