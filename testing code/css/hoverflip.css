@@ -4,8 +4,8 @@
   -ms-perspective: 800;
   -moz-perspective: 800;
   -o-perspective: 800;
-   width: 400px;
-   height: 200px;
+   width: 300px;
+   height: 300px;
    }
 .flip .card.flipped {
   transform:rotatey(-180deg);
