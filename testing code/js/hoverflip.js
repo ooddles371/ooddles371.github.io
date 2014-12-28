@@ -5,10 +5,11 @@ $(".flip").hover(function(){
 });
 //--------------------End Card Flip---------------
 
-var small,medium, large;
+var small,medium,large,width;
 small = 0;
 medium = 0;
 large = 0;
+width=0;
 
 if($(window).width() < 768){
 	$('.small').prepend("screen is SMALL");   
@@ -26,7 +27,12 @@ if($(window).width() < 768){
 			$('.medium').empty();
 			large=2;
 		}
+
+
+
 $(window).resize(function() {
+	$('width').empty();
+	$('width').prepend(width);
 	if ($(this).width() < 768) {
 		small+=1;
 		medium=0;
@@ -40,7 +46,7 @@ $(window).resize(function() {
 			medium+=1;
 			small=0;
 			large=0;
-			if(large < 2) {
+			if(medium < 2) {
 				$('.medium').prepend("screen is MEDIUM");
 				$('.small').empty();
 				$('.large').empty();
@@ -55,7 +61,7 @@ $(window).resize(function() {
 					$('.medium').empty();
 				}
 			}
-};
+});
 
 
 //min 1200 is large
