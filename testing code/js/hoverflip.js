@@ -67,3 +67,4 @@ $(window).resize(function() {
 //min 1200 is large
 //min 992 is medium
 //min 768 is small
+
