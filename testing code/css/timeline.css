@@ -231,7 +231,7 @@
       float: left;
       clear: left;
     }
-    ul.timeline > li > .timeline-panel {
+    ul.timeline > li > .timeline-panel {F
         width: calc(100% - 90px);
         width: -moz-calc(100% - 90px);
         width: -webkit-calc(100% - 90px);
