@@ -208,7 +208,7 @@ a {
 	width: 50%;
 	float: left;
 	height: 100%;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	position: relative;
 }
 
@@ -306,6 +306,12 @@ a {
 }
 
 @media screen and (max-width: 650px) {
+
+	.og-fullimg { display: none; }
+	.og-details { float: none; width: 100%; }
+	
+}
+@media screen and (min-width: 650px) {
 
 	.og-fullimg { display: none; }
 	.og-details { float: none; width: 100%; }
