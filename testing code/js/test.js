@@ -162,10 +162,9 @@ $.fn.imagesLoaded = function( callback ) {
 };
 
 var Grid = (function() {
-		// grid selector
-		var $selector = '#og-grid', 
+
 		// list of items
-		$grid = $( $selector ),
+	var $grid = $( '#og-grid' ),
 		// the items
 		$items = $grid.children( 'li' ),
 		// current expanded item's index
@@ -194,14 +193,14 @@ var Grid = (function() {
 		settings = {
 			minHeight : 500,
 			speed : 350,
-			easing : 'ease',
-			showVisitButton : true
+			easing : 'ease'
 		};
 
 	function init( config ) {
 		
 		// the settings..
 		settings = $.extend( true, {}, settings, config );
+
 		// preload all images
 		$grid.imagesLoaded( function() {
 
@@ -345,12 +344,8 @@ var Grid = (function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
 			this.$description = $( '<p></p>' );
-			var detailAppends = [this.$title, this.$description];
-			if (settings.showVisitButton === true) {
-				this.$href = $( '<a href="#">Visit website</a>' );
-				detailAppends.push(this.$href);
-			}
-			this.$details = $( '<div class="og-details"></div>' ).append(detailAppends);
+			this.$href = $( '<a href="#">Visit website</a>' );
+			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );
@@ -392,9 +387,7 @@ var Grid = (function() {
 
 			this.$title.html( eldata.title );
 			this.$description.html( eldata.description );
-			if (settings.showVisitButton === true) {
-				this.$href.attr( 'href', eldata.href );
-			}
+			this.$href.attr( 'href', eldata.href );
 
 			var self = this;
 			

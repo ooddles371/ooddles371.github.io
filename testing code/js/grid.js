@@ -136,6 +136,7 @@ $.fn.imagesLoaded = function( callback ) {
 			// find out if this image has been already checked for status
 			// if it was, and src has not changed, call imgLoaded on it
 			var cached = $.data( el, 'imagesLoaded' );
+			
 			if ( cached && cached.src === src ) {
 				imgLoaded( el, cached.isBroken );
 				return;
