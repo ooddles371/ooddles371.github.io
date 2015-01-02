@@ -162,7 +162,7 @@ a {
 	margin-top: 10px;
 	text-align: left;
 	height: 0;
-	overflow: hidden;
+	overflow: scroll;
 }
 
 .og-expander-inner {
