@@ -345,7 +345,8 @@ var Grid = (function() {
 		create : function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
-			this.$description = $( '<p></p>' );
+			this.$description = $( '<p id="foo"></p>' );
+			$( "span" ).appendTo( "#foo" );
 			var detailAppends = [this.$title, this.$description];
 			if (settings.showVisitButton === true) {
 				this.$href = $( '<a href="#">Visit website</a>' );
@@ -363,6 +364,7 @@ var Grid = (function() {
 			if( support ) {
 				this.setTransition();
 			}
+			
 		},
 		update : function( $item ) {
 
