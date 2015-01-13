@@ -339,20 +339,25 @@ var Grid = (function() {
 		this.expandedIdx = this.$item.index();
 		this.create();
 		this.update();
+		$( "#pic1" ).appendTo( "#foo" ); // Christo added
 	}
 
 	Preview.prototype = {
 		create : function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
+			//this.$description = $( '<p></p>' );
 			this.$description = $( '<p id="foo"></p>' );
-			$( "span" ).appendTo( "#foo" );
+			//Christo added
+			//var whatid = [this.id]
+			//end of Christo added
 			var detailAppends = [this.$title, this.$description];
 			if (settings.showVisitButton === true) {
 				this.$href = $( '<a href="#">Visit website</a>' );
 				detailAppends.push(this.$href);
 			}
 			this.$details = $( '<div class="og-details"></div>' ).append(detailAppends);
+			
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );
