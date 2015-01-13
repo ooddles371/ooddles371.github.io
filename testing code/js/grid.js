@@ -339,7 +339,9 @@ var Grid = (function() {
 		this.expandedIdx = this.$item.index();
 		this.create();
 		this.update();
-		$( "#pic1" ).appendTo( "#foo" ); // Christo added
+		//$( "#pic1" ).appendTo( "#foo" ); // Christo added
+		var blog = document.getElementById('pic111');
+		$( "blog:first-child" ).appendTo( #foo" ); // Christo added
 	}
 
 	Preview.prototype = {
