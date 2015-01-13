@@ -10,6 +10,38 @@
 .poof .insert{
 	display:none;
 }
+
+.caption-right {
+	margin: 5px;
+    padding: 5px;
+    border: 1px solid #808080;
+    height: auto;
+    width: auto;
+    float: right;
+    text-align: center;
+}
+.caption-left {
+	margin: 5px;
+    padding: 5px;
+    border: 1px solid #808080;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+
+
+.caption-right p,
+.caption-left p{
+	margin:0;
+	padding:5px 5px 0px 5px;
+}
+
+.surround {
+	border: 1px solid black;
+	padding:7px; 
+	margin:7px;
+}
 /*end of Christo   added*/
 
 html { height: 100%; }
@@ -171,7 +203,7 @@ a {
 	margin-top: 10px;
 	text-align: left;
 	height: 0;
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
 .og-expander-inner {
