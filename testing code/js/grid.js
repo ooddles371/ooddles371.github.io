@@ -53,6 +53,8 @@ $special = $event.special.debouncedresize = {
 // contributors: Oren Solomianik, David DeSandro, Yiannis Chatzikonstantinou
 
 // blank image data-uri bypasses webkit log warning (thx doug jones)
+
+
 var BLANK = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
 
 $.fn.imagesLoaded = function( callback ) {
@@ -340,7 +342,8 @@ var Grid = (function() {
 		this.create();
 		this.update();
 		//$( "#pic1" ).appendTo( "#foo" ); // Christo added
-		$( "this.children(:first-child)" ).appendTo( #foo" ); // Christo added
+		$( "this" ).children( ".idfinder" ).appendTo( "#foo" );// Christo added
+		console.log($( this ).children( ".idfinder" ));
 	}
 
 	Preview.prototype = {
@@ -405,6 +408,8 @@ var Grid = (function() {
 				this.$href.attr( 'href', eldata.href );
 			}
 
+
+			
 			var self = this;
 			
 			// remove the current image in the preview
