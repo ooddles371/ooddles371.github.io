@@ -340,8 +340,7 @@ var Grid = (function() {
 		this.create();
 		this.update();
 		//$( "#pic1" ).appendTo( "#foo" ); // Christo added
-		var blog = document.getElementById('pic111');
-		$( "blog:first-child" ).appendTo( #foo" ); // Christo added
+		$( "this.children(:first-child)" ).appendTo( #foo" ); // Christo added
 	}
 
 	Preview.prototype = {

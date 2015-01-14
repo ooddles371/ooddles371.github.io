@@ -37,11 +37,24 @@
 	padding:5px 5px 0px 5px;
 }
 
-.surround {
-	border: 1px solid black;
-	padding:7px; 
-	margin:7px;
+
+.overlay h2{
+	position: absolute; 
+	bottom: -10px; 
+	width: 100%; 
+
 }
+.overlay h2 span {
+	color: white; 
+	font: bold 19px/45px Helvetica, Sans-Serif; 
+	letter-spacing: -1px;  
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.7);
+	padding: 12px;
+
+}
+
+
 /*end of Christo   added*/
 
 html { height: 100%; }
