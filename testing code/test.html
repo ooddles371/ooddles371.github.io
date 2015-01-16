@@ -23,30 +23,21 @@
 
     <!-- Custom styles for this template -->
 
-	<script>
-		$(document).ready(function(){
-			<!--$("div.help p.some").first().css("background-color","yellow");-->
-			$("div.sources p.ssdd").first().appendTo("#foo");
 
-		});
-</script>
 
 	</head>
 	<body>
 		<p class="test" id="foo">
-			So why is this the thing that turns yellow?
-			<p> This is turned yellow by the script in the heading looking for p.test:first-child</p>
-			<p> This isn't yellow </p>
+			This is where the thing is getting added to.
 		</p>
-		<div class="bass">Hello world! What a beautiful day!</div>
+		<div class="bass">Hello world! What a beautiful day! (random text, not useful)</div>
 		</br>
 
-		<div class="sources">This is the ---------------------
-			<div class="ssdd"> Append this! </div>
+		<div class="help">This is the ---------------------
+			<p class="some"> Append this! </p>
 			<div>DO NOT APPEND THIS </div>
 		</div>
 
-	<button class="test">Action</button><br>
 
 
 
@@ -66,6 +57,13 @@
 			Grid.init();
 		});
 	</script>
+		<script>
+		$(document).ready(function(){
+			<!--$("div.help p.some").first().css("background-color","yellow");-->
+			$("div.help p.some").first().appendTo("#foo");
+
+		});
+</script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
