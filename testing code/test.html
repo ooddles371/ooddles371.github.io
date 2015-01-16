@@ -25,6 +25,7 @@
     <!-- Custom styles for this template -->
 	<script>
 		$(document).ready(function(){
+			$("p.test:first-child").css("background-color","yellow");
 			$("button.test").click(function(){
 				<!--    $("div.bass").contents().wrap("<b/>");-->
 				$("div.sources:first-child").appendTo("#foo");
@@ -35,7 +36,10 @@
 
 	</head>
 	<body>
-
+		<p class="test">
+			<p> This is turned yellow by the script in the heading looking for p.test:first-child</p>
+			<p> This isn't yellow </p>
+		</p>
 		<div class="bass" id="foo">Hello world! What a beautiful day!</div>
 		</br>
 
