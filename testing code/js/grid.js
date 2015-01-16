@@ -341,9 +341,10 @@ var Grid = (function() {
 		this.expandedIdx = this.$item.index();
 		this.create();
 		this.update();
-		//$( "#pic1" ).appendTo( "#foo" ); // Christo added
-		$( "this" ).children( ".idfinder" ).appendTo( "#foo" );// Christo added
-		console.log($( this ).children( ".idfinder" ));
+		$( "#pic111" ).appendTo( "#foo" ); // Christo added
+		//$( ( this ).children( ".idfinder" ) ).appendTo( "#foo" );// Christo added
+		//console.log($( this ).children( ".idfinder" ));
+
 	}
 
 	Preview.prototype = {
@@ -351,7 +352,7 @@ var Grid = (function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
 			//this.$description = $( '<p></p>' );
-			this.$description = $( '<p id="foo"></p>' );
+			this.$description = $( '<p id="foo" class="fubar"></p>' );
 			//Christo added
 			//var whatid = [this.id]
 			//end of Christo added
