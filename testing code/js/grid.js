@@ -341,7 +341,7 @@ var Grid = (function() {
 		this.expandedIdx = this.$item.index();
 		this.create();
 		this.update();
-		$( "#pic111" ).appendTo( "#foo" ); // Christo added
+		$("li.og-expanded div.ssdd").appendTo( "#foo" ); // Christo added
 		//$( ( this ).children( ".idfinder" ) ).appendTo( "#foo" );// Christo added
 		//console.log($( this ).children( ".idfinder" ));
 

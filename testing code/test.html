@@ -23,34 +23,31 @@
 
     <!-- Custom styles for this template -->
 
+	<script>
+		$(document).ready(function(){
+			<!--$("div.help p.some").first().css("background-color","yellow");-->
+			$("div.sources p.ssdd").first().appendTo("#foo");
 
+		});
+</script>
 
 	</head>
 	<body>
-		<p class="test">
+		<p class="test" id="foo">
 			So why is this the thing that turns yellow?
 			<p> This is turned yellow by the script in the heading looking for p.test:first-child</p>
 			<p> This isn't yellow </p>
 		</p>
-		<div class="bass" id="foo">Hello world! What a beautiful day!</div>
+		<div class="bass">Hello world! What a beautiful day!</div>
 		</br>
 
 		<div class="sources">This is the ---------------------
-			<div> Append this! </div>
+			<div class="ssdd"> Append this! </div>
 			<div>DO NOT APPEND THIS </div>
 		</div>
 
 	<button class="test">Action</button><br>
 
-	<script>
-		$(document).ready(function(){
-			$("p.test:first-child").css("background-color","yellow");
-			
-				<!--    $("div.bass").contents().wrap("<b/>");-->
-				$("div.sources:first-child").appendTo("#foo");
-			
-		});
-	</script>
 
 
 
