@@ -341,7 +341,10 @@ var Grid = (function() {
 		this.expandedIdx = this.$item.index();
 		this.create();
 		this.update();
+		$("li.help p.some").first().appendTo( "#foo" );
 		$("li.og-expanded div.ssdd").first().appendTo( "#foo" ); // Christo added
+		$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ;
+		$( "#booted" ).append( $( "li" ).hasClass( "help" ).toString() ) 
 		//$( ( this ).children( ".idfinder" ) ).appendTo( "#foo" );// Christo added
 		//console.log($( this ).children( ".idfinder" ));
 
@@ -527,6 +530,7 @@ var Grid = (function() {
 		getEl : function() {
 			return this.$previewEl;
 		}
+					
 	}
 
 	return { 
