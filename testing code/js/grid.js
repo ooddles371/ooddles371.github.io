@@ -286,6 +286,7 @@ var Grid = (function() {
 			return false;
 
 		} );
+		$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 	}
 
 	function getWinSize() {

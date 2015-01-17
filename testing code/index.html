@@ -761,6 +761,8 @@
 <div>hello</div>
 <div id="boot">Does any li have the class of og-expanded: </div>
 <div id="booted">Does any li have the class of help: </div>
+<button class="test">Action</button><br>
+<div id="bo">Does any li have the class of og-expanded: </div>
 
 <div class="container" style="max-width: 1400px;">	
 			<div class="main">
@@ -860,6 +862,14 @@
 		$(function() {
 			Grid.init();
 		});
+	</script>
+		<script>
+	$(document).ready(function(){
+		$("button.test").click(function(){
+			$( "#bo" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
+			console.log("hello");
+		});
+	});
 	</script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
