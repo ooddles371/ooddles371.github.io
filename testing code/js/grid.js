@@ -325,7 +325,7 @@ var Grid = (function() {
 		preview = $.data( this, 'preview', new Preview( $item ) );
 		// expand preview overlay
 		preview.open();
-
+		$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 	}
 
 	function hidePreview() {
@@ -377,7 +377,7 @@ var Grid = (function() {
 			if( support ) {
 				this.setTransition();
 			}
-			
+			$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 		},
 		update : function( $item ) {
 
@@ -435,7 +435,7 @@ var Grid = (function() {
 					}
 				} ).attr( 'src', eldata.largesrc );	
 			}
-
+			$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 		},
 		open : function() {
 
@@ -445,7 +445,7 @@ var Grid = (function() {
 				// scroll to position the preview in the right place
 				this.positionPreview();
 			}, this ), 25 );
-
+			$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 		},
 		close : function() {
 
@@ -521,7 +521,7 @@ var Grid = (function() {
 				scrollVal = this.height + this.$item.data( 'height' ) + marginExpanded <= winsize.height ? position : this.height < winsize.height ? previewOffsetT - ( winsize.height - this.height ) : previewOffsetT;
 			
 			$body.animate( { scrollTop : scrollVal }, settings.speed );
-
+			$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 		},
 		setTransition  : function() {
 			this.$previewEl.css( 'transition', 'height ' + settings.speed + 'ms ' + settings.easing );
