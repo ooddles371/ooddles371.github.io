@@ -284,7 +284,7 @@ var Grid = (function() {
 			// check if item already opened
 			current === $item.index() ? hidePreview() : showPreview( $item );
 			return false;
-
+			$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 		} );
 		$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 	}
@@ -373,6 +373,7 @@ var Grid = (function() {
 			if( support ) {
 				this.setTransition();
 			}
+			console.log(this);
 			$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 		},
 		update : function( $item ) {
