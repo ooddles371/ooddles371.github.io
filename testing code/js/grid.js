@@ -347,6 +347,12 @@ var Grid = (function() {
 		$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ;
 		$( "#booted" ).append( $( "li" ).hasClass( "help" ).toString() ) 
 		$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
+		var $itemElder = this.$item.children( 'a' ),
+				elderdata = {
+					idfinder : $itemElder.data( 'idfinder' )//work on this
+				};
+		console.log(elderdata.idfinder);
+		$("#" + elderdata.idfinder).clone().appendTo("#foo");
 	}
 
 	Preview.prototype = {
@@ -373,31 +379,33 @@ var Grid = (function() {
 			if( support ) {
 				this.setTransition();
 			}
-			console.log(this.$item.innerHTML);
-			console.log("space");
-			console.log(this.$item);
-			console.log("space");
-			console.log(this);
-			console.log("space");
-			console.log(this.$item);
-			console.log("space");
-			console.log(this.$item.text());
-			
-			console.log($("this.item:first"));
-			var thisitem = this.$item;
-			var parent = $("thisitem").parent();
-			var firstofparent = $("parent div.ssdd").first();
-			console.log("this item");
-			console.log(thisitem);
-			console.log("parent");
-			console.log(parent);
-			console.log("firstofparent");
-			console.log(firstofparent);
-			console.log("firstofparent text()");
-			console.log(firstofparent.text());
-			console.log(ssdd.text());
-			
-			$("parent div.ssdd").first().appendTo( "#foo" ); // Christo added
+			//console.log("this.$item.innerHTML")
+//			console.log(this.$item.innerHTML);
+//			console.log("this.$item");
+//			console.log(this.$item);
+//			console.log("this");
+//			console.log(this);
+//			console.log("this.$item.text()");
+//			console.log(this.$item.text());
+//			
+//			console.log($("this.item:first"));
+//			var thisitem = this.$item;
+//			var parent = $("thisitem").parent();
+////			var firstofparent = $("parent div.ssdd").first();
+//			var cnodes = thisitem.childNodes;
+//			cnodes[3].innerHTML = "yellow";
+//			console.log("thisitem");
+//			console.log(thisitem);
+//			console.log("parent");
+//			console.log(parent);
+//			console.log("firstofparent");
+//			console.log(firstofparent);
+//			console.log("firstofparent text()");
+//			console.log(firstofparent.text());
+//
+//			var copythis = thisitem.previousSibling.innerHTML;
+//			document.getElementById("foo").innerHTML = copythis;
+			//$("parent div.ssdd").first().appendTo( "#foo" ); // Christo added
 			$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 		},
 		update : function( $item ) {
@@ -425,10 +433,12 @@ var Grid = (function() {
 					largesrc : $itemEl.data( 'largesrc' ),
 					title : $itemEl.data( 'title' ),
 					description : $itemEl.data( 'description' ),
-				//	idfinder : $itemEl.idfinder( 'idfinder' )//work on this
+					idfinder : $itemEl.data( 'idfinder' )//work on this
 				};
-			//console.log(eldata.idfinder);
-
+			console.log(eldata.idfinder);
+			
+			//$("#" + eldata.idfinder).clone().appendTo("#hello");
+			
 			this.$title.html( eldata.title );
 			this.$description.html( eldata.description );
 			if (settings.showVisitButton === true) {
