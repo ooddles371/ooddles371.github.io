@@ -345,7 +345,6 @@ var Grid = (function() {
 		create : function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
-			//this.$description = $( '<p></p>' );
 			this.$description = $( '<p id="foo" class="fubar"></p>' );
 			var detailAppends = [this.$title, this.$description];
 			if (settings.showVisitButton === true) {
