@@ -68,8 +68,15 @@
 	background: rgb(0, 0, 0); /* fallback color */
 	background: rgba(0, 0, 0, 0.7);
 	padding: 12px;
-
 }
+
+.log {
+	border-collapse:collapse; 
+	max-width:720px; 
+	margin-right:auto; 
+	margin-left:auto;
+}
+
 
 
 /*end of Christo   added*/
