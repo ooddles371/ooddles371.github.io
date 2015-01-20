@@ -40,7 +40,9 @@
 	margin-top: 7px;
 	
 }
-.caption-center img {
+.caption-center img,
+.caption-left img,
+.caption-right img {
 	max-width:720px;
 }
 

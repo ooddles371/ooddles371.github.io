@@ -271,6 +271,7 @@ var Grid = (function() {
 			}
 
 		} );
+		$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 	}
 
 	function initItemsEvents( $items ) {
@@ -283,7 +284,9 @@ var Grid = (function() {
 			// check if item already opened
 			current === $item.index() ? hidePreview() : showPreview( $item );
 			return false;
+			$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 		} );
+		$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 	}
 
 	function getWinSize() {
@@ -323,6 +326,7 @@ var Grid = (function() {
 		preview = $.data( this, 'preview', new Preview( $item ) );
 		// expand preview overlay
 		preview.open();
+		$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 	}
 
 	function hidePreview() {
@@ -338,14 +342,17 @@ var Grid = (function() {
 		this.expandedIdx = this.$item.index();
 		this.create();
 		this.update();
-		//start of Christo added
+		$("li.help p.some").first().appendTo( "#foo" );
+		$("li.og-expanded div.ssdd").first().appendTo( "#foo" ); // Christo added
+		$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ;
+		$( "#booted" ).append( $( "li" ).hasClass( "help" ).toString() ) 
+		$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 		var $itemElder = this.$item.children( 'a' ),
 				elderdata = {
-					idfinder : $itemElder.data( 'idfinder' )
+					idfinder : $itemElder.data( 'idfinder' )//work on this
 				};
 		console.log(elderdata.idfinder);
 		$("#" + elderdata.idfinder).clone().appendTo("#foo");
-		//end of Christo added
 	}
 
 	Preview.prototype = {
@@ -372,6 +379,34 @@ var Grid = (function() {
 			if( support ) {
 				this.setTransition();
 			}
+			//console.log("this.$item.innerHTML")
+//			console.log(this.$item.innerHTML);
+//			console.log("this.$item");
+//			console.log(this.$item);
+//			console.log("this");
+//			console.log(this);
+//			console.log("this.$item.text()");
+//			console.log(this.$item.text());
+//			
+//			console.log($("this.item:first"));
+//			var thisitem = this.$item;
+//			var parent = $("thisitem").parent();
+////			var firstofparent = $("parent div.ssdd").first();
+//			var cnodes = thisitem.childNodes;
+//			cnodes[3].innerHTML = "yellow";
+//			console.log("thisitem");
+//			console.log(thisitem);
+//			console.log("parent");
+//			console.log(parent);
+//			console.log("firstofparent");
+//			console.log(firstofparent);
+//			console.log("firstofparent text()");
+//			console.log(firstofparent.text());
+//
+//			var copythis = thisitem.previousSibling.innerHTML;
+//			document.getElementById("foo").innerHTML = copythis;
+			//$("parent div.ssdd").first().appendTo( "#foo" ); // Christo added
+			$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 		},
 		update : function( $item ) {
 
@@ -431,6 +466,7 @@ var Grid = (function() {
 					}
 				} ).attr( 'src', eldata.largesrc );	
 			}
+			$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 		},
 		open : function() {
 
@@ -440,6 +476,7 @@ var Grid = (function() {
 				// scroll to position the preview in the right place
 				this.positionPreview();
 			}, this ), 25 );
+			$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 		},
 		close : function() {
 
@@ -515,13 +552,16 @@ var Grid = (function() {
 				scrollVal = this.height + this.$item.data( 'height' ) + marginExpanded <= winsize.height ? position : this.height < winsize.height ? previewOffsetT - ( winsize.height - this.height ) : previewOffsetT;
 			
 			$body.animate( { scrollTop : scrollVal }, settings.speed );
+			$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 		},
 		setTransition  : function() {
 			this.$previewEl.css( 'transition', 'height ' + settings.speed + 'ms ' + settings.easing );
 			this.$item.css( 'transition', 'height ' + settings.speed + 'ms ' + settings.easing );
+			$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 		},
 		getEl : function() {
 			return this.$previewEl;
+			$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 		}
 					
 	}
