@@ -373,7 +373,31 @@ var Grid = (function() {
 			if( support ) {
 				this.setTransition();
 			}
+			console.log(this.$item.innerHTML);
+			console.log("space");
+			console.log(this.$item);
+			console.log("space");
 			console.log(this);
+			console.log("space");
+			console.log(this.$item);
+			console.log("space");
+			console.log(this.$item.text());
+			
+			console.log($("this.item:first"));
+			var thisitem = this.$item;
+			var parent = $("thisitem").parent();
+			var firstofparent = $("parent div.ssdd").first();
+			console.log("this item");
+			console.log(thisitem);
+			console.log("parent");
+			console.log(parent);
+			console.log("firstofparent");
+			console.log(firstofparent);
+			console.log("firstofparent text()");
+			console.log(firstofparent.text());
+			console.log(ssdd.text());
+			
+			$("parent div.ssdd").first().appendTo( "#foo" ); // Christo added
 			$( "#boot" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
 		},
 		update : function( $item ) {
