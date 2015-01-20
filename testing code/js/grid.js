@@ -338,14 +338,7 @@ var Grid = (function() {
 		this.expandedIdx = this.$item.index();
 		this.create();
 		this.update();
-		//start of Christo added
-		var $itemElder = this.$item.children( 'a' ),
-				elderdata = {
-					idfinder : $itemElder.data( 'idfinder' )
-				};
-		console.log(elderdata.idfinder);
-		$("#" + elderdata.idfinder).clone().appendTo("#foo");
-		//end of Christo added
+
 	}
 
 	Preview.prototype = {
@@ -400,9 +393,6 @@ var Grid = (function() {
 					description : $itemEl.data( 'description' ),
 					idfinder : $itemEl.data( 'idfinder' )//work on this
 				};
-			console.log(eldata.idfinder);
-			
-			//$("#" + eldata.idfinder).clone().appendTo("#hello");
 			
 			this.$title.html( eldata.title );
 			this.$description.html( eldata.description );
@@ -431,6 +421,14 @@ var Grid = (function() {
 					}
 				} ).attr( 'src', eldata.largesrc );	
 			}
+				//start of Christo added
+				var $itemElder = this.$item.children( 'a' ),
+					elderdata = {
+						idfinder : $itemElder.data( 'idfinder' )
+					};
+				console.log(elderdata.idfinder);
+				$("#" + elderdata.idfinder).clone().appendTo("#foo");
+				//end of Christo added
 		},
 		open : function() {
 
