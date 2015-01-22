@@ -425,7 +425,6 @@ var Grid = (function() {
 					elderdata = {
 						idfinder : $itemElder.data( 'idfinder' )
 					};
-				console.log(elderdata.idfinder);
 				$("#" + elderdata.idfinder).clone().appendTo("#foo");
 				//end of Christo added
 		},

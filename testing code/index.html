@@ -10,7 +10,7 @@
     <meta name="author" content="Christo Landry">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>Christo Landry - Professional Runner</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,6 +22,8 @@
     <![endif]-->
 	<link href="css/carousel.css" rel="stylesheet">
 	<link href="css/grid.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/prettySticky.css" type="text/css">
+
 	
     <!-- Custom styles for this template -->
 
@@ -29,45 +31,22 @@
 
 	</head>
 	<body>
-
-		<!-- NAVBAR
-================================================== -->
-	<div class="navbar-wrapper">
+	<!-- new navbar ---------------->
+	<nav>
 		<div class="container">
-
-			<nav class="navbar navbar-inverse navbar-static-top">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#">Christo Landry - Professional Runner</a>
-					</div>
-					<div id="navbar" class="navbar-collapse collapse">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="index.html">Home</a>
-							</li>
-							<li><a href="schedule.html">Schedule</a>
-							</li>
-							<li><a href="results.html">Results</a>
-							</li>
-							<li><a href="resume.html">Athletic Resume</a>
-							</li>
-							<li><a href="affiliation.html">Affiliation</a>
-							</li>
-							<li><a href="media.html">In the Media</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
+			<div class="menu">
+				<ul class="PrettyStickyNav" style="margin-top: 14px !important; margin-bottom: 14px !important;">
+					<li class="PrettyStickyNav"><a href="index.html">Home</a></li>
+					<li class="PrettyStickyNav"><a href="results.html">Schedule &amp; Results</a></li>
+					<li class="PrettyStickyNav"><a href="resume.html">Athletic Resume</a></li>
+					<li class="PrettyStickyNav"><a href="affiliation.html">Affiliation</a></li>
+					<li class="PrettyStickyNav"><a href="media.html">In the Media</a></li>
+				</ul>
+			</div>
 		</div>
-	</div>
-	<!-- NAVBAR End
-================================================== -->
+	</nav>	
+	<!-- End new navbar ---------------->
+
 	
 
 	<!-- Carousel
@@ -843,14 +822,12 @@
 			Grid.init();
 		});
 	</script>
-		<script>
-	$(document).ready(function(){
-		$("button.test").click(function(){
-			$( "#bo" ).append( $( "li" ).hasClass( "og-expanded" ).toString() ) ; //Christo-test
-			console.log("hello");
-		});
-	});
-	</script>
+
+	
+	<script src="js/prettySticky.js"></script>
+	<script src="js/jquery.smooth-scroll.min.js"></script>
+	<script src="js/scripts.js"></script>
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
