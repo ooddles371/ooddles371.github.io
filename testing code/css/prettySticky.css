@@ -36,14 +36,16 @@ img.logoScroll {
 .menu ui {
 	margin-top:14px;
 	margin-bottom: 14px;
+	
 }
 
 div.menu {
 	text-align:center;
+	font-weight: bold;
 }
 
 div.menuScroll {
-	float:right;
+/*	float:right;*/
 }
 
 li.PrettyStickyNav {

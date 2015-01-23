@@ -4,6 +4,46 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 /*Christo added*/
+
+/*
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}*/
+.headline{
+	style="max-width:4000px;
+	margin:0px;"
+}
+
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+footer {
+	background-color: #333333;
+	
+}
+
+footer p {
+	padding:5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #cccccc;
+	text-align: center;
+}
+
 .insert{
 	display:inline;
 }
@@ -37,8 +77,6 @@
 	margin-left:auto;
 	margin-bottom: 7px;
 	margin-top: 7px;
-	margin-top: 7px;
-	
 }
 .caption-center img,
 .caption-left img,
