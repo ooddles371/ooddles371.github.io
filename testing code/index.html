@@ -30,7 +30,7 @@
 
 
 	</head>
-	<body>
+	<body><div class="body_holder" id="body_wrapper">
 	<!-- new navbar ---------------->
 	<nav>
 		<div class="container">
@@ -49,6 +49,7 @@
 	<div class="headline">
 		<img src="images/index/largest.jpg" style="max-width:100%;">
 	</div>
+	
 	<div id="blog"></div>
 
 <div class="poof">
@@ -1105,13 +1106,17 @@
 			Grid.init();
 		});
 	</script>
-
-	
+	<script>
+		$(window).load(function() {
+			$("#body_wrapper").removeClass("body_holder");
+		});
+	</script>
 	<script src="js/prettySticky.js"></script>
 	<script src="js/jquery.smooth-scroll.min.js"></script>
 	<script src="js/scripts.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </div><!-- id=body_wrapper -->
   </body>
 
