@@ -35,6 +35,17 @@
     display: none !important;
   }
 }*/
+
+.quoteblock{
+	height: 140px;
+	background-color: #333333;
+}
+
+.centerthis{
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
 footer {
 	background-color: #333333;
 	
