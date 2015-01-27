@@ -1,27 +1,26 @@
 
-
-.container {
+.cd-container {
   margin: 0px auto;
   padding: 0px;
 }
 
-#main { 
+#cd-main { 
   background: #3B3B3B;
   height: 430px;
 }
 
-.content {
-  padding: 10px 44px;
+.cd-content {
+  padding: 10px 10px;
 }
 
-.text {
+.cd-text {
   border-bottom: 1px solid #262626;
   margin-top: 40px;
   padding-bottom: 40px;
-  text-align: center;
+  text-align: left;
 }
 
-.text h2 {
+.cd-text h2 {
   color: #E5E5E5;
   font-size: 30px;
   font-style: normal;
@@ -30,7 +29,7 @@
   letter-spacing: 2px;
 }
 
-.counter {
+.cd-counter {
   background: #2C2C2C;
   -moz-box-shadow:    inset 0 0 5px #000000;
   -webkit-box-shadow: inset 0 0 5px #000000;
@@ -39,26 +38,26 @@
   text-align: center;
 }
 
-.counter h3 {
+.cd-counter h3 {
   color: #E5E5E5;
-  font-size: 14px;
+  font-size: 26px;
   font-style: normal;
   font-variant: normal;
-  font-weight: lighter;
+  font-weight: normal;
   letter-spacing: 1px;
   padding-top: 20px;
   margin-bottom: 30px;
 }
 
-#countdown {
+#cd-countdown {
   color: #FFFFFF;
 }
 
-#countdown span {
+#cd-countdown span {
   color: #E5E5E5;
   font-size: 26px;
-  font-weight: normal;
-  margin-left: 20px;
-  margin-right: 20px;
+  font-weight: lighter;
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: center;
 }

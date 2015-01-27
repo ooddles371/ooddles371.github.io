@@ -20,17 +20,23 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+	<link href="css/countdown.css" rel="stylesheet">
 	<link href="css/grid.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/prettySticky.css" type="text/css">
-
+	
 	
     <!-- Custom styles for this template -->
 
 
 
 	</head>
-	<body><div class="body_holder" id="body_wrapper">
+	<body>
+	<!-- Loading Gif -->
+	<div id="loading_gif">
+		<img src="images/index/loading.gif" style="display: block; margin: auto; top:50%;">
+	</div>
+	<!-- End of loading gif-->
+	<div class="body_holder" id="body_wrapper">
 	<!-- new navbar ---------------->
 	<nav>
 		<div class="container">
@@ -55,9 +61,10 @@
 	
 	<!-- Quote block ------------------->
 	<div class="quoteblock">
-		<div class="centerthis">
-		<img src="images/index/quote3.png">
-		</div>
+
+			<img src="images/index/quote3.png" style="display: block;
+  margin: 0 auto;">
+
 	</div>
 	<!-- end of Quote ------------------>
 	
@@ -1016,7 +1023,7 @@
 
 <!--Start of Grid blog pictures -->
 <div id="blog"></div>
-<div class="container" style="max-width: 1400px;">	
+		<!--<div class="container" style="max-width: 1400px;">	-->
 			<div class="main">
 				<ul id="og-grid" class="og-grid">
 					<li><!--Weeks 15&16 (20km)-->
@@ -1096,9 +1103,57 @@
 				</ul>
 
 			</div>
-		</div><!-- /container -->
+		<!--</div><!-- /container -->
 <!--End of Grid blog pictures ---->
 
+	<!-- Start of three div wide -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 block1">
+			Recent Media
+				
+			</div>
+			<div class="col-sm-4 block2">
+				<!--<div class="container">-->
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px !important;">
+							<div id="cd-main">
+								<div class="cd-content">
+									<div class="cd-text">
+										<!--<h2>Next Race:</h2>-->
+									</div> <!-- /.Text Div -->
+									<div class="cd-counter">
+										<h3>Next Race: World's Best 10km</h3>
+										<div id="cd-countdown">
+										</div><!-- /#Countdown Div -->
+									</div> <!-- /.Counter Div -->
+								</div> <!-- /.Content Div -->
+							</div> <!-- /#Main Div -->
+						</div> <!-- /.Columns Div -->
+					</div> <!-- /.Row Div -->
+				<!--</div> <!-- /.Container Div -->
+			</div>
+			<div class="col-sm-4 block3">
+				<div style="margin-left:auto; margin-right:auto; max-width:520px;">
+					<a class="twitter-timeline" 
+					href="https://twitter.com/RunChristo" 
+					data-widget-id="559409129752895488"
+					height="400"
+					data-chrome="noheader nofooter transparent noscrollbar"
+					></a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of three div wide -->
+
+	<!-- Bottom Banner --------->
+	<div style="overflow:hidden; height: 500px;">
+		<img src="images/index/bottombanner.jpg" class="bannerWidth centerPicture" >
+	</div>
+	<!-- End of bottom banner -->
+	
 	<!-- Start of footer -->
 	<footer>
 		<div class="container" style="height:51px !important;">
@@ -1115,7 +1170,9 @@
 	<!--<script src="js/docs.min.js"></script> is this even needed? -->
 	<!-- Christo added -->
 	<script src="js/modernizr.custom.js"></script>
+	<script src="js/countdown.js"></script>
 	<script src="js/grid.js"></script>
+	
 	<script>
 		$(function() {
 			Grid.init();
@@ -1123,9 +1180,11 @@
 	</script>
 	<script>
 		$(window).load(function() {
+			$("#loading_gif").addClass("visNone");
 			$("#body_wrapper").removeClass("body_holder");
 		});
 	</script>
+	
 	<script src="js/prettySticky.js"></script>
 	<script src="js/jquery.smooth-scroll.min.js"></script>
 	<script src="js/scripts.js"></script>

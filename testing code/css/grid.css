@@ -7,45 +7,99 @@
 .body_holder {
 	visibility: hidden;
 }
-/*
+.visNone {
+	display: none;
+}
+/* Bottom banner picture */
+.bottomBanner{
+	overflow:hidden;
+}
+
 @media (max-width: 767px) {
-  .hidden-xs {
-    display: none !important;
+  .bannerWidth {
+    max-width:1350px;
+  }
+  .bottomBanner{
+	height: 200px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .hidden-sm {
-    display: none !important;
+  .bannerWidth {
+    max-width:1300px;
+  }
+  .bottomBanner{
+	height: 200px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .hidden-md {
-    display: none !important;
+  .bannerWidth {
+    max-width:1350px;
   }
-}*/
+  .bottomBanner{
+	height: 200px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .bannerWidth {
+    max-width:1350px;
+	}
+  .bottomBanner{
+	height: 300px;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1799px) {
+  .bannerWidth {
+    max-width:100%;
+	max-height:500px;
+	}
+  .bottomBanner{
+	height: 400px;
+  }
+}
+@media (min-width: 1800px) {
+  .bannerWidth {
+    max-width:100%;
+	}
+  .bottomBanner{
+	height: 500px;
+  }
+}
+/* end Bottom banner picture */
+.centerPicture{
+	display: block;  
+	position:relative; 
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%,-50%);
+}
+
 .headline{
 	max-width:4000px;
 	margin:0px;
 	max-height: 850px;
 	overflow-y: hidden;
 }
-/*
-@media (min-width: 1200px) {
-  .hidden-lg {
-    display: none !important;
-  }
-}*/
 
 .quoteblock{
 	height: 140px;
 	background-color: #333333;
 }
-
-.centerthis{
-	margin-left: auto !important;
-	margin-right: auto !important;
+/* Start of three div wide */
+.block1{
+	height:400px;
+	background-color: lightblue;
 }
 
+.block2{
+	height:400px;
+	background-color: lightgrey;
+}
+
+.block3{
+	height:400px;
+	background-color: lightblue;
+}
+/* End of three div wide */
 footer {
 	background-color: #333333;
 	
