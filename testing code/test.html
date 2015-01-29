@@ -10,11 +10,11 @@
     <meta name="author" content="Christo Landry">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>Test page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/countdown.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -22,33 +22,14 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-	<link rel="stylesheet" href="css/prettySticky.css" type="text/css">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-
-
+	<style>
+	
+	</style>
 	</head>
 	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div id="cd-main">
-						<div class="cd-content">
-							<div class="cd-text">
-								<h2>This Website Is Under Construction</h2>
-							</div> <!-- /.Text Div -->
-							<div class="cd-counter">
-								<h3>Estimated Time Remaining Before Launch:</h3>
-								<div id="cd-countdown">
-  
-								</div><!-- /#Countdown Div -->
-							</div> <!-- /.Counter Div -->
-						</div> <!-- /.Content Div -->
-					</div> <!-- /#Main Div -->
-				</div> <!-- /.Columns Div -->
-			</div> <!-- /.Row Div -->
-		</div> <!-- /.Container Div -->
-
-
+	
+	<div id="typer"></div></br></br>
+	<div id="typer2"></div>
 
   
     <!-- Bootstrap core JavaScript
@@ -58,44 +39,30 @@
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/docs.min.js"></script>
 	<!-- Chrsito added -->
-	<script src="js/countdown.js"></script>
-	<!--<script>
-	// set the date we're counting down to
-var target_date = new Date('Mar, 1, 2015').getTime();
- 
-// variables for time units
-var days, hours, minutes, seconds;
- 
-// get tag element
-var countdown = document.getElementById('countdown');
- 
-// update the tag with id "countdown" every 1 second
-setInterval(function () {
- 
-    // find the amount of "seconds" between now and target
-    var current_date = new Date().getTime();
-    var seconds_left = (target_date - current_date) / 1000;
- 
-    // do some time calculations
-    days = parseInt(seconds_left / 86400);
-    seconds_left = seconds_left % 86400;
-     
-    hours = parseInt(seconds_left / 3600);
-    seconds_left = seconds_left % 3600;
-     
-    minutes = parseInt(seconds_left / 60);
-    seconds = parseInt(seconds_left % 60);
-     
-    // format countdown string + set tag value
-    countdown.innerHTML = '<span class="days">' + days +  ' <b>Days</b></span> <span class="hours">' + hours + ' <b>Hours</b></span> <span class="minutes">'
-    + minutes + ' <b>Minutes</b></span> <span class="seconds">' + seconds + ' <b>Seconds</b></span>';  
- 
-}, 1000);
-	
-	</script> -->
+
+	<script src='js/typewriter.js'></script>
+	<script>
+            var typeWin = $(window),
+                food = $('#typer');
+				food2 = $('#typer2');
+				
+            food.typer(['Christo Landry']);
+			setTimeout(function(){food2.typer(['Professional Runner'])},1000);
+            // unneeded...
+            typeWin.resize(function(){
+                var fontSize = Math.max(Math.min(typeWin.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+					
+				food.css({
+                    fontSize: fontSize * .8 + 'px'
+                });
+                food2.css({
+                    fontSize: fontSize * .8 + 'px'
+                });
+            }).resize();
+        </script>
 	
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <!--<script src="js/ie10-viewport-bug-workaround.js"></script>-->
   </body>
 </html>

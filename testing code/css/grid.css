@@ -84,15 +84,30 @@
 	height: 140px;
 	background-color: #333333;
 }
+
+
+.indexMedia{
+	list-style-type:none;
+	font-weight: normal;
+	margin: 15px;
+}
+.indexMedia li{
+	border-bottom: 1px solid black;
+	
+	padding: 10px;
+}
+
 /* Start of three div wide */
 .block1{
 	height:400px;
 	background-color: lightblue;
+	padding: 0px;
 }
 
 .block2{
 	height:400px;
-	background-color: lightgrey;
+	background-color: #3B3B3B;
+	padding: 0px;
 }
 
 .block3{
@@ -184,6 +199,7 @@ footer p {
 	margin-left:auto;
 	margin-top: 20px;
 }
+
 
 
 

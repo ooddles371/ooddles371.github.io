@@ -56,6 +56,10 @@
 	<!-- Headline image ---------------->
 	<div class="headline">
 		<img src="images/index/largest.jpg" style="max-width:100%;">
+		<div style="position:relative; bottom:214px; z-index: 5; margin-bottom:-214px;">
+			<div id="typer" style="color:red;"></div>
+			<div id="typer2" style="color:red;"></div>
+		</div>
 	</div>
 	<!-- End of Headline image --------->
 	
@@ -1110,28 +1114,41 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4 block1">
-			Recent Media
-				
+				<div class="v-alignOuter">
+					<div class="v-alignMiddle">
+						<div class="v-alignInner">
+							<ul class="indexMedia">
+								<li style="font-size:18px;">Recent News</li>
+								<li><a href="http://www.usatf.org/News/Boit,-Keflezighi,-Landry-named-USATF-Champions.aspx">Boit, Keflezighi, Landry, True named USATF Champions</a></li>
+								<li><a href="http://us-national-12k.runnerspace.com/eprofile.php?event_id=8644&do=news&news_id=299010">Christo Landry’s Season to Remember</a></li>
+								<li><a href="http://www.letsrun.com/news/2014/10/christo-landry-150-mile-weeks-32-mile-long-runs-behind-ready-chicago/">Christo Landry With 150 Mile Weeks and 32 Mile Long Runs Behind Him is Ready for Chicago</a></li>
+								<li><a href="http://www.usatf.org/News/Fan-Voting-is-Now-Open-for-Jesse-Owens-and-Jackie-.aspx">Fan Voting is Now Open for Jesse Owens and Jackie Joyner-Kersee Athletes of the Year</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="col-sm-4 block2">
-				<!--<div class="container">-->
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px !important;">
-							<div id="cd-main">
-								<div class="cd-content">
-									<div class="cd-text">
-										<!--<h2>Next Race:</h2>-->
-									</div> <!-- /.Text Div -->
-									<div class="cd-counter">
-										<h3>Next Race: World's Best 10km</h3>
-										<div id="cd-countdown">
-										</div><!-- /#Countdown Div -->
-									</div> <!-- /.Counter Div -->
-								</div> <!-- /.Content Div -->
-							</div> <!-- /#Main Div -->
-						</div> <!-- /.Columns Div -->
-					</div> <!-- /.Row Div -->
-				<!--</div> <!-- /.Container Div -->
+				<div class="v-alignOuter">
+					<div class="v-alignMiddle">
+						<div class="v-alignInner linkStyle">
+							<div class="latestRace">
+								<center>
+									Last Race: Chiba Ekiden</br>
+									6th, 28:55 (10km)
+								</center>										
+							</div>
+							<center>
+								<a href="results.html">View complete schedule and results</a>
+							</center>
+							<div class="nextRace">
+								Next race: <a href="http://www.wb10k.com/">World's Best 10k</a>
+								<div id="cd-countdown2" style="font-size:16px; font-weight:lighter;"></div>
+								<div id="cd-countdown"></div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="col-sm-4 block3">
 				<div style="margin-left:auto; margin-right:auto; max-width:520px;">
@@ -1180,10 +1197,42 @@
 	</script>
 	<script>
 		$(window).load(function() {
-			$("#loading_gif").addClass("visNone");
-			$("#body_wrapper").removeClass("body_holder");
+			$("#loading_gif").addClass("visNone");//hides loading gif
+			$("#body_wrapper").removeClass("body_holder");//Makes page appear
+			
+			//<!--Run the typewriter text-->
+			var typeWin = $(window),
+                food = $('#typer');
+				food2 = $('#typer2');
+			
+            //food.typer(['Christo Landry']);
+			//setTimeout(function(){food2.typer(['Professional Runner'])},1000);
+            // unneeded... resizes font based on screen width.
+            typeWin.resize(function(){
+                var fontSize = Math.max(Math.min(typeWin.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+					
+				food.css({
+                    fontSize: fontSize * .8 + 'px'
+                });
+                food2.css({
+                    fontSize: fontSize * .8 + 'px'
+                });
+            }).resize();
+			var fontSizer = Math.max(Math.min(typeWin.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+			var screenW = typeWin.width();
+			
+			food.typer(['Christo Landry', fontSizer]);
+			setTimeout(function(){food2.typer(['Professional Runner', screenW])},1000);
+			//<!-- end of typewriter -->
 		});
 	</script>
+	
+	<script src='js/typewriter.js'></script><!-- Typewriter text -->
+	<script><!-- Typewriter text -->
+            
+    </script>
+	
+	
 	
 	<script src="js/prettySticky.js"></script>
 	<script src="js/jquery.smooth-scroll.min.js"></script>

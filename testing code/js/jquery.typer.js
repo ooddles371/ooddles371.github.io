@@ -12,7 +12,7 @@
             char: '',
             delay: 2000,
             duration: 600,
-            endless: false, //Christo changed - it makes it print only once
+            endless: true,
             onType: $.noop,
             afterAll: $.noop,
             afterPhrase: $.noop
