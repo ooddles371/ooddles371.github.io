@@ -97,6 +97,14 @@
 	padding: 10px;
 }
 
+.removeLinkStyle a:link,
+.removeLinkStyle a:visited,
+.removeLinkStyle a:hover,
+.removeLinkStyle a:active {
+	text-decoration: none;
+	color: black;
+}
+
 /* Start of three div wide */
 .block1{
 	height:400px;

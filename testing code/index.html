@@ -54,12 +54,13 @@
 	<!-- End new navbar ---------------->
 	
 	<!-- Headline image ---------------->
-	<div class="headline">
+	<div class="headline" id="headlinePic">
 		<img src="images/index/largest.jpg" style="max-width:100%;">
-		<div style="position:relative; bottom:214px; z-index: 5; margin-bottom:-214px;">
-			<div id="typer" style="color:red;"></div>
-			<div id="typer2" style="color:red;"></div>
-		</div>
+	</div>
+
+	<div id="typewriterDiv" style="position: absolute;"> <!--Typewriter stuff, height adjust in JS -->
+		<div id="typer" style="color:red;"></div>
+		<div id="typer2" style="color:red;"></div>
 	</div>
 	<!-- End of Headline image --------->
 	
@@ -74,10 +75,12 @@
 	
 	<!--  Hidden blog posts ------------>
 <div class="poof">
-	<div id="pic2" class="insert">Hello, Picture something or another checking in  <img src="images/brian2.jpg"></div>
-	<div id="pic2" class="insert"> <!-- Weeks 17-19 -->
+	<div id="2014sum9" class="insert"> <!-- Weeks 17-19 -->
 		Starting my first full week in Charlotte, I’m getting a sense of the place and how to avoid the spiderwebs.  Got my first chance to run on the Greenway (a paved path along a stream) Monday that runs through the UNCC campus and is very conveniently marked every 800 meters.  Great place to do pace runs (tempo runs) although this one didn’t go exactly according to plan as it turns out the inhaler (I have exercised induced asthma) I’ve been using ran out last week and my replacement one didn’t show up until after the workout.  That being said, if you take away the inability to breath, the legs were doing alright in adjusting to the heat.</br></br>
-
+		<div class="caption-right">
+			<img src="images/blog/2014-week18.jpg">
+			<p>Reedy Creek Park, Charlotte</p>
+		</div>
 		On Thursday I had the workout that I had been dreading for a while.  I use the word dreading because I knew it was a big workout on the horizon and I hadn’t been feeling as recovered as I would have liked the past few weeks.  However, after removing the aerobic fartlek from the long run last weekend, I finally got back on top of my game and it showed in the workout, putting up splits that were significantly faster than the previous year while at the same time going further in hot, humid and unfortunately sunny conditions.  I didn’t realize how worried I’d been until afterwards when the relief hit me.  Probably shouldn’t have built up a single workout that much in my mind, but it’s behind me now and hopefully I’ll learn a lesson from it.</br></br>
 
 		This week also had the last longer than a marathon long run, where I ended up cruising in the low 5:40’s for the majority of the effort after naturally working into the run.
@@ -945,6 +948,720 @@
 			</tbody>
 		</table>
 	</div>
+	<div id="2014sum4" class="insert"> <!-- Weeks 7-8-->
+		Well these these have certainly been a two tough weeks on my body.  I knew looking ahead at my schedule they would be as they were my first two weeks of significant mileage as well as my first marathon focused workouts.  Combined that with recovering from a road 10k and the lower leg tightness associated with it, I’ll be glad for a few down days heading into the USA 7 mile Championships next week.</br></br>
+
+		This block of training featured my first progression run and aerobic fartlek of the season.  The progression run starts slowly, slower than marathon pace, and gradually quickens to threshold pace and finishes beyond it.  It’s a useful workout as it eases you into the paces and accustoms the body to becoming aggressive and dropping below marathon pace at the end of an effort, in addition to the aerobic benefits.  It’s also a handy post race workout as it’s not as demanding overall as a pace run of equal duration.</br></br>
+		
+		<div class="caption-left">
+			<img src="images/blog/2014-week7.jpg">
+			<p>Ferry Field, the workplace</p>
+		</div>
+		
+		For this progression run, I started at 5:20 pace for the first twenty minutes and then gradually worked my way down over the next forty minutes to 4:40 pace for the last thousand.  While I was very happy with the workout due to hitting my paces precisely in a relaxed manner, I also came out of it with a slightly inflamed lower distal peroneal which took a few days to rid myself of.  Lower leg issues have been my achilles heel (figuratively and literally) in the past, so I take the least bit of tightness or soreness seriously and immediately take evasive actions.  In this case it involved a rotation of shoes, icing multiple times a day, heating before runs, getting a couple of massages and sleeping 10-12 hours day.</br></br>
+
+		This week also included my first aerobic fartlek which occurs in the middle of a long run.  In this case I had seven segments of twelve minutes for a total of eight-four minutes of hard running in the middle of a 2:20 long run following the pattern of medium, hard and easy. Warm up and cool down are done without break as this is the long run of the week.   This is one of the workouts that will gasping for breath and completely exhausted by the end, although I’ve also been known to push the given pace constraints, so it’s probably my fault.
+		
+		<table class="table table-condensed table-hover log">
+			<tbody>
+				<tr>
+					<td>Week 7</td>
+					<td>Morning</td>
+					<td>Afternoon</td>
+					<td>Other</td>
+					<td>Total</td>
+				</tr>
+				<tr>
+					<td>Monday</td>
+					<td>60</td>
+					<td>35</td>
+					<td>Lift</td>
+					<td>95</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td>40</td>
+					<td>Progression Run 60 min 5:20-4:40</td>
+					<td></td>
+					<td>140</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td>100</td>
+					<td></td>
+					<td>Lift</td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td>65</td>
+					<td>35</td>
+					<td>Strides</td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td>Fartlek 6,6,5,5,4,4,3,3,2,2 rest is half rounded up</td>
+					<td></td>
+					<td></td>
+					<td>115</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>30</td>
+					<td></td>
+					<td></td>
+					<td>30</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td>140 w/7 12 min segments of med(~5:29), hard (~5:20), easy (~5:40)</td>
+					<td></td>
+					<td></td>
+					<td>140</td>
+				</tr>
+				<tr>
+					<td>Week</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>720 (120mi)</td>
+				</tr>
+			</tbody>
+		</table>
+		Well this week involved something that hasn’t happened in the last four years to my recollection…I had to cut a workout short.  On Friday I was supposed to do 2x5xmile, however, after the 6th mile I was going backwards and significantly off my splits.  In an attempt to salvage volume from the workout I moved to thousands but those were even slower.  It was a difficult decision for me to stop the workout at this point.  On one hand, my legs were done and my times were 10 seconds per mile or more off.  On the other hand, if you quit once when it gets tough or things aren’t going well, it becomes much easier to quit again which is not a routine I want to get in.  At that point the question had to be asked, how did it get to this point?  Sure the workout was hard on paper: high volume, low rest, and fast splits, but it was something I should have been able to handle given the past few weeks.  My focus was definitely off, I had picked my head up and started to think ahead to next week’s race instead of taking things a day at a time, yet that doesn’t account for everything.  At this point, I’ll have to chalk it up to a hard two weeks of training and a heavy lift on Wednesday.  All that’s left now is to recover and not screw up again in the future.
+		
+		<table class="table table-condensed table-hover log">
+			<tbody>
+				<tr>
+					<td>Week 8</td>
+					<td>Morning</td>
+					<td>Afternoon</td>
+					<td>Other</td>
+					<td>Total</td>
+				</tr>
+				<tr>
+					<td>Monday</td>
+					<td>65</td>
+					<td>40</td>
+					<td>Lift</td>
+					<td>105</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td>50 min PR avg 4:58</td>
+					<td>40</td>
+					<td></td>
+					<td>130</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td>105</td>
+					<td>30</td>
+					<td>Lift</td>
+					<td>135</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td>65</td>
+					<td>35</td>
+					<td>Strides</td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td>Failed: 2x5xMile, w/1 min rest, only got in 6</td>
+					<td>50</td>
+					<td></td>
+					<td>115</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>150</td>
+					<td></td>
+					<td></td>
+					<td>150</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td>45</td>
+					<td></td>
+					<td></td>
+					<td>45</td>
+				</tr>
+				<tr>
+					<td>Week</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>780 (130 mi)</td>
+				</tr>
+			</tbody>
+		</table>
+		*Note: Unit of measurement is minutes. To convert to miles, divide by six or so.
+	</div>
+	<div id="2014sum3" class="insert"> <!-- Weeesk 5-6 (10km) -->
+		One week out from the AJC Peachtree 10k (USA 10k Championships) and I got a chance to step on the track for the first time to get a glimpse of my fitness.  Going into the workout I was worried how my legs would respond as they were sore from my work in the weight room the previous day, however, I was pleasantly surprised at the times my legs carried me to.  This workout in particular got me excited for the race as I was much further ahead of where I thought I would be and the times were pretty close to the paces I would expect to be required to garner a top five spot.  Later in the week, I got a chance to work on some turnover after a pace run which would be handy if I happened to be in a sprint finish.</BR></br>
+
+		Another feature in my weekly running is the easy day.  This day plays a part in my overall training scheme both mentally and physically.  Mentally it’s a day where I get to relax, jog slowly (maybe 40 sec/mile slower) and enjoy the scenery.  Physically it gives my body a chance to recover from the pounding I’ve inflicted upon it earlier in the week.  Usually I limit the run to an hour and if I’ve been on top of my mileage during the week I’ll get it under half an hour.
+		
+		<table class="table table-condensed table-hover log">
+			<tbody>
+				<tr>
+					<td>Week 5</td>
+					<td>Morning</td>
+					<td>Afternoon</td>
+					<td>Other</td>
+					<td>Total</td>
+				</tr>
+				<tr>
+					<td>Monday</td>
+					<td>30</td>
+					<td>75</td>
+					<td>Strides/Lift</td>
+					<td>105</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td>6 x Mile w/ 1:30 rest 4:34 avg.</td>
+					<td>30</td>
+					<td></td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td>95</td>
+					<td></td>
+					<td>Lift</td>
+					<td>95</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td>35</td>
+					<td>75</td>
+					<td>Strides</td>
+					<td>110</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td>36 min PR 4:59 avg & 4x300 ~44</td>
+					<td>35</td>
+					<td></td>
+					<td>120</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>135</td>
+					<td></td>
+					<td></td>
+					<td>135</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td>25</td>
+					<td></td>
+					<td></td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>Week</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>690 (115mi)</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		I flew down to Atlanta early in the week for a confab of all the Mizuno athletes.  This was a great event where we got an inside peak at Mizuno’s What If Everybody Ran marketing campaign, shot some quick interviews for social media (and found out some hilarious facts about each other), had a little photo shoot and a great time all around.  Below are a few photos from the event taken by a hapless volunteer on my phone. </br></br>
+		
+		On July 2nd, I had the opportunity to meet with a great group of kids who participate in the program Kilometer Kids.  It’s a program designed to get children active at an early age to promote lifelong healthy habits, which is a great idea.  While I was there, with a few of the other athletes, we went though a series of drills and stretches and then a jog around the athletic fields in Piedmont Park.  I also got to catch up with them after the race and snagged a few pictures.</br></br>
+		
+		After taking a few easy days my legs were starting to come around and I was getting antsy waiting for race day.  My plan going into the race was a passive one of staying in touch with the leaders and covering their moves.  The first mile is slightly uphill and this was reflected in the slightly slow split of 4:41.  Taking exception to this was Girma Mecheso who took off and instigated a small chase pack.  Following my plan, I attached myself to the pack chasing him while trying to stay relaxed at the increased pace.  This was the course the next two miles took, screaming downhill with 4:23 mile splits until we (Tyler Pennal, Shadrack Biwott and Arron Braun) caught and passed Girma at the start of Cardiac Hill and the fourth mile.  At this point, Tyler took over the lead and started pounding up the hills which lead to our pack slowly dwindling to just the two of us by the time we hit five and a half miles.  It was at this point where I realized that I had a great shot at winning another national championship and I started thinking about how I wanted to end the race.  Once we made the turn onto 10th street (about 800 left, almost all downhill) I decided that I would make a sharp move when we hit the slight uptick with ~600 left as it would be the hardest point for Tyler to respond.  The plan went off with only one hitch, on my first acceleration step I scuffed the ground, almost tripped, righted myself, and was able to make a clean break to the finish.</br></br>
+
+		The Atlanta Track Club does a fantastic job of putting on the race and taking care of the invited athletes and people lining the course cheering the whole way, it’s easy to love this race.  I’ll be looking forward to coming back next year.
+		
+		<table class="table table-condensed table-hover log">
+			<tbody>
+				<tr>
+					<td>Week </td>
+					<td>Morning</td>
+					<td>Afternoon</td>
+					<td>Other</td>
+					<td>Total</td>
+				</tr>
+				<tr>
+					<td>Monday</td>
+					<td>70</td>
+					<td>45</td>
+					<td>Strides/Lift</td>
+					<td>115</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td>30 min Fartlek:2-3-5-3-2 euqal rest</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td>40</td>
+					<td></td>
+					<td></td>
+					<td>40</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td>30</td>
+					<td></td>
+					<td>Strides</td>
+					<td>30</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td>Peachtree 10k (28:25 1st)</td>
+					<td>30</td>
+					<td></td>
+					<td>80</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>45</td>
+					<td>65</td>
+					<td></td>
+					<td>110</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td>125</td>
+					<td></td>
+					<td></td>
+					<td>125</td>
+				</tr>
+				<tr>
+					<td>Week</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>570 (95mi)</td>
+				</tr>
+			</tbody>
+		</table>
+		*Note: Unit of measurement is minutes.  To convert to miles, divide by six.
+	</div>
+	<div id="2014sum2" class="insert"> <!-- Weeks 3-4 -->
+		Well it’s usually about this time when I return to training that my legs lose their freshness and realize that it’s time to get adjust to training again, and right on schedule the middle of the week got tough.  It also coincided with a vast amounts of hills courtesy of a short trip out to Bainbridge Island (an unreasonably hilly and scenic island in the Puget Sound) to visit the family.  At this changeover point in a cycle it’s important to make sure that soft tissue issues don’t creep up on you and that you’re dedicating adequate time to sleep until your body adapts to the training load.  To this end, I’ve been incorporating a mid day siesta into my routine and the extra sleep has been paying off.
+		<table class="table table-condensed table-hover log">
+			<tbody>
+				<tr>
+					<td>Week </td>
+					<td>Morning</td>
+					<td>Afternoon</td>
+					<td>Other</td>
+					<td>Total</td>
+				</tr>
+				<tr>
+					<td>Monday</td>
+					<td>20</td>
+					<td>60</td>
+					<td></td>
+					<td>80</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td>Fly to Seattle</td>
+					<td>25 min Fartlek: 5 x 3 min on / 2 min off</td>
+					<td></td>
+					<td>65</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td>90</td>
+					<td></td>
+					<td></td>
+					<td>90</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td>65</td>
+					<td>50</td>
+					<td></td>
+					<td>115</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td>12 x 1 min hill repeats</td>
+					<td>35</td>
+					<td>Lift</td>
+					<td>110</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>120</td>
+					<td></td>
+					<td></td>
+					<td>120</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td>50</td>
+					<td></td>
+					<td>Strides/Lift</td>
+					<td>50</td>
+				</tr>
+				<tr>
+					<td>Week</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>630 (105mi)</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="table table-condensed table-hover log">
+			<tbody>
+				<tr>
+					<td>Week </td>
+					<td>Morning</td>
+					<td>Afternoon</td>
+					<td>Other</td>
+					<td>Total</td>
+				</tr>
+				<tr>
+					<td>Monday</td>
+					<td>30</td>
+					<td>35 min Pace Run 5:01 avg</td>
+					<td></td>
+					<td>105</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td>95</td>
+					<td>Fly Home</td>
+					<td></td>
+					<td>95</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td>55</td>
+					<td>30</td>
+					<td>Strides/Lift</td>
+					<td>85</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td>50</td>
+					<td></td>
+					<td></td>
+					<td>50</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td>6 x 5 min on 2/ min off</td>
+					<td>40</td>
+					<td></td>
+					<td>130</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>65</td>
+					<td></td>
+					<td></td>
+					<td>65</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td>130</td>
+					<td></td>
+					<td></td>
+					<td>130</td>
+				</tr>
+				<tr>
+					<td>Week</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>660 (110mi)</td>
+				</tr>
+			</tbody>
+		</table>
+		*Note: Unit of measurement is minutes.  To convert to miles, divide by six.
+	</div>
+	<div id="2014sum1" class="insert"> <!-- R&R Weeks 1-2 -->
+		Sometimes your body (and mind) need a little time off to recoup and before starting training for a fall marathon was a perfect time for it.  To this extent I took ten days with little to no running and then worked my way back into training. I take a relatively cautious approach when starting up a cycle to minimize the chance for soft tissue issues, something that has been problematic for me in the past.  The first week of rest started on Monday, May 12th.
+		
+		<table class="table table-condensed table-hover log">
+			<tbody>
+				<tr>
+					<td>R&R</td>
+					<td>Morning</td>
+					<td>Afternoon</td>
+					<td>Other</td>
+					<td>Total</td>
+				</tr>
+				<tr>
+					<td>Monday</td>
+					<td></td>
+					<td>25</td>
+					<td></td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td></td>
+					<td>25</td>
+					<td></td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td></td>
+					<td>Off</td>
+					<td></td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td></td>
+					<td>25</td>
+					<td></td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td></td>
+					<td>Off</td>
+					<td></td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td></td>
+					<td>Off</td>
+					<td></td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td></td>
+					<td>35</td>
+					<td></td>
+					<td>35</td>
+				</tr>
+				<tr>
+					<td>Week</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>110 (18mi)</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="table table-condensed table-hover log">
+			<tbody>
+				<tr>
+					<td>Week </td>
+					<td>Morning</td>
+					<td>Afternoon</td>
+					<td>Other</td>
+					<td>Total</td>
+				</tr>
+				<tr>
+					<td>Monday</td>
+					<td></td>
+					<td>25</td>
+					<td></td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td></td>
+					<td>25</td>
+					<td></td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td></td>
+					<td>25</td>
+					<td></td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td></td>
+					<td>35</td>
+					<td></td>
+					<td>35</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td></td>
+					<td>45</td>
+					<td></td>
+					<td>45</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td></td>
+					<td>40</td>
+					<td></td>
+					<td>40</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td></td>
+					<td>50</td>
+					<td></td>
+					<td>50</td>
+				</tr>
+				<tr>
+					<td>Week</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>245 (40mi)</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="table table-condensed table-hover log">
+			<tbody>
+				<tr>
+					<td>Week </td>
+					<td>Morning</td>
+					<td>Afternoon</td>
+					<td>Other</td>
+					<td>Total</td>
+				</tr>
+				<tr>
+					<td>Monday</td>
+					<td></td>
+					<td>60</td>
+					<td></td>
+					<td>60</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td></td>
+					<td>40</td>
+					<td></td>
+					<td>40</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td>30</td>
+					<td>50</td>
+					<td></td>
+					<td>80</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td></td>
+					<td>50</td>
+					<td></td>
+					<td>50</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td></td>
+					<td>75</td>
+					<td></td>
+					<td>75</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td></td>
+					<td>50</td>
+					<td></td>
+					<td>50</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td></td>
+					<td>90</td>
+					<td></td>
+					<td>90</td>
+				</tr>
+				<tr>
+					<td>Week</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>445 (74mi)</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="table table-condensed table-hover log">
+			<tbody>
+				<tr>
+					<td>Week </td>
+					<td>Morning</td>
+					<td>Afternoon</td>
+					<td>Other</td>
+					<td>Total</td>
+				</tr>
+				<tr>
+					<td>Monday</td>
+					<td></td>
+					<td>60</td>
+					<td></td>
+					<td>60</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td>65</td>
+					<td>25</td>
+					<td></td>
+					<td>90</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td>30</td>
+					<td></td>
+					<td>Lift</td>
+					<td>30</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td>30 min Pace Run 5:01 avg</td>
+					<td>30</td>
+					<td></td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td>40</td>
+					<td>Lift</td>
+					<td></td>
+					<td>40</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>110</td>
+					<td></td>
+					<td></td>
+					<td>110</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td>70</td>
+					<td>40</td>
+					<td>Strides</td>
+					<td>110</td>
+				</tr>
+				<tr>
+					<td>Week</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>540 (90mi)</td>
+				</tr>
+			</tbody>
+		</table>
+		A note on the running log.  At the beginning of a training cycle I’ll sit down with my coach and we’ll plan out the entire cycle in terms of mileage, long runs and likely races (if things change such as injuries or races we readjust).  Each week I’ll convert the mileage into minutes at 6:00 min / mile and then run that many minutes.  I choose this method for measuring miles for a few reasons.  First, it’s simple.  I don’t have to figure out how far a random collection of trails and roads were, I just add on until I hit the next 5 minute interval and I’m done with my run.  Second, it protects me from making err…less than rational decisions on a run.  For example, say I’m out for a 10 mile run, it is possible to run faster to be done sooner and running faster is not always the best choice.  Now while I love running, there are times when I’m looking forward to the run being done and if I’m running for certain amount of minutes, I can’t speed up to be done sooner.  There is also the question of, how accurate is this system?  Am I running 6:00 min / mile every step of every run? Obviously not, especially considering my steady state runs at 5:00 min / mile plus or minus are counted at 6:00 min / mile too.  But then again, when I’m exhausted after a workout, my cool downs are not quite at six minute pace either.  So I, a wholly unbiased source, think it’s accurate enough in the long term and even if I’m (most likely) under counting my mileage a little, I’m doing it consistently from week to week and cycle to cycle so the comparisons of weeks, months and years of training are applicable.
+	
+	</div>
 </div>
 <!-- end of hidden blog posts -->
 
@@ -1030,6 +1747,18 @@
 		<!--<div class="container" style="max-width: 1400px;">	-->
 			<div class="main">
 				<ul id="og-grid" class="og-grid">
+					<li><!--Weeks 17&18&19-->
+						<a href="#" data-largesrc="images/1.jpg" data-title="Running Log: Weeks 17-19" data-description=" " data-idfinder="2014sum9">
+							<div class="overlay">
+								<img src="images/blog/thumb-2014-week18.jpg" alt="img01"/>
+								<h2 align="left">
+									<span>Running Log</span>
+									<br />
+									<span>Weeks 17 - 19</span>
+								</h2>
+							</div>
+						</a>
+					</li>
 					<li><!--Weeks 15&16 (20km)-->
 						<a href="#" data-largesrc="images/1.jpg" data-title="Running Log: Weeks 15-16 (New Haven 20k)" data-description=" " data-idfinder="2014sum8">
 							<div class="overlay">
@@ -1066,44 +1795,66 @@
 							</div>
 						</a>
 					</li>
-					<li><!-- Weeks 9-10-->
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Running Log: Weeks 9-10" data-description="" data-idfinder="2014sum5">
+					<li><!-- Weeks 9-10 (7mi)-->
+						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Running Log: Weeks 9-10 (Bix 7mi)" data-description="" data-idfinder="2014sum5">
 							<div class="overlay">
 								<img src="images/blog/thumb-2014-week9.jpg" alt="img01"/>
 								<h2 align="left">
 									<span>Running Log</span>
 									<br />
-									<span>Weeks 9 & 10</span>
+									<span>Weeks 9 & 10 (USA 7mi)</span>
 								</h2>
 							</div>
 						</a>
 					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/thumbs/2.jpg" alt="img02"/>
+					<li><!-- Weeks 7-8-->
+						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Running Log: Weeks 7-8" data-description="" data-idfinder="2014sum4">
+							<div class="overlay">
+								<img src="images/blog/thumb-2014-week7.jpg" alt="img02"/>
+								<h2 align="left">
+									<span>Running Log</span>
+									<br />
+									<span>Weeks 7 & 8</span>
+								</h2>
+							</div>
 						</a>
 					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/thumbs/3.jpg" alt="img03"/>
+					<li><!-- Weeks 5-6 (10km)-->
+						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Running Log: Weeks 5-6 (Peachtree 10k)" data-description="" data-idfinder="2014sum3">
+							<div class="overlay">
+								<img src="images/blog/thumb-2014-week6.jpg" alt="img02"/>
+								<h2 align="left">
+									<span>Running Log</span>
+									<br />
+									<span>Weeks 5 & 6 (USA 10km)</span>
+								</h2>
+							</div>
 						</a>
 					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/thumbs/1.jpg" alt="img01"/>
+					<li><!-- Weeks 3-4-->
+						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Running Log: Weeks 3-4" data-description="" data-idfinder="2014sum2">
+							<div class="overlay">
+								<img src="images/blog/thumb-2014-week3.jpg" alt="img02"/>
+								<h2 align="left">
+									<span>Running Log</span>
+									<br />
+									<span>Weeks 3 & 4</span>
+								</h2>
+							</div>
 						</a>
 					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/thumbs/2.jpg" alt="img02"/>
+					<li><!-- Weeks R&R 1-2-->
+						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Running Log: R&R and Weeks 1-2" data-description="" data-idfinder="2014sum1">
+							<div class="overlay">
+								<img src="images/blog/thumb-2014-week1.jpg" alt="img02"/>
+								<h2 align="left">
+									<span>Running Log</span>
+									<br />
+									<span>R&R/Weeks 1 & 2</span>
+								</h2>
+							</div>
 						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/thumbs/3.jpg" alt="img03"/>
-						</a>
-					</li>
-					
+					</li>			
 				</ul>
 
 			</div>
@@ -1123,6 +1874,7 @@
 								<li><a href="http://us-national-12k.runnerspace.com/eprofile.php?event_id=8644&do=news&news_id=299010">Christo Landry’s Season to Remember</a></li>
 								<li><a href="http://www.letsrun.com/news/2014/10/christo-landry-150-mile-weeks-32-mile-long-runs-behind-ready-chicago/">Christo Landry With 150 Mile Weeks and 32 Mile Long Runs Behind Him is Ready for Chicago</a></li>
 								<li><a href="http://www.usatf.org/News/Fan-Voting-is-Now-Open-for-Jesse-Owens-and-Jackie-.aspx">Fan Voting is Now Open for Jesse Owens and Jackie Joyner-Kersee Athletes of the Year</a></li>
+								<li class="removeLinkStyle" style="border-bottom: none;"><a href="media.html">View all news</a></li>
 							</ul>
 						</div>
 					</div>
@@ -1132,30 +1884,28 @@
 				<div class="v-alignOuter">
 					<div class="v-alignMiddle">
 						<div class="v-alignInner linkStyle">
-							<div class="latestRace">
-								<center>
-									Last Race: Chiba Ekiden</br>
-									6th, 28:55 (10km)
-								</center>										
-							</div>
-							<center>
-								<a href="results.html">View complete schedule and results</a>
-							</center>
 							<div class="nextRace">
 								Next race: <a href="http://www.wb10k.com/">World's Best 10k</a>
 								<div id="cd-countdown2" style="font-size:16px; font-weight:lighter;"></div>
 								<div id="cd-countdown"></div>
 							</div>
+							<center>
+								<a href="results.html">View complete schedule and results</a>
+							</center>
+							<div class="nextRace">
+									Last Race: Chiba Ekiden</br>
+								<div style="font-size:22px;font-weight:lighter;">6th, 28:55 (10km)</div>
+							</div>						
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-sm-4 block3">
-				<div style="margin-left:auto; margin-right:auto; max-width:520px;">
+				<div style="margin-left:auto; margin-right:auto; margin-top: 10px; margin-bottom:10px;max-width:520px;">
 					<a class="twitter-timeline" 
 					href="https://twitter.com/RunChristo" 
 					data-widget-id="559409129752895488"
-					height="400"
+					height="380"
 					data-chrome="noheader nofooter transparent noscrollbar"
 					></a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -1205,24 +1955,36 @@
                 food = $('#typer');
 				food2 = $('#typer2');
 			
-            //food.typer(['Christo Landry']);
-			//setTimeout(function(){food2.typer(['Professional Runner'])},1000);
-            // unneeded... resizes font based on screen width.
+            var fontRatio =.8
+			var screenW = typeWin.width();
+			var imgHeight = document.getElementById('headlinePic').clientHeight;
+			var typewriterDiv = document.getElementById('typewriterDiv');
+			var topOffset = imgHeight - (screenW * .1 * fontRatio * 2.83);
+			
+			typewriterDiv.style.top= topOffset+"px";
+			//take this out before it goes live
+			
+			var fontSizer = Math.max(Math.min(typeWin.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+									
+			//end of take out
+			food.typer(['Christo Landry', imgHeight]); //remember to take out the variable
+			setTimeout(function(){food2.typer(['Professional Runner', screenW])},1000);//remember to take out the variable
+			
+            // resizes font based on screen width and rewrites typewriter
             typeWin.resize(function(){
                 var fontSize = Math.max(Math.min(typeWin.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
 					
 				food.css({
-                    fontSize: fontSize * .8 + 'px'
+                    fontSize: fontSize * fontRatio + 'px'
                 });
                 food2.css({
-                    fontSize: fontSize * .8 + 'px'
+                    fontSize: fontSize * fontRatio + 'px'
                 });
+				food.typer(['Christo Landry']);
+				food2.typer(['Professional Runner']);
             }).resize();
-			var fontSizer = Math.max(Math.min(typeWin.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
-			var screenW = typeWin.width();
+						
 			
-			food.typer(['Christo Landry', fontSizer]);
-			setTimeout(function(){food2.typer(['Professional Runner', screenW])},1000);
 			//<!-- end of typewriter -->
 		});
 	</script>
