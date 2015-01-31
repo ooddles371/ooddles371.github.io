@@ -34,6 +34,9 @@
 	<!-- Loading Gif -->
 	<div id="loading_gif">
 		<img src="images/index/loading.gif" style="display: block; margin: auto; top:50%;">
+		</br>
+		<!--Below is needed to grab starting height of the typewriterDiv for the correct top off set-->
+		<div id="loadingTypewriter" style="text-align: center; margin-right:auto; margin-left:auto;"></div>
 	</div>
 	<!-- End of loading gif-->
 	<div class="body_holder" id="body_wrapper">
@@ -58,18 +61,16 @@
 		<img src="images/index/largest.jpg" style="max-width:100%;">
 	</div>
 
-	<div id="typewriterDiv" style="position: absolute;"> <!--Typewriter stuff, height adjust in JS -->
-		<div id="typer" style="color:red;"></div>
-		<div id="typer2" style="color:red;"></div>
+	<div id="typewriterDiv" style="position: absolute; "> <!--Typewriter stuff, height adjust in JS -->
+		<div id="typer" class="typeWriterText"></div>
+		<div id="typer2" class="typeWriterText"></div>
 	</div>
 	<!-- End of Headline image --------->
 	
 	<!-- Quote block ------------------->
-	<div class="quoteblock">
+	<div class = "quoteblock">
 
-			<img src="images/index/quote3.png" style="display: block;
-  margin: 0 auto;">
-
+				<img src="images/index/quote3.png" style="display: block;margin: 0 auto; max-width:100%;">
 	</div>
 	<!-- end of Quote ------------------>
 	
@@ -1394,7 +1395,7 @@
 		<table class="table table-condensed table-hover log">
 			<tbody>
 				<tr>
-					<td>R&R</td>
+					<td>R&amp;R</td>
 					<td>Morning</td>
 					<td>Afternoon</td>
 					<td>Other</td>
@@ -1461,7 +1462,7 @@
 		<table class="table table-condensed table-hover log">
 			<tbody>
 				<tr>
-					<td>Week </td>
+					<td>R&amp;R</td>
 					<td>Morning</td>
 					<td>Afternoon</td>
 					<td>Other</td>
@@ -1528,7 +1529,7 @@
 		<table class="table table-condensed table-hover log">
 			<tbody>
 				<tr>
-					<td>Week </td>
+					<td>Week 1</td>
 					<td>Morning</td>
 					<td>Afternoon</td>
 					<td>Other</td>
@@ -1595,7 +1596,7 @@
 		<table class="table table-condensed table-hover log">
 			<tbody>
 				<tr>
-					<td>Week </td>
+					<td>Week 2</td>
 					<td>Morning</td>
 					<td>Afternoon</td>
 					<td>Other</td>
@@ -1939,60 +1940,68 @@
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/countdown.js"></script>
 	<script src="js/grid.js"></script>
-	
+	<script src='js/typewriter.js'></script><!-- Typewriter text -->
 	<script>
 		$(function() {
 			Grid.init();
 		});
-	</script>
-	<script>
+		//----------------Start of Typewriter-------------------
+		//Some variables for the typewriter functions
+		var typeWin = $(window),
+			loadingTypewriter = $('#loadingTypewriter');
+		var fontSize = Math.max(Math.min(typeWin.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+		var fontRatio =.5; 
+		
+		//This is the loading typewriter text, it grabs the baseline height for the offset of the other typewirter text.
+		loadingTypewriter.css({fontSize: fontSize * fontRatio + 'px'});
+		loadingTypewriter.typer(['Loading']);
+		var divHeight = document.getElementById('loadingTypewriter').offsetHeight;
+
+		
 		$(window).load(function() {
-			$("#loading_gif").addClass("visNone");//hides loading gif
-			$("#body_wrapper").removeClass("body_holder");//Makes page appear
+			$("#loading_gif").addClass("visNone");//hides loading gif (not typewriter related)
+			$("#body_wrapper").removeClass("body_holder");//Makes page appear (not typewriter related)
 			
-			//<!--Run the typewriter text-->
-			var typeWin = $(window),
-                food = $('#typer');
-				food2 = $('#typer2');
+			//<!--Start of typewriter text-->
+			var food = $('#typer'),
+				food2 = $('#typer2'),
+				imgHeight = document.getElementById('headlinePic').clientHeight;				
+				
+			//Sets the top portion of the div containing the typewriter text.
+				
 			
-            var fontRatio =.8
-			var screenW = typeWin.width();
-			var imgHeight = document.getElementById('headlinePic').clientHeight;
-			var typewriterDiv = document.getElementById('typewriterDiv');
-			var topOffset = imgHeight - (screenW * .1 * fontRatio * 2.83);
-			
-			typewriterDiv.style.top= topOffset+"px";
-			//take this out before it goes live
-			
-			var fontSizer = Math.max(Math.min(typeWin.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
-									
-			//end of take out
-			food.typer(['Christo Landry', imgHeight]); //remember to take out the variable
-			setTimeout(function(){food2.typer(['Professional Runner', screenW])},1000);//remember to take out the variable
+			//The actual commands to do the typewriter text, delayed so it looks right.
+			setTimeout(function(){food.typer(['Christo Landry'])},1000);
+			setTimeout(function(){food2.typer(["Professional Runner"])},2000);
 			
             // resizes font based on screen width and rewrites typewriter
             typeWin.resize(function(){
-                var fontSize = Math.max(Math.min(typeWin.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
-					
-				food.css({
-                    fontSize: fontSize * fontRatio + 'px'
-                });
-                food2.css({
-                    fontSize: fontSize * fontRatio + 'px'
-                });
-				food.typer(['Christo Landry']);
-				food2.typer(['Professional Runner']);
+                //Set max-width for top typewriter based on screen width
+				document.getElementById('typer').style.maxWidth= typeWin.width() / 3.02071 +30 + "px";
+				
+				//Change font size based on screen width
+				fontSize = Math.max(Math.min(typeWin.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+				food.css({fontSize: fontSize * fontRatio + 'px'});				
+                food2.css({fontSize: fontSize * fontRatio + 'px'});
+								
+				//Change top offset based upon new height of typewriter divs
+				imgHeight = document.getElementById('headlinePic').clientHeight;
+				document.getElementById('typewriterDiv').style.top= imgHeight - (2 * document.getElementById('typer').offsetHeight) +"px";
             }).resize();
-						
-			
 			//<!-- end of typewriter -->
+			
+			//Set starting max width and top offset after they are mis-set by the $(window).load function
+			document.getElementById('typewriterDiv').style.top= imgHeight - (2 * divHeight) +"px";
+			setTimeout(function(){document.getElementById('typer').style.maxWidth=document.getElementById('typer').clientWidth+'px'},2500); //Sets the max width of the first typewriter line to its width before it gets extended by the second typewriter line.  It waits for the line to get to its full width before it triggers.
+			//setTimeout(function(){console.log(getElementById('typer').clientWidth)},2500);
+			//setTimeout(function(){console.log(getElementById('typer').clientWidth+15)},2500);
+			
 		});
+		//-------------------End of typewriter-------------
 	</script>
 	
-	<script src='js/typewriter.js'></script><!-- Typewriter text -->
-	<script><!-- Typewriter text -->
-            
-    </script>
+
+
 	
 	
 	

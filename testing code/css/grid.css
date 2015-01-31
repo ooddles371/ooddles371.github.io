@@ -10,6 +10,13 @@
 .visNone {
 	display: none;
 }
+.typeWriterText{
+	color:black; 
+	font-weight:bold; 
+	background: rgba(255, 255, 255, 0.7);
+	padding-left:15px;
+	padding-right:10px;
+}
 /* Bottom banner picture */
 .bottomBanner{
 	overflow:hidden;
