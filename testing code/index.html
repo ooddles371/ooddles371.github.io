@@ -1992,7 +1992,7 @@
 			
 			//Set starting max width and top offset after they are mis-set by the $(window).load function
 			document.getElementById('typewriterDiv').style.top= imgHeight - (2 * divHeight) +"px";
-			setTimeout(function(){document.getElementById('typer').style.maxWidth=document.getElementById('typer').clientWidth+'px'},2500); //Sets the max width of the first typewriter line to its width before it gets extended by the second typewriter line.  It waits for the line to get to its full width before it triggers.
+			setTimeout(function(){document.getElementById('typer').style.maxWidth=document.getElementById('typer').clientWidth+2+'px'},2500); //Sets the max width of the first typewriter line to its width before it gets extended by the second typewriter line.  It waits for the line to get to its full width before it triggers.
 			//setTimeout(function(){console.log(getElementById('typer').clientWidth)},2500);
 			//setTimeout(function(){console.log(getElementById('typer').clientWidth+15)},2500);
 			
