@@ -48,6 +48,24 @@ div.menuScroll {
 /*	float:right;*/
 }
 
+li.TopNav{
+	display:inline;
+	text-decoration:none;
+	padding-left:15px;
+	font-size: 20px;
+}
+	li.TopNav a {
+		list-style-type: none;
+		text-decoration:none;
+		color:#fff;/*change color of header text here*/
+		text-shadow:0.5px 0 0 rgba(255,255,255,0.5);
+	}
+
+	li.TopNav a:hover {
+		color: #F0C0A8;
+	}
+
+
 li.PrettyStickyNav {
 	display:inline;
 	text-decoration:none;

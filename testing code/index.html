@@ -1,4 +1,4 @@
-
+<!-- Hi! Thanks for peeking under the hood.  I've tried to comment things well enough that you can figure out how to grab any feature you might like.  If you're having some trouble, let me know and I can point you to the source.  Enjoy and if my website had gone bonkers, let me know so I can fix it! -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Christo Landry - Professional Runner">
     <meta name="author" content="Christo Landry">
     <link rel="icon" href="../../favicon.ico">
 
@@ -14,27 +14,23 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!--<link href="css/bootstrap.css" rel="stylesheet">-->
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-	<link href="css/countdown.css" rel="stylesheet">
-	<link href="css/grid.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/prettySticky.css" type="text/css">
-	
-	
     <!-- Custom styles for this template -->
-
-
-
+	
+	<link href="css/countdown.css" rel="stylesheet"><!-- This is for the countdown timer -->
+	<link href="css/grid.css" rel="stylesheet"><!-- This is for the blog posts, the google image expanding action-->
+	<link href="css/prettySticky.css" rel="stylesheet" type="text/css"><!-- This is for the top nav bar -->
+	<link href="css/christoCustom.css" rel="stylesheet" type="text/css"><!-- All me bud -->
+	
 	</head>
 	<body>
 	<!-- Loading Gif -->
 	<div id="loading_gif">
-		<img src="images/index/loading.gif" style="display: block; margin: auto; top:50%;">
-		</br>
 		<!--Below is needed to grab starting height of the typewriterDiv for the correct top off set-->
 		<div id="loadingTypewriter" style="text-align: center; margin-right:auto; margin-left:auto;"></div>
 	</div>
@@ -48,7 +44,7 @@
 					<li class="PrettyStickyNav"><a href="#blog">Blog</a></li>
 					<li class="PrettyStickyNav"><a href="results.html">Schedule &amp; Results</a></li>
 					<li class="PrettyStickyNav"><a href="resume.html">Athletic Resume</a></li>
-					<li class="PrettyStickyNav"><a href="affiliation.html">Affiliation</a></li>
+					<li class="PrettyStickyNav"><a href="sponsors.html">Sponsors</a></li>
 					<li class="PrettyStickyNav"><a href="media.html">In the Media</a></li>
 				</ul>
 			</div>
@@ -1952,13 +1948,16 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
 	<!--<script src="js/docs.min.js"></script> is this even needed? -->
 	<!-- Christo added -->
-	<script src="js/modernizr.custom.js"></script>
-	<script src="js/countdown.js"></script>
-	<script src="js/grid.js"></script>
+	<script src="js/countdown.js"></script> <!-- For the countdown timer -->
+	<script src="js/grid.js"></script><!-- The blog posts, the google image expanding action-->
+	<script src="js/prettySticky.js"></script><!-- Top Navbar -->
+	<script src="js/jquery.smooth-scroll.min.js"></script><!-- Top Navbar -->
 	<script src='js/typewriter.js'></script><!-- Typewriter text -->
 	<script>
+		//Starts the grid function, the google image thing.
 		$(function() {
 			Grid.init();
 		});
@@ -2017,15 +2016,6 @@
 		});
 		//-------------------End of typewriter-------------
 	</script>
-	
-
-
-	
-	
-	
-	<script src="js/prettySticky.js"></script>
-	<script src="js/jquery.smooth-scroll.min.js"></script>
-	<script src="js/scripts.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
