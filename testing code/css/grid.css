@@ -72,7 +72,7 @@
   }
 }
 /* end Bottom banner picture */
-.centerPicture{
+.centerPictureHorizontally{
 	display: block;  
 	position:relative; 
 	top: 50%; 

@@ -11,7 +11,7 @@
         options = $.extend({}, {
             char: '',
             delay: 2000,
-            duration: 600,
+            duration: 1000,
             endless: false, //Christo changed - it makes it print only once
             onType: $.noop,
             afterAll: $.noop,

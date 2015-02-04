@@ -1,64 +1,50 @@
-
-
-.container {
-  margin: 0px auto;
-  padding: 0px;
+#bg, #search-bg {
+  background-image: url('images/freelancer-desk.jpg');
+  background-repeat: no-repeat;
+  background-size: 1080px auto;
 }
 
-#main { 
-  background: #3B3B3B;
-  height: 430px;
+#bg {
+  background-position: center top;
+  padding: 70px 90px 120px 90px;
 }
 
-.content {
-  padding: 10px 44px;
+#search-container {
+  position: relative;
 }
 
-.text {
-  border-bottom: 1px solid #262626;
-  margin-top: 40px;
-  padding-bottom: 40px;
-  text-align: center;
+#search-bg {
+  /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 99;
+
+  /* Pull the background 70px higher to the same place as #bg's */
+  background-position: center -70px;
+
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  filter: url('media/blur.svg#blur'); /* for Firefox */
 }
 
-.text h2 {
-  color: #E5E5E5;
-  font-size: 30px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: lighter;
-  letter-spacing: 2px;
+#search {
+  /* Put this on top of the blurred layer */
+  position: relative;
+  z-index: 100;
+  padding: 20px;
+  background: rgb(34,34,34); /* for IE */
+  background: rgba(34,34,34,0.75);
 }
 
-.counter {
-  background: #2C2C2C;
-  -moz-box-shadow:    inset 0 0 5px #000000;
-  -webkit-box-shadow: inset 0 0 5px #000000;
-  box-shadow:         inset 0 0 5px #000000;
-  min-height: 150px;
-  text-align: center;
+@media (max-width: 600px ) {
+  #bg { padding: 10px; }
+  #search-bg { background-position: center -10px; }
 }
 
-.counter h3 {
-  color: #E5E5E5;
-  font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: lighter;
-  letter-spacing: 1px;
-  padding-top: 20px;
-  margin-bottom: 30px;
-}
-
-#countdown {
-  color: #FFFFFF;
-}
-
-#countdown span {
-  color: #E5E5E5;
-  font-size: 26px;
-  font-weight: normal;
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: center;
-}
+#search h2, #search h5, #search h5 a { text-align: center; color: #fefefe; font-weight: normal; }
+#search h2 { margin-bottom: 50px }
+#search h5 { margin-top: 70px }
