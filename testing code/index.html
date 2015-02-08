@@ -101,13 +101,6 @@
 	</div>
 	<!-- End of Headline image --------->
 	
-	<!-- Quote block -------------------
-	<div class = "quoteblock">
-
-				<img src="images/index/quote3.png" style="display: block;margin: 0 auto; max-width:100%;">
-	</div>
-	<!-- end of Quote ------------------>
-	
 	<!--  Hidden blog posts ------------>
 <div class="poof">
 	<div id="2014sum9" class="insert"> <!-- Weeks 17-19 -->
@@ -2048,7 +2041,12 @@
                 food2.css({fontSize: fontSize * fontRatio + 'px'});
 								
 				//Change top offset based upon new height of typewriter divs
-				document.getElementById('typewriterDiv').style.top= document.getElementById('headlinePic').clientHeight - (2 * document.getElementById('typer').offsetHeight) +"px";
+				if(screen.width < 767){
+					document.getElementById('typewriterDiv').style.top= document.getElementById('headlinePic').clientHeight - (2 * document.getElementById('typer').offsetHeight) + 50 + "px";
+				}
+				else{
+					document.getElementById('typewriterDiv').style.top= document.getElementById('headlinePic').clientHeight - (2 * document.getElementById('typer').offsetHeight) + "px";
+				}
             }).resize();
 			//<!-- end of typewriter -->
 			
