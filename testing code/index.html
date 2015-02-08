@@ -1947,7 +1947,7 @@
 	<!-- End of three div wide -->
 	
 	<!-- Bottom Banner --------->
-	<div style="overflow:hidden; height:500px; position:relative" class="bottomBanner">
+	<div style="overflow:hidden; height:500px; position:relative" class="bottomBanner" id="bottomBanner">
 		<!--<img src="images/index/bottombanner.jpg" class="bannerWidth centerPictureHorizontally" >-->
 		<div class="v-alignOuter" style="position:absolute;">
 			<div class="v-alignMiddle">
@@ -1956,9 +1956,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="v-alignOuter" style="z-index: 5; position:absolute; top:0px; max-width:25%;">
+		<div class="v-alignOuter" style="z-index: 5; max-width:20%;"id="bottomBannerSponsor">
 			<div class="v-alignMiddle">
-				<div class="v-alignInner" style="background: rgba(255, 255, 255, 0.7); padding:10px;" id="bottomBannerSponsor">
+				<div class="v-alignInner" style="background: rgba(255, 255, 255, 0.7); padding:10px;" >
 					<img src="images/index/MizunoLogo3.png" id="bottomBannerMizuno" style="max-width:50px;"> 
 				</div>
 			</div>
@@ -2013,11 +2013,7 @@
 		$(window).load(function() {
 			$("#loading_gif").addClass("visNone");//hides loading gif (not typewriter related)
 			$("#body_wrapper").removeClass("body_holder");//Makes page appear (not typewriter related)
-			
-			//Bottom Banner width settings
-			document.getElementById("bottomBannerMizuno").style.maxWidth = document.getElementById('bottomBannerSponsor').clientWidth + "px";	
-			//End of bottom banner width settings
-			
+						
 			//<!--Start of typewriter text-->
 			var food = $('#typer'),
 				food2 = $('#typer2');
@@ -2032,6 +2028,15 @@
 			
             // resizes font based on screen width and rewrites typewriter
             typeWin.resize(function(){
+				//Bottom Banner width settings: done this way to get Safari to work.
+				//document.getElementById("bottomBannerSponsor").style.maxWidth=document.getElementById('bottomBanner').clientWidth * .25 + "px";
+				document.getElementById("bottomBannerSponsor").style.maxWidth = document.getElementById('bottomBanner').clientWidth / 5 + "px";	
+				document.getElementById("bottomBannerMizuno").style.maxWidth = document.getElementById('bottomBanner').clientWidth / 5 + "px";	
+				console.log("bottomBanner ", document.getElementById('bottomBanner').clientWidth);
+				console.log("bottomBannerSponsor ", document.getElementById('bottomBannerSponsor').clientWidth);
+				console.log("bottomBannerMizuno ", document.getElementById('bottomBannerMizuno').clientWidth);
+				//End of bottom banner width settings
+			
                 //Set max-width for top typewriter based on screen width
 				document.getElementById('typer').style.maxWidth= typeWin.width() / 3.02071 +30 + "px";
 				
