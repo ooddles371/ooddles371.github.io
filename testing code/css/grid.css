@@ -215,7 +215,7 @@ a {
 }
 
 .og-details {
-	padding: 0 40px 0 20px;
+	padding: 0 0px 0 0px; /*Christo changed, used to be 0 40px 0 20px*/
 }
 
 .og-fullimg {

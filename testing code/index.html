@@ -13,8 +13,8 @@
     <title>Christo Landry - Professional Runner</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+	<link href="css/bootstrap.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -1931,7 +1931,7 @@
 				</div>
 			</div>
 			<div class="col-sm-4 block3" style="overflow:hidden;">
-				<div style="margin-left:auto; margin-right:auto; max-width:520px; display: block;  position:relative; top: 50%; transform: translate(0%,-50%); ">
+				<div style="margin-left:auto; margin-right:auto; max-width:520px; display: block;  position:relative; top: 50%; -webkit-transform:translateY(-50%); ">	
 					<a class="twitter-timeline" style=""
 					href="https://twitter.com/RunChristo" 
 					data-widget-id="559409129752895488"
@@ -1947,27 +1947,25 @@
 	<!-- End of three div wide -->
 	
 	<!-- Bottom Banner --------->
-	<div style="overflow:hidden; height:500px; position:relative" class="bottomBanner" id="bottomBanner">
-		<!--<img src="images/index/bottombanner.jpg" class="bannerWidth centerPictureHorizontally" >-->
-		<div class="v-alignOuter" style="position:absolute;">
-			<div class="v-alignMiddle">
-				<div class="v-alignInner">
-					<img src="images/index/bottombanner.jpg" class="bannerWidth">
-				</div>
-			</div>
+	<div style="height:500px; overflow:hidden; position:relative;">
+		
+		<div style="position:relative; top:50%;"><!--Top is done here because it doesn't work if placed in the img -->
+			<img src="images/index/bottombanner.jpg" style="position:relative; left:50%; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%);" class="bbtest">
 		</div>
-		<div class="v-alignOuter" style="z-index: 5; max-width:20%;"id="bottomBannerSponsor">
-			<div class="v-alignMiddle">
-				<div class="v-alignInner" style="background: rgba(255, 255, 255, 0.7); padding:10px;" >
-					<img src="images/index/MizunoLogo3.png" id="bottomBannerMizuno" style="max-width:50px;"> 
-				</div>
-			</div>
+		
+		<div style="position:absolute; top:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%);max-width:20%; z-index:5; background: rgba(255, 255, 255, 0.7); padding:10px;">
+			<a href="sponsors.html"><img src="images/index/MizunoLogo3.png" style="max-width:100%"></a>
 		</div>
-		<div style="position: absolute; bottom:0; right:0; color:black; font-weight:bold; margin-right:3px;">
-					Credit: <a href="http://http://ellisimages.com/" style="color:black; text-decoration:none;">Eric J. Ellis</a>
+		
+		<div style="position: absolute; bottom:0; right:0; color:white;  margin-right:3px;">
+			Credit: <a href="http://http://ellisimages.com/" style="color:white; text-decoration:none;">Eric J. Ellis</a>
 		</div>
+		
 	</div>
 	<!-- End of bottom banner -->
+	
+	
+	
 	
 	<!-- Start of footer -->
 	<footer>
@@ -2029,12 +2027,7 @@
             // resizes font based on screen width and rewrites typewriter
             typeWin.resize(function(){
 				//Bottom Banner width settings: done this way to get Safari to work.
-				//document.getElementById("bottomBannerSponsor").style.maxWidth=document.getElementById('bottomBanner').clientWidth * .25 + "px";
-				document.getElementById("bottomBannerSponsor").style.maxWidth = document.getElementById('bottomBanner').clientWidth / 5 + "px";	
-				document.getElementById("bottomBannerMizuno").style.maxWidth = document.getElementById('bottomBanner').clientWidth / 5 + "px";	
-				console.log("bottomBanner ", document.getElementById('bottomBanner').clientWidth);
-				console.log("bottomBannerSponsor ", document.getElementById('bottomBannerSponsor').clientWidth);
-				console.log("bottomBannerMizuno ", document.getElementById('bottomBannerMizuno').clientWidth);
+				//document.getElementById("bottomBannerMizuno").style.maxWidth = document.getElementById('bottomBanner').clientWidth / 5 + "px";//If the 5 changes, change the 20% for the max width of the bottomBannerSponsor div.
 				//End of bottom banner width settings
 			
                 //Set max-width for top typewriter based on screen width

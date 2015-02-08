@@ -71,81 +71,39 @@ li.TopNav{
 	padding-right:10px;
 }
 /* Bottom banner picture */
-.bottomBanner{
-	overflow:hidden;
-}
-@media (max-width: 514px) {
-  .bannerWidth {
-    max-width:1350px;
-	position:relative;
-	left:50%;
-	margin-left:-785px;
-  }
-  .bottomBanner{
-	height: 200px;
-  }
-}
-@media (min-width: 515px) and (max-width: 767px) {
-  .bannerWidth {
-    max-width:1350px;
-	position:relative;
-	left:50%;
-	margin-left:-650px;
-  }
-  .bottomBanner{
-	height: 200px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .bannerWidth {
-	max-width:1300px;
-	position:relative;
-	left:50%;
-	margin-left:-650px;
-  }
-  .bottomBanner{
-	height: 200px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .bannerWidth {
-    max-width:1350px;
-	position:relative;
-	left:50%;
-	margin-left:-675px;
-  }
-  .bottomBanner{
-	height: 200px;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1499px) {
-  .bannerWidth {
-    max-width:1500px;
-	position:relative;
-	left:50%;
-	margin-left:-750px;
+@media (max-width: 1277px){
+	.bbtest{
+		max-width: 1278px;
 	}
-  .bottomBanner{
-	height: 300px;
-  }
 }
-@media (min-width: 1500px) and (max-width: 1799px) {
-  .bannerWidth {
-    max-width:100%;
-	
+@media (min-width: 1278px) and (max-width: 1367px){
+	.bbtest{
+		max-width: 1368px;
 	}
-  .bottomBanner{
-	height: 400px;
-  }
 }
-@media (min-width: 1800px) {
-  .bannerWidth {
-    max-width:100%;
-
+@media (min-width: 1368px) and (max-width: 1441px){
+	.bbtest{
+		max-width: 1442px;
 	}
-  .bottomBanner{
-
-  }
+}
+@media (min-width: 1442px) and (max-width: 1681px){
+	.bbtest{
+		max-width: 1682px;
+		-webkit-transform:translate(-50%,-55%)!important; 
+		transform:translate(-50%,-55%)!important;
+	}
+}
+@media (min-width: 1682px) and (max-width: 1921px){
+	.bbtest{
+		max-width: 1922px;
+		-webkit-transform:translate(-50%,-55%)!important; 
+		transform:translate(-50%,-55%)!important;
+	}
+}
+@media (min-width: 1922px){
+	.bbtest{
+		max-width:100%;
+	}
 }
 /* end Bottom banner picture */
 .centerPictureHorizontally{
