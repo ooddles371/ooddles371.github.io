@@ -35,6 +35,21 @@ li.TopNav{
 	}
 /*--------Non-moving Top Navbar-------*/
 
+@media (max-width: 767px) {
+	#bigNavBar {
+		display:none;
+	}
+	#smallNavBarMargin{
+		height:50px;
+	}
+}
+@media (min-width: 768px) {
+	#smallNavBar {
+		display:none;
+	}
+}
+
+
  .hiddenRow td{    
  padding-top: 0 !important;
  padding-bottom: 0 !important;
@@ -59,10 +74,23 @@ li.TopNav{
 .bottomBanner{
 	overflow:hidden;
 }
-
-@media (max-width: 767px) {
+@media (max-width: 514px) {
   .bannerWidth {
     max-width:1350px;
+	position:relative;
+	left:50%;
+	margin-left:-785px;
+  }
+  .bottomBanner{
+	height: 200px;
+  }
+}
+@media (min-width: 515px) and (max-width: 767px) {
+  .bannerWidth {
+    max-width:1350px;
+	position:relative;
+	left:50%;
+	margin-left:-650px;
   }
   .bottomBanner{
 	height: 200px;
@@ -70,7 +98,10 @@ li.TopNav{
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .bannerWidth {
-    max-width:1300px;
+	max-width:1300px;
+	position:relative;
+	left:50%;
+	margin-left:-650px;
   }
   .bottomBanner{
 	height: 200px;
@@ -79,6 +110,9 @@ li.TopNav{
 @media (min-width: 992px) and (max-width: 1199px) {
   .bannerWidth {
     max-width:1350px;
+	position:relative;
+	left:50%;
+	margin-left:-675px;
   }
   .bottomBanner{
 	height: 200px;
@@ -86,7 +120,10 @@ li.TopNav{
 }
 @media (min-width: 1200px) and (max-width: 1499px) {
   .bannerWidth {
-    max-width:1350px;
+    max-width:1500px;
+	position:relative;
+	left:50%;
+	margin-left:-750px;
 	}
   .bottomBanner{
 	height: 300px;
@@ -95,7 +132,7 @@ li.TopNav{
 @media (min-width: 1500px) and (max-width: 1799px) {
   .bannerWidth {
     max-width:100%;
-	max-height:500px;
+	
 	}
   .bottomBanner{
 	height: 400px;
@@ -104,9 +141,10 @@ li.TopNav{
 @media (min-width: 1800px) {
   .bannerWidth {
     max-width:100%;
+
 	}
   .bottomBanner{
-	height: 500px;
+
   }
 }
 /* end Bottom banner picture */
@@ -270,7 +308,17 @@ footer p {
     margin-right: auto; 
 }
 
-.mediaLink{
-	float:none !important;
+.media-pull-right{
+	float:right;
 }
+
+@media (max-width: 767px) {
+	.media-pull-right{
+		float:none;
+	}
+	.mediaLink{
+	text-align:center;
+	}
+}
+
 /*end of Christo   added*/

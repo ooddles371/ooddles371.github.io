@@ -36,9 +36,9 @@
 	</div>
 	<!-- End of loading gif-->
 	<div class="body_holder" id="body_wrapper">
-	<!-- new navbar ---------------->
-	<nav>
-		<div class="container">
+	<!-- navbar ---------------->
+	<nav id="bigNavBar"> <!-- Navbar for screen widths over 767 -->
+		<div class="container" >
 			<div class="menu">
 				<ul class="PrettyStickyNav" style="margin-top: 14px !important; margin-bottom: 14px !important;">
 					<li class="PrettyStickyNav"><a href="#blog">Blog</a></li>
@@ -49,10 +49,45 @@
 				</ul>
 			</div>
 		</div>
+	</nav>
+
+	<nav id="smallNavBar"> <!-- Navbar for screen widths under 767 -->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Start Bootstrap</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li>
+							<a href="#">Services</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</div>
 	</nav>	
-	<!-- End new navbar ---------------->
+
+	<!-- End navbar ---------------->
 	
 	<!-- Headline image ---------------->
+	<div id="smallNavBarMargin"></div>
 	<div class="headline" id="headlinePic" style="position:relative;">
 		<img src="images/index/topbanner.jpg" style="max-width:100%;">
 		<div style="position: absolute; bottom:0; right:0; color:white;  margin-right:3px;">
@@ -1750,7 +1785,7 @@
 			<div class="main">
 				<ul id="og-grid" class="og-grid">
 					<li><!--Weeks 17&18&19-->
-						<a href="#" data-largesrc="images/1.jpg" data-title="Running Log: Weeks 17-19" data-description=" " data-idfinder="2014sum9">
+						<a href="java-error.html" data-largesrc="images/small.jpg" data-title="Running Log: Weeks 17-19" data-description=" " data-idfinder="2014sum9">
 							<div class="overlay">
 								<img src="images/blog/thumb-2014-week18.jpg" alt="img01"/>
 								<h2 align="left">
@@ -1762,7 +1797,7 @@
 						</a>
 					</li>
 					<li><!--Weeks 15&16 (20km)-->
-						<a href="#" data-largesrc="images/1.jpg" data-title="Running Log: Weeks 15-16 (New Haven 20k)" data-description=" " data-idfinder="2014sum8">
+						<a href="java-error.html" data-largesrc="images/small.jpg" data-title="Running Log: Weeks 15-16 (New Haven 20k)" data-description=" " data-idfinder="2014sum8">
 							<div class="overlay">
 								<img src="images/blog/thumb-2014-20km3.jpg" alt="img01"/>
 								<h2 align="left">
@@ -1774,7 +1809,7 @@
 						</a>
 					</li>
 					<li><!-- Weeks 13-14 -->
-						<a href="http:/google.com" data-largesrc="images/2.jpg" data-title="Running Log: Weeks 13-14" data-description=" " data-idfinder="2014sum7">
+						<a href="java-error.html" data-largesrc="images/small.jpg" data-title="Running Log: Weeks 13-14" data-description=" " data-idfinder="2014sum7">
 							<div class="overlay">
 								<img src="images/blog/thumb-2014-week13.jpg" alt="img01"/>
 								<h2 align="left">
@@ -1786,7 +1821,7 @@
 						</a>
 					</li>
 					<li><!-- Weeks 11-12-->
-						<a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=brian's%20a%20buttmunch" data-largesrc="images/3.jpg" data-title="Running Log: Weeks 11-12" data-description=" " data-idfinder="2014sum6">
+						<a href="java-error.html" data-largesrc="images/small.jpg" data-title="Running Log: Weeks 11-12" data-description=" " data-idfinder="2014sum6">
 							<div class="overlay">
 								<img src="images/blog/thumb-2014-week12.jpg" alt="img01"/>
 								<h2 align="left">
@@ -1798,7 +1833,7 @@
 						</a>
 					</li>
 					<li><!-- Weeks 9-10 (7mi)-->
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Running Log: Weeks 9-10 (Bix 7mi)" data-description="" data-idfinder="2014sum5">
+						<a href="java-error.html" data-largesrc="images/small.jpg" data-title="Running Log: Weeks 9-10 (Bix 7mi)" data-description="" data-idfinder="2014sum5">
 							<div class="overlay">
 								<img src="images/blog/thumb-2014-week9.jpg" alt="img01"/>
 								<h2 align="left">
@@ -1810,7 +1845,7 @@
 						</a>
 					</li>
 					<li><!-- Weeks 7-8-->
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Running Log: Weeks 7-8" data-description="" data-idfinder="2014sum4">
+						<a href="java-error.html" data-largesrc="images/small.jpg" data-title="Running Log: Weeks 7-8" data-description="" data-idfinder="2014sum4">
 							<div class="overlay">
 								<img src="images/blog/thumb-2014-week7.jpg" alt="img02"/>
 								<h2 align="left">
@@ -1822,7 +1857,7 @@
 						</a>
 					</li>
 					<li><!-- Weeks 5-6 (10km)-->
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Running Log: Weeks 5-6 (Peachtree 10k)" data-description="" data-idfinder="2014sum3">
+						<a href="java-error.html" data-largesrc="images/small.jpg" data-title="Running Log: Weeks 5-6 (Peachtree 10k)" data-description="" data-idfinder="2014sum3">
 							<div class="overlay">
 								<img src="images/blog/thumb-2014-week6.jpg" alt="img02"/>
 								<h2 align="left">
@@ -1834,7 +1869,7 @@
 						</a>
 					</li>
 					<li><!-- Weeks 3-4-->
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Running Log: Weeks 3-4" data-description="" data-idfinder="2014sum2">
+						<a href="java-error.html" data-largesrc="images/small.jpg" data-title="Running Log: Weeks 3-4" data-description="" data-idfinder="2014sum2">
 							<div class="overlay">
 								<img src="images/blog/thumb-2014-week3.jpg" alt="img02"/>
 								<h2 align="left">
@@ -1846,7 +1881,7 @@
 						</a>
 					</li>
 					<li><!-- Weeks R&R 1-2-->
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Running Log: R&R and Weeks 1-2" data-description="" data-idfinder="2014sum1">
+						<a href="java-error.html" data-largesrc="images/small.jpg" data-title="Running Log: R&R and Weeks 1-2" data-description="" data-idfinder="2014sum1">
 							<div class="overlay">
 								<img src="images/blog/thumb-2014-week1.jpg" alt="img02"/>
 								<h2 align="left">
@@ -1919,14 +1954,20 @@
 	<!-- End of three div wide -->
 	
 	<!-- Bottom Banner --------->
-	<div style="overflow:hidden; height: 500px;position:relative">
-		<img src="images/index/bottombanner.jpg" class="bannerWidth centerPictureHorizontally" >
-		<div class="v-alignOuter" style="z-index: 5; position:absolute; top:0px;max-width:25%;">
+	<div style="overflow:hidden; height:500px; position:relative" class="bottomBanner">
+		<!--<img src="images/index/bottombanner.jpg" class="bannerWidth centerPictureHorizontally" >-->
+		<div class="v-alignOuter" style="position:absolute;">
 			<div class="v-alignMiddle">
-				<div class="v-alignInner" style="background: rgba(255, 255, 255, 0.7); padding:10px;">
-					<a href="sponsors.html"><img src="images/index/MizunoLogo3.png" style="max-width:100%; z-index: 10;" ></a>
+				<div class="v-alignInner">
+					<img src="images/index/bottombanner.jpg" class="bannerWidth">
 				</div>
-				
+			</div>
+		</div>
+		<div class="v-alignOuter" style="z-index: 5; position:absolute; top:0px; max-width:25%;">
+			<div class="v-alignMiddle">
+				<div class="v-alignInner" style="background: rgba(255, 255, 255, 0.7); padding:10px;" id="bottomBannerSponsor">
+					<img src="images/index/MizunoLogo3.png" id="bottomBannerMizuno" style="max-width:50px;"> 
+				</div>
 			</div>
 		</div>
 		<div style="position: absolute; bottom:0; right:0; color:black; font-weight:bold; margin-right:3px;">
@@ -1962,6 +2003,7 @@
 			Grid.init();
 		});
 		
+		
 		//----------------Start of Typewriter-------------------
 		//Some variables for the typewriter functions
 		var typeWin = $(window),
@@ -1979,10 +2021,14 @@
 			$("#loading_gif").addClass("visNone");//hides loading gif (not typewriter related)
 			$("#body_wrapper").removeClass("body_holder");//Makes page appear (not typewriter related)
 			
+			//Bottom Banner width settings
+			document.getElementById("bottomBannerMizuno").style.maxWidth = document.getElementById('bottomBannerSponsor').clientWidth + "px";	
+			//End of bottom banner width settings
+			
 			//<!--Start of typewriter text-->
 			var food = $('#typer'),
-				food2 = $('#typer2'),
-				imgHeight = document.getElementById('headlinePic').clientHeight;				
+				food2 = $('#typer2');
+							
 				
 			//Sets the top portion of the div containing the typewriter text.
 				
@@ -2002,14 +2048,12 @@
                 food2.css({fontSize: fontSize * fontRatio + 'px'});
 								
 				//Change top offset based upon new height of typewriter divs
-				imgHeight = document.getElementById('headlinePic').clientHeight;
-				document.getElementById('typewriterDiv').style.top= imgHeight - (2 * document.getElementById('typer').offsetHeight) +"px";
+				document.getElementById('typewriterDiv').style.top= document.getElementById('headlinePic').clientHeight - (2 * document.getElementById('typer').offsetHeight) +"px";
             }).resize();
 			//<!-- end of typewriter -->
 			
-			//Set starting max width and top offset after they are mis-set by the $(window).load function
-			document.getElementById('typewriterDiv').style.top= imgHeight - (2 * divHeight) +"px";
-			setTimeout(function(){document.getElementById('typer').style.maxWidth=document.getElementById('typer').clientWidth+2+'px'},2900); //Sets the max width of the first typewriter line to its width before it gets extended by the second typewriter line.  It waits for the line to get to its full width before it triggers.
+			//Set starting max width after it is mis-set by the $(window).load function
+			//setTimeout(function(){document.getElementById('typer').style.maxWidth=document.getElementById('typer').clientWidth+2+'px'},2900); //Sets the max width of the first typewriter line to its width before it gets extended by the second typewriter line.  It waits for the line to get to its full width before it triggers.
 			//setTimeout(function(){console.log(getElementById('typer').clientWidth)},2500);
 			//setTimeout(function(){console.log(getElementById('typer').clientWidth+15)},2500);
 			
