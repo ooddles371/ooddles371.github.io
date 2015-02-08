@@ -25,17 +25,51 @@
     <link href="css/christoCustom.css" rel="stylesheet" type="text/css"><!-- All me bud -->
   </head>
   
-<!-- new navbar ---------------->
-		<div class="TopNav">
-				<ul class="TopNav">
-					<li class="TopNav"><a href="index.html">Blog</a></li>
-					<li class="TopNav"><a href="results.html">Schedule &amp; Results</a></li>
-					<li class="TopNav"><a href="resume.html">Athletic Resume</a></li>
-					<li class="TopNav"><a href="sponsors.html">Sponsors</a></li>
-					<li class="TopNav"><a href="media.html">In the Media</a></li>
+	<!-- navbar ---------------->
+	<nav id="bigNavBar"> <!-- Navbar for screen widths over 767 -->
+		<div class="container" >
+			<div class="menu">
+				<ul class="PrettyStickyNav" style="margin-top: 14px !important; margin-bottom: 14px !important;">
+					<li class="PrettyStickyNav"><a href="index.html">Blog</a></li>
+					<li class="PrettyStickyNav"><a href="results.html">Schedule &amp; Results</a></li>
+					<li class="PrettyStickyNav"><a href="resume.html">Athletic Resume</a></li>
+					<li class="PrettyStickyNav"><a href="sponsors.html">Sponsors</a></li>
+					<li class="PrettyStickyNav"><a href="media.html">In the Media</a></li>
 				</ul>
+			</div>
 		</div>
-<!-- End new navbar ---------------->
+	</nav>
+
+	<nav id="smallNavBar"> <!-- Navbar for screen widths under 767 -->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="results.html">Schedule &amp; Results</a></li>
+						<li><a href="resume.html">Athletic Resume</a></li>
+						<li><a href="sponsors.html">Sponsors</a></li>
+						<li><a href="media.html">In the Media</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</div>
+	</nav>	
+
+	<!-- End navbar ---------------->
   
 	
 	<!-- Start of footer -->
