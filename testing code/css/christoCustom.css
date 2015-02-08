@@ -16,6 +16,7 @@ div.TopNav{
 ul.TopNav{
 	padding-top: 14px;
 	margin-bottom: 14px;
+	padding-left: 0px;
 }
 li.TopNav{
 	display:inline;
