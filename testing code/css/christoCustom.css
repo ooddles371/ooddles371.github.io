@@ -192,7 +192,10 @@ footer p {
     height: auto;
     width: auto;
     float: right;
+	max-width: 720px;
 }
+
+
 .caption-left {
 	margin-right: 7px;
     padding: 5px;
@@ -200,6 +203,7 @@ footer p {
     height: auto;
     width: auto;
     float: left;
+	max-width: 720px;
 }
 .caption-center{
     padding: 5px;
@@ -211,11 +215,12 @@ footer p {
 	margin-left:auto;
 	margin-bottom: 7px;
 	margin-top: 7px;
+	max-width: 720px;
 }
 .caption-center img,
 .caption-left img,
 .caption-right img {
-	max-width:720px;
+	max-width:100%;
 }
 
 .caption-right p,
