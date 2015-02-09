@@ -29,12 +29,7 @@
 	
 	</head>
 	<body>
-	<!-- Loading Gif -->
-	<div id="loading_gif">
-		<!--Below is needed to grab starting height of the typewriterDiv for the correct top off set-->
-		<div id="loadingTypewriter" style="text-align: center; margin-right:auto; margin-left:auto;"></div>
-	</div>
-	<!-- End of loading gif-->
+
 	<div class="body_holder" id="body_wrapper">
 	<!-- navbar ---------------->
 	<nav id="bigNavBar"> <!-- Navbar for screen widths over 767 -->
@@ -1994,16 +1989,9 @@
 		//----------------Start of Typewriter-------------------
 		//Some variables for the typewriter functions
 		var typeWin = $(window),
-			loadingTypewriter = $('#loadingTypewriter');
-		var fontSize = Math.max(Math.min(typeWin.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
-		var fontRatio =.5; 
-		
-		//This is the loading typewriter text, it grabs the baseline height for the offset of the other typewirter text.
-		loadingTypewriter.css({fontSize: fontSize * fontRatio + 'px'});
-		loadingTypewriter.typer(['Loading']);
-		var divHeight = document.getElementById('loadingTypewriter').offsetHeight;
-
-		
+			fontSize = Math.max(Math.min(typeWin.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY)),
+			fontRatio =.5; 
+				
 		$(window).load(function() {
 			$("#loading_gif").addClass("visNone");//hides loading gif (not typewriter related)
 			$("#body_wrapper").removeClass("body_holder");//Makes page appear (not typewriter related)
