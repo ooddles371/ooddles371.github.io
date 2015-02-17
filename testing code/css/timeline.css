@@ -1,4 +1,6 @@
-@media (max-width: 767px){
+/* Original found here: http://bootsnipp.com/snippets/featured/timeline-21-with-images-and-responsive */
+
+@media (max-width: 767px){/* Christo added to remove timeline aspect from mobile width but retain card look*/
 	.timeline-badge{
 		display:none;
 	}

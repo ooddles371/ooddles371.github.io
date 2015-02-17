@@ -1,3 +1,5 @@
+/* Original found here: http://bootsnipp.com/snippets/featured/timeline-21-with-images-and-responsive */
+
 $(document).ready(function(){
 	var my_posts = $("[rel=tooltip]");
 
