@@ -34,7 +34,7 @@ li.TopNav{
 	li.TopNav a:hover {
 		color: #F0C0A8;
 	}
-/*--------Non-moving Top Navbar-------*/
+/*-------- End of Non-moving Top Navbar-------*/
 
 @media (max-width: 767px) {
 	#bigNavBar {
@@ -291,4 +291,8 @@ footer p {
 	}
 }
 
-/*end of Christo   added*/
+/*Sponsors Page*/
+
+
+
+/*End of Sponsors Page*/
