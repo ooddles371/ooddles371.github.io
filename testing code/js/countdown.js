@@ -1,6 +1,6 @@
 // set the date we're counting down to
 //var target_date = new Date('Mar, 1, 2015').getTime();
-var race_date = new Date('Mar, 1, 2015 17:25:00')
+var race_date = new Date('Mar, 14, 2015 8:30:00')
 
 var target_date = race_date.getTime(); 
 // variables for time units
