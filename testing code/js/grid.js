@@ -303,7 +303,7 @@ var Grid = (function() {
 
 			// not in the same row
 			if( previewPos !== position ) {
-				// if position > previewPos then we need to take te current preview´s height in consideration when scrolling the window
+				// if position > previewPos then we need to take the current preview´s height in consideration when scrolling the window
 				if( position > previewPos ) {
 					scrollExtra = preview.height;
 				}
@@ -366,12 +366,12 @@ var Grid = (function() {
 			}
 		},
 		update : function( $item ) {
-				//start of Christo added
-				var $itemElder = this.$item.children( 'a' ),
-					elderdata = {
-						idfinder : $itemElder.data( 'idfinder' )
-					};
-				//end of Christo added
+			//start of Christo added
+			var $itemElder = this.$item.children( 'a' ),
+				elderdata = {
+					idfinder : $itemElder.data( 'idfinder' )
+				};
+			//end of Christo added
 			if( $item ) {
 				this.$item = $item;
 			}
