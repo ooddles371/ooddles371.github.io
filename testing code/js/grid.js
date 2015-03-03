@@ -427,6 +427,7 @@ var Grid = (function() {
 			}
 			//start of Christo added
 			$("#" + elderdata.idfinder).clone().appendTo("#foo");
+			console.log("added");
 			//end of Christo added
 		},
 		open : function() {
