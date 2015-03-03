@@ -307,10 +307,12 @@ var Grid = (function() {
 				if( position > previewPos ) {
 					scrollExtra = preview.height;
 				}
-				hidePreview();//found it Brian
+				hidePreview();
+				console.log("different rows");
 			}
 			// same row
 			else {
+				console.log("same row");
 				preview.update( $item );
 				return false;
 			}
@@ -347,12 +349,13 @@ var Grid = (function() {
 			this.$title = $( '<h3></h3>' );
 			this.$description = $( '<p id="foo" class="fubar"></p>' );
 			var detailAppends = [this.$title, this.$description];
+
 			if (settings.showVisitButton === true) {
 				this.$href = $( '<a href="#">Visit website</a>' );
 				detailAppends.push(this.$href);
 			}
-			this.$details = $( '<div class="og-details"></div>' ).append(detailAppends);
 			
+			this.$details = $( '<div class="og-details"></div>' ).append(detailAppends);
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );
@@ -364,13 +367,16 @@ var Grid = (function() {
 			if( support ) {
 				this.setTransition();
 			}
+			console.log("create");
 		},
 		update : function( $item ) {
+			console.log("update");
 			//start of Christo added
 			var $itemElder = this.$item.children( 'a' ),
 				elderdata = {
 					idfinder : $itemElder.data( 'idfinder' )
 				};
+				
 			//end of Christo added
 			if( $item ) {
 				this.$item = $item;
@@ -395,17 +401,22 @@ var Grid = (function() {
 					largesrc : $itemEl.data( 'largesrc' ),
 					title : $itemEl.data( 'title' ),
 					description : $itemEl.data( 'description' ),
-					idfinder : $itemEl.data( 'idfinder' )//work on this
+					idfinder : $itemEl.data( 'idfinder' )
 				};
+			//start of Christo added
+			//eldata.description = document.getElementById(eldata.idfinder);
+			//end of Christo added
+			
 			
 			this.$title.html( eldata.title );
 			this.$description.html( eldata.description );
+			
 			if (settings.showVisitButton === true) {
 				this.$href.attr( 'href', eldata.href );
 			}
 			
 			var self = this;
-			
+
 			// remove the current image in the preview
 			if( typeof self.$largeImg != 'undefined' ) {
 				self.$largeImg.remove();
@@ -429,18 +440,20 @@ var Grid = (function() {
 			$("#" + elderdata.idfinder).clone().appendTo("#foo");
 			console.log("added");
 			//end of Christo added
+			
 		},
 		open : function() {
-
+			console.log("open");
 			setTimeout( $.proxy( function() {	
 				// set the height for the preview and the item
 				this.setHeights();
 				// scroll to position the preview in the right place
 				this.positionPreview();
 			}, this ), 25 );
+			
 		},
 		close : function() {
-
+			console.log("close");
 			var self = this,
 				onEndFn = function() {
 					if( support ) {
@@ -470,7 +483,8 @@ var Grid = (function() {
 
 		},
 		calcHeight : function() {
-
+			console.log(document.getElementById('foo').offsetHeight);
+			settings.minHeight=document.getElementById('foo').offsetHeight+207;
 			var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
 				itemHeight = winsize.height;
 
@@ -484,7 +498,7 @@ var Grid = (function() {
 
 		},
 		setHeights : function() {
-
+			
 			var self = this,
 				onEndFn = function() {
 					if( support ) {
@@ -521,6 +535,7 @@ var Grid = (function() {
 		getEl : function() {
 			return this.$previewEl;
 		}
+		
 					
 	}
 
