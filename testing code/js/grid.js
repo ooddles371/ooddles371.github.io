@@ -307,7 +307,7 @@ var Grid = (function() {
 				if( position > previewPos ) {
 					scrollExtra = preview.height;
 				}
-				hidePreview();
+				hidePreview();//found it Brian
 			}
 			// same row
 			else {
