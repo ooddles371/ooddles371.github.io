@@ -366,7 +366,12 @@ var Grid = (function() {
 			}
 		},
 		update : function( $item ) {
-
+				//start of Christo added
+				var $itemElder = this.$item.children( 'a' ),
+					elderdata = {
+						idfinder : $itemElder.data( 'idfinder' )
+					};
+				//end of Christo added
 			if( $item ) {
 				this.$item = $item;
 			}
@@ -377,7 +382,7 @@ var Grid = (function() {
 				$currentItem.removeClass( 'og-expanded' );
 				this.$item.addClass( 'og-expanded' );
 				// position the preview correctly
-				this.positionPreview();
+				this.positionPreview();			
 			}
 
 			// update current value
@@ -420,13 +425,9 @@ var Grid = (function() {
 					}
 				} ).attr( 'src', eldata.largesrc );	
 			}
-				//start of Christo added
-				var $itemElder = this.$item.children( 'a' ),
-					elderdata = {
-						idfinder : $itemElder.data( 'idfinder' )
-					};
-				$("#" + elderdata.idfinder).clone().appendTo("#foo");
-				//end of Christo added
+			//start of Christo added
+			$("#" + elderdata.idfinder).clone().appendTo("#foo");
+			//end of Christo added
 		},
 		open : function() {
 
