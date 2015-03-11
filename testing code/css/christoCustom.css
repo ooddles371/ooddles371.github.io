@@ -10,7 +10,7 @@ div.TopNav{
 	text-align:center;
 	font-weight: bold;
 	height:56px; 
-	background: rgba(0, 0, 0, 0.7);
+	background-color: #333333;
 
 }
 ul.TopNav{
@@ -35,7 +35,6 @@ li.TopNav{
 		color: #F0C0A8;
 	}
 /*-------- End of Non-moving Top Navbar-------*/
-
 @media (max-width: 767px) {
 	#bigNavBar {
 		display:none;

@@ -53,6 +53,8 @@ $special = $event.special.debouncedresize = {
 // contributors: Oren Solomianik, David DeSandro, Yiannis Chatzikonstantinou
 
 // blank image data-uri bypasses webkit log warning (thx doug jones)
+
+
 var BLANK = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
 
 $.fn.imagesLoaded = function( callback ) {
@@ -136,6 +138,7 @@ $.fn.imagesLoaded = function( callback ) {
 			// find out if this image has been already checked for status
 			// if it was, and src has not changed, call imgLoaded on it
 			var cached = $.data( el, 'imagesLoaded' );
+			
 			if ( cached && cached.src === src ) {
 				imgLoaded( el, cached.isBroken );
 				return;
@@ -162,9 +165,10 @@ $.fn.imagesLoaded = function( callback ) {
 };
 
 var Grid = (function() {
-
+		// grid selector
+		var $selector = '#og-grid', 
 		// list of items
-	var $grid = $( '#og-grid' ),
+		$grid = $( $selector ),
 		// the items
 		$items = $grid.children( 'li' ),
 		// current expanded item's index
@@ -193,14 +197,14 @@ var Grid = (function() {
 		settings = {
 			minHeight : 500,
 			speed : 350,
-			easing : 'ease'
+			easing : 'ease',
+			showVisitButton : false //christo changed
 		};
 
 	function init( config ) {
 		
 		// the settings..
 		settings = $.extend( true, {}, settings, config );
-
 		// preload all images
 		$grid.imagesLoaded( function() {
 
@@ -267,7 +271,6 @@ var Grid = (function() {
 			}
 
 		} );
-
 	}
 
 	function initItemsEvents( $items ) {
@@ -280,7 +283,6 @@ var Grid = (function() {
 			// check if item already opened
 			current === $item.index() ? hidePreview() : showPreview( $item );
 			return false;
-
 		} );
 	}
 
@@ -289,7 +291,7 @@ var Grid = (function() {
 	}
 
 	function showPreview( $item ) {
-		console.log('showPreview');
+
 		var preview = $.data( this, 'preview' ),
 			// item´s offset top
 			position = $item.data( 'offsetTop' );
@@ -301,15 +303,19 @@ var Grid = (function() {
 
 			// not in the same row
 			if( previewPos !== position ) {
-				// if position > previewPos then we need to take te current preview´s height in consideration when scrolling the window
+				// if position > previewPos then we need to take the current preview´s height in consideration when scrolling the window
 				if( position > previewPos ) {
 					scrollExtra = preview.height;
 				}
 				hidePreview();
+				console.log("different rows");
 			}
 			// same row
 			else {
+				console.log("same row");
 				preview.update( $item );
+				//part of scrolling
+				//preview.open();//Christo added -- this is so the height updates.
 				return false;
 			}
 			
@@ -321,12 +327,9 @@ var Grid = (function() {
 		preview = $.data( this, 'preview', new Preview( $item ) );
 		// expand preview overlay
 		preview.open();
-		
-		
 	}
 
 	function hidePreview() {
-		console.log('hidePreview');
 		current = -1;
 		var preview = $.data( this, 'preview' );
 		preview.close();
@@ -335,22 +338,35 @@ var Grid = (function() {
 
 	// the preview obj / overlay
 	function Preview( $item ) {
-		console.log('preview');
 		this.$item = $item;
 		this.expandedIdx = this.$item.index();
 		this.create();
 		this.update();
+
 	}
 
 	Preview.prototype = {
 		create : function() {
-			console.log('create');
 			// create Preview structure:
+			console.log("create");
 			this.$title = $( '<h3></h3>' );
-			this.$description = $( '<p id="fools"></p>' );
-			//this.$href = $( '<a href="#">Visit website</a>' );takes out visit button - Christo changed
-			//this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );takes out visit button - Christo changed
-			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description );
+			this.$description = $( '<p id="foo" class="fubar"></p>' );
+			//start of Christo added
+			this.$myInsert= $( '<p id="fools"></p>' );
+			var myInsertAppends = this.$myInsert;
+			
+			//end of Christo added
+			
+			var detailAppends = [this.$title, this.$description];
+			
+			if (settings.showVisitButton === true) {
+				this.$href = $( '<a href="#">Visit website</a>' );
+				detailAppends.push(this.$href);
+			}
+			
+			//this.$details = $( '<div class="og-details"></div>' ).append(detailAppends);
+			this.$details = $( '<div class="og-details"></div>' ).append(detailAppends).append(myInsertAppends);
+			
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );
@@ -362,9 +378,24 @@ var Grid = (function() {
 			if( support ) {
 				this.setTransition();
 			}
+			
+			//start of Christo added
+			//----------------------
+			
+			
+			//---------------------
+			var $itemElder = this.$item.children( 'a' ),
+				elderdata = {
+					idfinder : $itemElder.data( 'idfinder' )
+				};
+			
+			$("#" + elderdata.idfinder).clone().appendTo("#fools");//div added
+			
+			//end of Christo added
 		},
 		update : function( $item ) {
-			console.log('update');
+			console.log("update");
+			
 			if( $item ) {
 				this.$item = $item;
 			}
@@ -375,7 +406,7 @@ var Grid = (function() {
 				$currentItem.removeClass( 'og-expanded' );
 				this.$item.addClass( 'og-expanded' );
 				// position the preview correctly
-				this.positionPreview();
+				this.positionPreview();			
 			}
 
 			// update current value
@@ -388,14 +419,43 @@ var Grid = (function() {
 					largesrc : $itemEl.data( 'largesrc' ),
 					title : $itemEl.data( 'title' ),
 					description : $itemEl.data( 'description' )
+					//idfinder : $itemEl.data( 'idfinder' )
+				};
+			//start of Christo added
+			var $itemElder = this.$item.children( 'a' ),
+				elderdata = {
+					idfinder : $itemElder.data( 'idfinder' )
 				};
 
+				
+			//end of Christo added
+			
+			
+			//start of Christo added
+			//eldata.description = document.getElementById(elderdata.idfinder);
+			//console.log(eldata.description);
+			//end of Christo added
+			
+			
 			this.$title.html( eldata.title );
 			this.$description.html( eldata.description );
-			//this.$href.attr( 'href', eldata.href ); takes out visit button - Christo changed
-
-			var self = this;
 			
+			//start of Christo added
+			
+			//console.log(document.getElementById('fools'));
+			//document.getElementById("fools").innerHTML = "";
+
+			//$("#" + elderdata.idfinder).clone().appendTo("#fools");//div added
+			
+			
+			//end of Christo added
+			
+			if (settings.showVisitButton === true) {
+				this.$href.attr( 'href', eldata.href );
+			}
+			
+			var self = this;
+
 			// remove the current image in the preview
 			if( typeof self.$largeImg != 'undefined' ) {
 				self.$largeImg.remove();
@@ -415,28 +475,22 @@ var Grid = (function() {
 					}
 				} ).attr( 'src', eldata.largesrc );	
 			}
-
-			//-----------------Start of Christo added----------------------------
-			var $itemElder = this.$item.children( 'a' ),
-				elderdata = {
-					idfinder : $itemElder.data( 'idfinder' )
-				};
-			$("#" + elderdata.idfinder).clone().appendTo("#fools");
-			//-----------------End of Christo added------------------------------
-
+			
+			
 		},
 		open : function() {
-			console.log('open');
+			console.log("open");
+			
 			setTimeout( $.proxy( function() {	
 				// set the height for the preview and the item
 				this.setHeights();
 				// scroll to position the preview in the right place
 				this.positionPreview();
 			}, this ), 25 );
-
+			
 		},
 		close : function() {
-			console.log('close');
+			console.log("close");
 			var self = this,
 				onEndFn = function() {
 					if( support ) {
@@ -466,7 +520,6 @@ var Grid = (function() {
 
 		},
 		calcHeight : function() {
-
 			var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
 				itemHeight = winsize.height;
 
@@ -478,9 +531,23 @@ var Grid = (function() {
 			this.height = heightPreview;
 			this.itemHeight = itemHeight;
 
+
+			//part of scrolling
+			//Start of Christo added
+			//sets the height to be equal to the heigh to foo div + the offset of the other sections in the preview, only the foo div changes height.
+			
+
+			//this.height = document.getElementById('foo').offsetHeight+207; //this is the area with the grey background 
+			
+
+			//this.itemHeight = document.getElementById('foo').offsetHeight+207+ this.$item.data( 'height' ) + marginExpanded; //this is how much it pushes down the next row, so the extra is the height of the pictures in the next row (250) and the margin (10).
+			//console.log(this.height);
+			//console.log(this.$item.data('height'));
+			//console.log(marginExpanded);
+			//End of Christo added			 
 		},
 		setHeights : function() {
-
+			
 			var self = this,
 				onEndFn = function() {
 					if( support ) {
@@ -509,7 +576,6 @@ var Grid = (function() {
 				scrollVal = this.height + this.$item.data( 'height' ) + marginExpanded <= winsize.height ? position : this.height < winsize.height ? previewOffsetT - ( winsize.height - this.height ) : previewOffsetT;
 			
 			$body.animate( { scrollTop : scrollVal }, settings.speed );
-
 		},
 		setTransition  : function() {
 			this.$previewEl.css( 'transition', 'height ' + settings.speed + 'ms ' + settings.easing );
@@ -518,11 +584,14 @@ var Grid = (function() {
 		getEl : function() {
 			return this.$previewEl;
 		}
+		
+					
 	}
 
 	return { 
 		init : init,
 		addItems : addItems
+		
 	};
 
 })();
