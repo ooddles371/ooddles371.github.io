@@ -1,3 +1,23 @@
+/* Original found here: http://bootsnipp.com/snippets/featured/timeline-21-with-images-and-responsive */
+
+@media (max-width: 767px){/* Christo added to remove timeline aspect from mobile width but retain card look*/
+	.timeline-badge{
+		display:none;
+	}
+	.timeline{
+		list-style-type: none;
+		padding:0px;
+	}
+	.timeline li {
+		border: 1px solid #d4d4d4; 
+		max-width:95%; 
+		box-shadow: 0 1px 6px rgba(0,0,0,0.175);
+		margin: 25px auto 0 auto;
+	}
+}
+
+@media (min-width: 768px) {/* Christo added to remove timeline aspect from mobile width */
+
 .timeline {
   list-style: none;
   padding: 20px 0 20px;
@@ -121,14 +141,7 @@
 .timeline-body > p + p {
   margin-top: 5px;
 }
-.timeline-footer{
-    padding:20px;
-    background-color:#f4f4f4;
-}
-.timeline-footer > a{
-    cursor: pointer;
-    text-decoration: none;
-}
+
 .tooltip{
 
     position:absolute;
@@ -218,8 +231,17 @@
 .timeline > li.timeline-inverted > .timeline-badge{
   left: -12px;
 }
+}
+.timeline-footer{
+    padding:20px;
+    background-color:#f4f4f4;
+}
+.timeline-footer > a{
+    cursor: pointer;
+    text-decoration: none;
+}
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
     ul.timeline:before {
         left: 40px;
     }
@@ -271,4 +293,4 @@
 .timeline > li.timeline-inverted > .timeline-badge{
   left: 28px;
 }
-}
+}*/

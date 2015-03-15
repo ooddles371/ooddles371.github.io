@@ -1,0 +1,309 @@
+/*default CSS */
+
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/*Christo added*/
+
+/*--------Non-moving Top Navbar-------*/
+div.TopNav{
+	text-align:center;
+	font-weight: bold;
+	height:56px; 
+	background-color: #333333;
+
+}
+ul.TopNav{
+	padding-top: 14px;
+	margin-bottom: 14px;
+	padding-left: 0px;
+}
+li.TopNav{
+	display:inline;
+	text-decoration:none;
+	padding-left:15px;
+	font-size: 20px;
+}
+	li.TopNav a {
+		list-style-type: none;
+		text-decoration:none;
+		color:#fff;/*change color of header text here*/
+		text-shadow:0.5px 0 0 rgba(255,255,255,0.5);
+	}
+
+	li.TopNav a:hover {
+		color: #F0C0A8;
+	}
+/*-------- End of Non-moving Top Navbar-------*/
+@media (max-width: 767px) {
+	#bigNavBar {
+		display:none;
+	}
+	#smallNavBarMargin{
+		height:50px;
+	}
+}
+@media (min-width: 768px) {
+	#smallNavBar {
+		display:none;
+	}
+}
+
+
+ .hiddenRow td{    
+ padding-top: 0 !important;
+ padding-bottom: 0 !important;
+ padding-left:1; 
+}
+.yearbreak td{padding-top:30px !important;}
+
+.body_holder {
+	visibility: hidden;
+}
+.visNone {
+	display: none;
+}
+.typeWriterText{
+	color:black; 
+	font-weight:bold; 
+	background: rgba(255, 255, 255, 0.7);
+	padding-left:15px;
+	padding-right:10px;
+}
+/* Bottom banner picture */
+@media (max-width: 1277px){
+	.bbtest{
+		max-width: 1278px;
+	}
+}
+@media (min-width: 1278px) and (max-width: 1367px){
+	.bbtest{
+		max-width: 1368px;
+	}
+}
+@media (min-width: 1368px) and (max-width: 1441px){
+	.bbtest{
+		max-width: 1442px;
+	}
+}
+@media (min-width: 1442px) and (max-width: 1681px){
+	.bbtest{
+		max-width: 1682px;
+		-webkit-transform:translate(-50%,-55%)!important; 
+		transform:translate(-50%,-55%)!important;
+	}
+}
+@media (min-width: 1682px) and (max-width: 1921px){
+	.bbtest{
+		max-width: 1922px;
+		-webkit-transform:translate(-50%,-55%)!important; 
+		transform:translate(-50%,-55%)!important;
+	}
+}
+@media (min-width: 1922px){
+	.bbtest{
+		max-width:100%;
+	}
+}
+/* end Bottom banner picture */
+.centerPictureHorizontally{
+	display: block;  
+	position:relative; 
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%,-50%);
+}
+
+.headline{
+	max-width:4000px;
+	margin:0px;
+	max-height: 850px;
+	overflow-y: hidden;
+}
+
+.quoteblock{
+	height: 140px;
+	background-color: #333333;
+}
+
+
+.indexMedia{
+	list-style-type:none;
+	font-weight: normal;
+	margin: 15px;
+}
+.indexMedia li{
+	border-bottom: 1px solid black;
+	
+	padding: 10px;
+}
+
+.removeLinkStyle a:link,
+.removeLinkStyle a:visited,
+.removeLinkStyle a:hover,
+.removeLinkStyle a:active {
+	text-decoration: none;
+	color: black;
+}
+
+/* Start of three div wide */
+.block1{
+	height:400px;
+	background-color: lightblue;
+	padding: 0px;
+}
+
+.block2{
+	height:400px;
+	background-color: #3B3B3B;
+	padding: 0px;
+}
+
+.block3{
+	height:400px;
+	background-color: lightblue;
+}
+/* End of three div wide */
+footer {
+	background-color: #333333;
+	
+}
+
+footer p {
+	padding:5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #cccccc;
+	text-align: center;
+}
+
+footer p a:link,
+footer p a:visited {
+	color: #cccccc;
+	text-decoration:none;
+}
+
+footer p a:hover,
+footer p a:active {
+	color: white;
+	text-decoration:none;
+}
+
+.insert{
+	display:inline;
+}
+.poof .insert{
+	display:none;
+}
+
+.caption-right {
+	margin-left: 7px;
+    padding: 5px;
+    border: 1px solid #808080;
+    height: auto;
+    width: auto;
+    float: right;
+	max-width: 720px;
+}
+
+
+.caption-left {
+	margin-right: 7px;
+    padding: 5px;
+    border: 1px solid #808080;
+    height: auto;
+    width: auto;
+    float: left;
+	max-width: 720px;
+}
+.caption-center{
+    padding: 5px;
+    border: 1px solid #808080;
+    height: auto;
+    width: auto;
+	max-width: 732px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-bottom: 7px;
+	margin-top: 7px;
+	max-width: 720px;
+}
+.caption-center img,
+.caption-left img,
+.caption-right img {
+	max-width:100%;
+}
+
+.caption-right p,
+.caption-left p,
+.caption-center p{
+	margin:0;
+	padding:5px 5px 0px 5px;
+	text-align: center;
+}
+@media (max-width: 767px) {
+	.caption-right,
+	.caption-left,
+	.caption-center{
+		margin-left: 0px !important;
+	}
+}
+
+.overlay h2{
+	position: absolute; 
+	bottom: -10px; 
+	width: 100%; 
+
+}
+.overlay h2 span {
+	color: white; 
+	font: bold 19px/45px Helvetica, Sans-Serif; 
+	/*letter-spacing: -1px;  */
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.7);
+	padding: 12px;
+}
+
+.log {
+	/*border-collapse:collapse; appears not to be needed*/
+	max-width:720px; 
+	margin-right:auto; 
+	margin-left:auto;
+	margin-top: 20px;
+}
+
+.v-alignOuter {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.v-alignMiddle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.v-alignInner {
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.media-pull-right{
+	float:right;
+}
+
+@media (max-width: 767px) {
+	.media-pull-right{
+		float:none;
+	}
+	.mediaLink{
+	text-align:center;
+	}
+}
+
+/*Sponsors Page*/
+
+
+
+/*End of Sponsors Page*/

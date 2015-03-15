@@ -310,6 +310,8 @@ var Grid = (function() {
 			// same row
 			else {
 				preview.update( $item );
+				preview.setHeights();//Christo Added - This is to changed the height of the preview.
+				preview.closeWhitespace();//Christo Added - closes whitespace.
 				return false;
 			}
 			
@@ -437,6 +439,7 @@ var Grid = (function() {
 		},
 		close : function() {
 			console.log('close');
+			console.log(this);
 			var self = this,
 				onEndFn = function() {
 					if( support ) {
@@ -454,8 +457,9 @@ var Grid = (function() {
 				this.$previewEl.css( 'height', 0 );
 				// the current expanded item (might be different from this.$item)
 				var $expandedItem = $items.eq( this.expandedIdx );
+			console.log($expandedItem.data( 'height' ));
 				$expandedItem.css( 'height', $expandedItem.data( 'height' ) ).on( transEndEventName, onEndFn );
-
+			
 				if( !support ) {
 					onEndFn.call();
 				}
@@ -465,22 +469,52 @@ var Grid = (function() {
 			return false;
 
 		},
+		
+		closeWhitespace : function() {
+			console.log('close Whitespace');
+			console.log(this);
+			var $expandedItem = $items.eq( this.expandedIdx );
+			$expandedItem.css( 'height', $expandedItem.data( 'height' ) );
+		},
+		
 		calcHeight : function() {
+			console.log('calcHeight');
+			//console.log(this);
+			//console.log(document.getElementById("fools").offsetHeight);
+			
+			
+			
+			//var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
+			//	itemHeight = winsize.height;
+			//
+			//if( heightPreview < settings.minHeight ) {
+			//	heightPreview = settings.minHeight;
+			//	itemHeight = settings.minHeight + this.$item.data( 'height' ) + marginExpanded;
+			//}
 
-			var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
-				itemHeight = winsize.height;
+			//this.height = heightPreview;
+			//this.itemHeight = itemHeight;
+			
+			
+			//Start of Christo Added
+			//This is to remove scrolling
+			this.height = document.getElementById('fools').offsetHeight+207; //this is the area with the grey background 
 
-			if( heightPreview < settings.minHeight ) {
-				heightPreview = settings.minHeight;
-				itemHeight = settings.minHeight + this.$item.data( 'height' ) + marginExpanded;
-			}
-
-			this.height = heightPreview;
-			this.itemHeight = itemHeight;
-
+			this.itemHeight = document.getElementById('fools').offsetHeight+207+ this.$item.data( 'height' ) + marginExpanded; //this is how much it pushes down the next row, so the extra is the height of the pictures in the next row (250) and the margin (10).
+			//console.log('this.height');
+			//console.log(this.height);
+			//console.log('this.itemHeight');
+			//console.log(this.itemHeight);
+			//console.log('fools height');
+			//console.log(document.getElementById('fools').offsetHeight);
+			//console.log('this.$item.data(height)');
+			//console.log(this.$item.data( 'height' ));
+			//console.log('marginExpanded');
+			//console.log(marginExpanded);
+			//End of Christo Added
 		},
 		setHeights : function() {
-
+			console.log('setHeights');
 			var self = this,
 				onEndFn = function() {
 					if( support ) {

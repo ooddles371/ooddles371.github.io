@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Christo Landry">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="images/favicon.png">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>Christo Landry - Professional Runner</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,42 +22,56 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
+	<link href="css/christoCustom.css" rel="stylesheet" type="text/css"><!-- All me bud -->
     
-  </head>
-<!-- NAVBAR
-================================================== -->
-	<div class="navbar-wrapper">
-      <div class="container">
+	</head>
+	<body>
 
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Christo Landry - Professional Runner</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="results.html">Results</a></li>
-				<li><a href="resume.html">Athletic Resume</a></li>
-				<li><a href="affiliation.html">Affiliation</a></li>
-				<li><a href="media.html">In the Media</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
-<!-- NAVBAR End
-================================================== -->
-  
-  
+	<!-- navbar ---------------->
+		<div class="TopNav" id="bigNavBar"><!-- Navbar for screen widths over 767 -->
+				<ul class="TopNav">
+					<li class="TopNav"><a href="index.html">Blog</a></li>
+					<li class="TopNav"><a href="results.html">Schedule &amp; Results</a></li>
+					<li class="TopNav"><a href="resume.html">Athletic Resume</a></li>
+					<li class="TopNav"><a href="sponsors.html">Sponsors</a></li>
+					<li class="TopNav"><a href="media.html">In the Media</a></li>
+				</ul>
+		</div>
+
+	<nav id="smallNavBar"> <!-- Navbar for screen widths under 767 -->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Blog</a></li>
+						<li><a href="results.html">Schedule &amp; Results</a></li>
+						<li><a href="resume.html">Athletic Resume</a></li>
+						<li><a href="sponsors.html">Sponsors</a></li>
+						<li><a href="media.html">In the Media</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</div>
+	</nav>	
+
+	<!-- End navbar ---------------->
+	<div id="smallNavBarMargin"></div>
+
+		</br>
+		<div style="max-width: 720px; margin-right:auto; margin-left:auto;"><!--This is to set a max width in safari as it won't take max-width in a table -->
 		<table class="table table-condensed table-hover" style="border-collapse:collapse; max-width:720px;" align="center">
 			<!--<thead>
 				<tr>
@@ -71,8 +85,40 @@
 					<td style="border-top: none !important;border-width:0 !important;"></td>
 					<td style="border-top: none !important;border-width:0 !important;"></td>
 				</tr>
+				
 				<tr>
-					<td colspan="3">Races for this year have not yet been scheduled.</td>
+					<td>May, 9th</td>
+					<td>25km USA Champs (Grand Rapids, MI)</td>
+					<td>25km</a></td>
+				</tr>
+
+				<tr>
+					<td>May, 2th</td>
+					<td>Payton Jordan (Stanford, CA)</td>
+					<td>10km</a></td>
+				</tr>
+				
+				<tr>
+					<td>April, 17th</td>
+					<td>Mt. SAC Relays (Walnut, CA)</td>
+					<td>5km</a></td>
+				</tr>
+				
+				<tr style="cursor:pointer;" data-toggle="collapse" data-target=".demo46">
+					<td>March, 14th</td>
+					<td>USA 15km Road Championships</td>
+					<td><a href="http://www.gate-riverrun.com/grr15topten.htm">44:14 (2nd)</a></td>
+				</tr>
+				<tr class="hiddenRow">
+					<td>
+						<div class="collapse demo46 in"><a href="http://www.usatf.tv/gprofile.php?mgroup_id=45365&do=videos&video_id=137152-Webcast-Replay-USATF-15-km-Championships-2015">Video</a></div>
+					</td>
+					<td>
+						<div class="collapse demo46 in">Jacksonville, FL</div>
+					</td>
+					<td>
+						<div class="collapse demo46 in">15km</div>
+					</td>
 				</tr>
 				
 				<tr class="yearbreak">
@@ -82,19 +128,19 @@
 				</tr>
 	
 				<tr style="cursor:pointer;" data-toggle="collapse" data-target=".demo45">
-					<td>Nov 24th</td>
+					<td>November 24th</td>
 					<td>International Chiba Ekiden</td>
 					<td><a href="http://www.usatf.org/Events---Calendar/2014/International-Chiba-Ekiden/Results.aspx">28:55 6th-Team</a></td>
 				</tr>
 				<tr class="hiddenRow">
 					<td>
-						<div class="collapse demo45 in"></div>
+						<div class="collapse demo45"></div>
 					</td>
 					<td>
-						<div class="collapse demo45 in">Chiba, Japan</div>
+						<div class="collapse demo45">Chiba, Japan</div>
 					</td>
 					<td>
-						<div class="collapse demo45 in">10km - Leg</div>
+						<div class="collapse demo45">10km - Leg</div>
 					</td>
 				</tr>
 <!--		
@@ -156,10 +202,13 @@
 				</tr>
 				
 				<tr style="cursor:pointer;" data-toggle="collapse" data-target=".demo40">
-					<td>July, 4th</td>
-					<td>USA 10km Road Championships</td>
-					<td><a href="http://usa-mens-10km.runnerspace.com/eprofile.php?event_id=2515&amp;year=2014&amp;do=info">28:25 (1st)</a></td>
+					<td><b>July, 4th</b></td>
+					<td><b>USA 10km Road Championships</b></td>
+					<td><a href="http://usa-mens-10km.runnerspace.com/eprofile.php?event_id=2515&amp;year=2014&amp;do=info"><b>28:25 (1st)</b></a></td>
 				</tr>
+				</b>
+				
+				<b>
 				<tr class="hiddenRow">
 					<td><div class="collapse demo40"><a href="http://usa-mens-10km.runnerspace.com/eprofile.php?event_id=2515&amp;do=videos&amp;video_id=120952">Video</a></div></td>
 					<td><div class="collapse demo40">Atlanta, GA</div></td>
@@ -167,9 +216,9 @@
 				</tr>
 				
 				<tr style="cursor:pointer;" data-toggle="collapse" data-target=".demo39">
-					<td>May, 10th</td>
-					<td>USA 25km Road Championships</td>
-					<td><a href="http://www.runnerspace.com/eprofile.php?event_id=2514&amp;year=2014&amp;do=info">1:14:18 <b>American Record</b></a></td>
+					<td><b>May, 10th</b></td>
+					<td><b>USA 25km Road Championships</b></td>
+					<td><a href="http://www.runnerspace.com/eprofile.php?event_id=2514&amp;year=2014&amp;do=info"><b>1:14:18 American Record</b></a></td>
 				</tr>
 				<tr class="hiddenRow">
 					<td><div class="collapse demo39"><a href="http://usa-25km.runnerspace.com/eprofile.php?event_id=2514&amp;do=videos&amp;video_id=114383">Video</a></div></td>
@@ -200,9 +249,9 @@
 				</tr>
 								
 				<tr style="cursor:pointer;" data-toggle="collapse" data-target=".demo36">
-					<td>April, 6th</td>
-					<td>USA 10mi Road Championships</td>
-					<td><a href="http://usa-10mile.runnerspace.com/eprofile.php?event_id=2520&amp;year=2014&amp;do=info">46:41 (1st)</a></td>
+					<td><b>April, 6th</b></td>
+					<td><b>USA 10mi Road Championships</b></td>
+					<td><a href="http://usa-10mile.runnerspace.com/eprofile.php?event_id=2520&amp;year=2014&amp;do=info"><b>46:41 (1st)</b></a></td>
 				</tr>
 				<tr class="hiddenRow">
 					<td><div class="collapse demo36"><a href="http://usa-10mile.runnerspace.com/eprofile.php?event_id=2520&amp;do=videos&amp;video_id=111117">Video</a></div></td>
@@ -284,9 +333,9 @@
 				</tr>
 				
 				<tr style="cursor:pointer;" data-toggle="collapse" data-target=".demo28">
-					<td>April 28th</td>
-					<td>Payton Jordan Invitational</td>
-					<td><a href="http://www.rtspt.com/events/stanford/pjc13/130428F021.htm">27:59.22 (14th)</a></td>
+					<td><b>April 28th</b></td>
+					<td><b>Payton Jordan Invitational</b></td>
+					<td><a href="http://www.rtspt.com/events/stanford/pjc13/130428F021.htm"><b>27:59.22 (14th)</b></a></td>
 				</tr>
 				<tr class="hiddenRow">
 					<td><div class="collapse demo28"><a href="http://www.flotrack.org/coverage/250668-Payton-Jordan-Cardinal-Invitational-2013/video/707789-M-10K-H01-St-Lawrence-kicks-for-home">Video</a></div></td>
@@ -444,9 +493,9 @@
 				</tr>
 				
 				<tr style="cursor:pointer;" data-toggle="collapse" data-target=".demo13">
-					<td>March, 10th</td>
-					<td>USA 15km Road Championships</td>
-					<td><a href="http://www.runnerspace.com/eprofile.php?event_id=2512&amp;year=2012&amp;do=info">44:37 (1st)</a></td>
+					<td><b>March, 10th</b></td>
+					<td><b>USA 15km Road Championships</b></td>
+					<td><a href="http://www.runnerspace.com/eprofile.php?event_id=2512&amp;year=2012&amp;do=info"><b>44:37 (1st)</b></a></td>
 				</tr>
 				<tr class="hiddenRow">
 					<td><div class="collapse demo13"><a href="http://www.runnerspace.com/eprofile.php?event_id=2512&amp;do=videos&amp;video_id=61614">Video</a></div></td>
@@ -584,9 +633,15 @@
 			
 			</tbody>
 		</table>
-
+		</div>
 		
-		
+	<!-- Start of footer -->
+	<footer>
+		<div class="container" style="height:51px !important;">
+			<p>Crafted by <a href="mailto:contact@christolandry.com">Christo Landry</a></p>
+		</div>
+	</footer>
+	<!-- End of footer ---->
 		
   
   
@@ -597,7 +652,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/docs.min.js"></script>
+    <!--<script src="js/docs.min.js"></script>-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>

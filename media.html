@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Christo Landry">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="images/favicon.png">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>Christo Landry - Professional Runner</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,62 +22,237 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="css/timeline.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet"><!--Take a guess-->
+	<link href="css/christoCustom.css" rel="stylesheet" type="text/css"><!-- All me bud -->
   </head>
-<!-- NAVBAR
-================================================== -->
-	<div class="navbar-wrapper">
-      <div class="container">
+	<!-- navbar ---------------->
+		<div class="TopNav" id="bigNavBar"><!-- Navbar for screen widths over 767 -->
+				<ul class="TopNav">
+					<li class="TopNav"><a href="index.html">Blog</a></li>
+					<li class="TopNav"><a href="results.html">Schedule &amp; Results</a></li>
+					<li class="TopNav"><a href="resume.html">Athletic Resume</a></li>
+					<li class="TopNav"><a href="sponsors.html">Sponsors</a></li>
+					<li class="TopNav"><a href="media.html">In the Media</a></li>
+				</ul>
+		</div>
 
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Christo Landry - Professional Runner</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="results.html">Results</a></li>
-				<li><a href="resume.html">Athletic Resume</a></li>
-				<li><a href="affiliation.html">Affiliation</a></li>
-				<li><a href="media.html">In the Media</a></li>
-              </ul>
+	<nav id="smallNavBar"> <!-- Navbar for screen widths under 767 -->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Blog</a></li>
+						<li><a href="results.html">Schedule &amp; Results</a></li>
+						<li><a href="resume.html">Athletic Resume</a></li>
+						<li><a href="sponsors.html">Sponsors</a></li>
+						<li><a href="media.html">In the Media</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</div>
+	</nav>	
+
+	<!-- End navbar ---------------->
+
+	<div id="smallNavBarMargin"></div>
+
+  <div class="container">
+    <ul class="timeline">
+	
+	
+		<li> <!-- 2015 15km -->
+			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
+			<div class="timeline-panel">
+				<div class="timeline-heading">
+					<img class="img-responsive" src="images/media/2015-15km.jpg" style="max-height: 315px;">
+				</div>
+				<div class="timeline-body" style="padding:20px; margin-bottom:0;">            
+				</div>
+				<div class="timeline-footer mediaLink mediaLink">
+					<i style="padding-bottom:0px;">March 14, 2015</i>
+					<a style="padding-bottom:5px;" data-toggle="modal" href="http://usatf-15km-championships.runnerspace.com/eprofile.php?event_id=2512&do=videos&video_id=137095" class="media-pull-right">Post-Race Interview</a>
+
             </div>
           </div>
-        </nav>
-      </div>
-    </div>
-<!-- NAVBAR End
-================================================== -->
+        </li>
+		<li class="timeline-inverted"> <!-- Run Washington Article -->
+			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
+			<div class="timeline-panel">
+				<div class="timeline-heading">
+					<img class="img-responsive" src="images/media/runwashington.jpg" style="max-height: 315px;">
+				</div>
+				<div class="timeline-body" style="padding:20px; margin-bottom:0;">            
+					<h4 style="margin:0;">Wait a Minute, was That? Go Christo!</h4>
+					</br>It wasn’t a bad showing. He had placed fourth at the inaugural U.S. 12k championships, the culmination of the 2013 American professional road racing circuit.
+					</br></br>
+					For Christo Landry, who runs professionally for Mizuno, that year included three more top-five finishes in U.S. championships, including in the marathon, held just six week earlier. But this race was special for him — because the Northern Virginia native was racing on his home turf in Alexandria. “This race exceeded all of my expectations,” he said.
+					</br></br>
+					You have to wonder, then: Imagine if Landry had known what was coming in the next year.
+				</div>
+				<div class="timeline-footer mediaLink mediaLink">
+					<i style="padding-bottom:0px;">February 9, 2015</i>
+					<a style="padding-bottom:5px;" data-toggle="modal" href="http://www.runwashington.com/2015/02/09/wait-minute-go-christo/" class="media-pull-right">Continue Reading</a>
 
-
-
-
-  
-  <div class="container">
-
-    <ul class="timeline">
-
-		<li><!-- 20k interviews -->
+            </div>
+          </div>
+        </li>
+		<li><!-- Awarded 2012 US Title -->
+			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
+			<div class="timeline-panel">
+				<div class="timeline-body">		  
+				</div>
+				<div class="timeline-body" style="padding:20px; margin-bottom:0;">            
+					
+					<h4 style="margin:0;">Boit, Keflezighi, Landry, True named USATF Champions</h4>
+					</br>Four U.S. athletes have been named USATF champions after the U.S. Anti-Doping Agency (USADA) announced a four-year doping sanction on Mo Trafeh. Due to the ruling, Trafeh is disqualified from all competitive results obtained on and subsequent to January 1, 2012, including forfeiture of any medals, points and prizes.
+				</div>
+				<div class="timeline-footer mediaLink">
+				
+				<i>December 18th, 2014</i>
+				<a class="media-pull-right mediaLink" data-toggle="modal" href="http://www.usatf.org/News/Boit,-Keflezighi,-Landry-named-USATF-Champions.aspx">Continue Reading</a>
+				</div>
+			</div>
+        </li>
+	
+		<li class="timeline-inverted"> <!-- 12k Preview -->
+			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
+			<div class="timeline-panel">
+				<div class="timeline-heading">
+					<img class="img-responsive" src="images/media/2014-12k.png"/>
+				</div>
+				<div class="timeline-body" style="padding:20px; margin-bottom:0;">            
+					<h4 style="margin:0;">Christo Landry’s Season to Remember</h4>
+					</br>It's been a season of success for Christo Landry. Before the 2014 season, Landry had seen plenty of success on the roads, but a national title eluded him. This year, from the gun, Landry attacked, and for a while he looked unbeatable, scoring three straight national titles over 10 Mile, 25 km and 10 km distances. Close runner-up finishes at the USA 7 Mile and USA 20 km Championships clinched the USARC overall victory for the 28 year old and now he sets his sights on the final USARC race of the season, the .US National 12K. </br></br>
+					We caught up with Landry this week, discussing his big season, the final race of the season and a whole lot more.
+				</div>
+				<div class="timeline-footer mediaLink mediaLink">
+					<i style="padding-bottom:0px;">November 16th, 2014</i>
+					<a style="padding-bottom:5px;" data-toggle="modal" href="http://us-national-12k.runnerspace.com/eprofile.php?event_id=8644&do=videos&video_id=127509" class="media-pull-right">USARC Champion</a>
+				
+				
+					</br></br>
+					<i style="padding-bottom:0px;">November 14th, 2014</i>
+					<a style="padding-bottom:5px;" data-toggle="modal" href="http://us-national-12k.runnerspace.com/eprofile.php?event_id=8644&do=videos&video_id=127254" class="media-pull-right">Pre-Race Press Conference</a>
+															
+					</br></br>
+					<i style="padding-bottom:0px;">November 13th, 2014</i>
+					<a style="padding-bottom:5px;" data-toggle="modal" href="http://us-national-12k.runnerspace.com/eprofile.php?event_id=8644&do=news&news_id=299010" class="media-pull-right">Continue Reading</a>
+				
+					</br></br>
+					<i style="padding-bottom:0px;">November 12th, 2014</i>
+					<a style="padding-bottom:5px;" data-toggle="modal" href="http://www.usatf.org/News/Christo-Landry-s-USARC-rise-in-2014-heading-into--.aspx" class="media-pull-right">USATF Article</a>
+            </div>
+          </div>
+        </li>
+		
+		<li ><!-- Mizuno ATC -->
 			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
 			<div class="timeline-panel">
 				<div class="timeline-body">
-					<img class="img-responsive" src="images/media/2014-20km.jpg"/>			  
+					<img class="img-responsive" src="images/media/2014-mizuno.jpg"/>			  
+				</div>
+				<div style="padding-left:20px;">photo by PhotoRun.net</div>
+				<div class="timeline-body" style="padding:20px; margin-bottom:0;">            
+					
+					<h4 style="margin:0;">Atlanta Track Club & Mizuno USA sign historic "integrated marketing " agreement</h4>
+					</br>In an announcement with far-reaching consequences, the Atlanta Track Club and Mizuno, one of the largest sports product manufacturers in the world, have reached a long term agreement for Mizuno to sponsor all facets of the Atlanta Track Club, its events and its merchandise.
+				</div>
+				<div class="timeline-footer mediaLink">
+				
+				<i>November, 12th, 2014</i>
+				<a class="media-pull-right" data-toggle="modal" href="http://www.runblogrun.com/2014/11/atlanta-track-club-mizuno-usa-sign-historic-integrated-marketing-agreement-what-it-means-to-the-spor.html">Continue Reading</a>
+				</div>
+			</div>
+        </li>
+	
+		<li class="timeline-inverted"><!-- Chicago Results -->
+			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
+			<div class="timeline-panel">
+				<div class="timeline-body">
+					<img class="img-responsive" src="images/media/2014-Chicago.jpg"/>			  
 				</div>
             
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
+				
+				<i>October, 11th, 2014</i>
+				<a class="media-pull-right" data-toggle="modal" href="http://results.chicagomarathon.com/2014/?content=detail&fpid=list&pid=list&idp=999999107FA309000013BDDE&lang=EN_CAP&event=MAR">Marathon Splits</a>
+				</div>
+			</div>
+        </li>
+		
+		<li > <!-- Chicago Preview -->
+			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
+			<div class="timeline-panel">
+				<div class="timeline-heading">
+					<iframe style="width:100%; height:315px;"src="https://www.youtube.com/embed/ZSrECskcUOk" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="timeline-body" style="padding:20px; margin-bottom:0;">            
+					<h4 style="margin:0;">Christo Landry With 150 Mile Weeks and 32 Mile Long Runs Behind Him is Ready for Chicago</h4>
+					</br>Landry has been on fire in 2014 winning the US 10k, 10 mile and 25k road titles and setting a US 25k record.</br></br>
+					He said this year he isn’t doing anything different, just building on what he’s done in previous years. He said, “I don’t think I’ve done all that much different this year. Main thing is I’ve been able to put another successful cycle back to back on top of my previous years. Each year I’ve been getting a little better…My first year on the roads I got dropped 80% through the race, last year, I could make it to the final kick…. This year a couple times I came out on top.”
+				</div>
+				<div class="timeline-footer mediaLink">
+				<i style="padding-bottom:0px;">October 10th, 2014</i>
+				<a style="padding-bottom:5px;" data-toggle="modal" href="http://www.letsrun.com/news/2014/10/christo-landry-150-mile-weeks-32-mile-long-runs-behind-ready-chicago/" class="media-pull-right">Continue Reading</a>
+								
+				</br></br>
+				
+				<i style="padding-bottom:0px;">October 10th, 2014</i>
+				<a style="padding-bottom:5px;" data-toggle="modal" href="http://www.flotrack.org/coverage/251694-Chicago-Marathon-2014/video/751999-Christo-Landry-Having-Best-Year-Yet" class="media-pull-right">Pre-Race Interview</a>
+								
+				</br></br>
+				<i style="padding-bottom:0px;">September 4th, 2014</i>
+				<a style="padding-bottom:5px;" data-toggle="modal" href="http://assets.chicagomarathon.com/wp-content/uploads/2012/05/Press-Release-090414.pdf" class="media-pull-right">Chicago Preview</a>
+            </div>
+          </div>
+        </li>
+	
+		<li class="timeline-inverted"> <!-- USATF AOY Nomination -->
+			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
+			<div class="timeline-panel">
+				<div class="timeline-heading">
+					
+				</div>
+				<div class="timeline-body" style="padding:20px; margin-bottom:0;">            
+					<h4 style="margin:0;">Fan Voting is Now Open for Jesse Owens and Jackie Joyner-Kersee Athletes of the Year</h4>
+					</br>INDIANAPOLIS -- Track and field fans have the opportunity to help select USA Track & Field’s 2014 Jesse Owens and Jackie Joyner-Kersee winners through online voting.</br></br>
+					Honoring the country’s top male and female track and field athletes, the Jesse Owens and Jackie Joyner-Kersee winners are selected by a vote of the media in combination with online fan balloting, with media votes weighing 90 percent of the vote and fan voting 10 percent.
+				</div>
+				<div class="timeline-footer mediaLink">
+				<i style="padding-bottom:0px;">October 9th, 2014</i>
+				<a style="padding-bottom:5px;" data-toggle="modal" href="http://www.usatf.org/News/Fan-Voting-is-Now-Open-for-Jesse-Owens-and-Jackie-.aspx" class="media-pull-right">Continue Reading</a>
+				
+            </div>
+          </div>
+        </li>
+	
+		<li ><!-- 20k interviews -->
+			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
+			<div class="timeline-panel">
+				<div class="timeline-body">
+					<img class="img-responsive" src="images/media/2014-20km1.jpg"/>			  
+				</div>
+            
+				<div class="timeline-footer mediaLink">
 				<i>September 1, 2014</i>
-					<a class="pull-right" data-toggle="modal" href="http://roads.runnerspace.com/gprofile.php?mgroup_id=90&do=videos&video_id=124126">Pre-Race Interview</a>
-					</br></br>
-					<i>August 31, 2014</i>
-					<a class="pull-right" data-toggle="modal" href="http://roads.runnerspace.com/gprofile.php?mgroup_id=90&do=videos&video_id=124143-Christo-Landry-2nd-USA-20-km-Championships-2014">Post-Race Interview</a>
+				<a class="media-pull-right" data-toggle="modal" href="http://roads.runnerspace.com/gprofile.php?mgroup_id=90&do=videos&video_id=124143-Christo-Landry-2nd-USA-20-km-Championships-2014">Post-Race Interview</a>
+					
+				</br></br>
+				<i>August 31, 2014</i>
+				<a class="media-pull-right" data-toggle="modal" href="http://roads.runnerspace.com/gprofile.php?mgroup_id=90&do=videos&video_id=124126">Pre-Race Interview</a>
 				</div>
 			</div>
         </li>
@@ -85,7 +260,9 @@
         <li class="timeline-inverted"><!--20k article-->
 			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
 			<div class="timeline-panel">
-				<div class="timeline-heading"></div>
+				<div class="timeline-heading">
+					<img class="img-responsive" src="images/media/2014-20km.jpg"/>	
+				</div>
 				<div class="timeline-body" style="padding:20px; margin-bottom:0;">            
 					<h4 style="margin:0;">New Haven Road Race: Christo Landry one of the favorites</h4>
 					</br>As weird as it sounds, distance runner Christo Landry’s favorite post-race meal is pizza.</br></br>
@@ -94,23 +271,23 @@
 
 					Landry is set to take part in the 37th annual Faxon Law New Haven Road Race, which doubles as the 20K national championship.
 				</div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 				<i style="padding-bottom:0px;">August 26, 2014</i>
-				<a style="padding-bottom:5px;" data-toggle="modal" href="http://www.nhregister.com/sports/20140826/new-haven-road-race-christo-landry-one-of-the-favorites" class="pull-right">Continue Reading</a>
+				<a style="padding-bottom:5px;" data-toggle="modal" href="http://www.nhregister.com/sports/20140826/new-haven-road-race-christo-landry-one-of-the-favorites" class="media-pull-right">Continue Reading</a>
             </div>
           </div>
         </li>
 		
-		<li><!--Runners Connect podcast-->
+		<li ><!--Runners Connect podcast-->
 			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
 			<div class="timeline-panel">
 				<div class="timeline-heading">
 					<img class="img-responsive" src="images/media/runnersconnect.jpg">
 				</div>
 				<div class="timeline-body"></div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i style="padding-bottom:0px;">August 7, 2014</i>
-					<a  data-toggle="modal" href="http://www.nhregister.com/sports/20140826/new-haven-road-race-christo-landry-one-of-the-favorites" class="pull-right">Podcast</a>
+					<a  data-toggle="modal" href="http://www.nhregister.com/sports/20140826/new-haven-road-race-christo-landry-one-of-the-favorites" class="media-pull-right">Podcast</a>
 				</div>
 			</div>
         </li>
@@ -122,12 +299,12 @@
 					<img class="img-responsive" src="images/media/2014-7mile.jpg"/>			  
 				</div>
             
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>July 25, 2014</i>
-					<a data-toggle="modal" href="http://usa-7mile.runnerspace.com/eprofile.php?event_id=2516&do=videos&video_id=123049" class="pull-right">Pre-Race Interview</a>
+					<a data-toggle="modal" href="http://usa-7mile.runnerspace.com/eprofile.php?event_id=2516&do=videos&video_id=123049" class="media-pull-right">Pre-Race Interview</a>
 					</br></br>
 					<i>July 26, 2014</i>
-					<a data-toggle="modal" href="http://usa-7mile.runnerspace.com/eprofile.php?event_id=2516&do=videos&video_id=123049" class="pull-right">Post-Race Interview</a>
+					<a data-toggle="modal" href="http://usa-7mile.runnerspace.com/eprofile.php?event_id=2516&do=videos&video_id=123049" class="media-pull-right">Post-Race Interview</a>
 				</div>
 			</div>
         </li>
@@ -149,10 +326,10 @@
 					“I thought it was pretty cool that a multi-time Olympian was bringing me a plate of something that the Kenyan runners eat every day,’’ Landry said.              
 				</div>
             
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
                 <i style="padding-bottom:0px;">July 22, 2014</i>
                 
-				<a style="padding-bottom:5px;" data-toggle="modal" href="http://qctimes.com/sports/running/bix7/emerging-landry-should-be-meb-s-main-competition/article_9419e093-5075-5346-b99b-0c00bf4eecb0.html" class="pull-right">Continue Reading</a>
+				<a style="padding-bottom:5px;" data-toggle="modal" href="http://qctimes.com/sports/running/bix7/emerging-landry-should-be-meb-s-main-competition/article_9419e093-5075-5346-b99b-0c00bf4eecb0.html" class="media-pull-right">Continue Reading</a>
 				</div>
 			</div>
         </li>      
@@ -164,9 +341,9 @@
 				<div class="timeline-body">
 					<img class="img-responsive" src="images/media/cloud259.jpg"/>			      
 				</div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i style="padding-bottom:0px;">July 17, 2014</i>
-					<a style="padding-bottom:5px;" data-toggle="modal" href="http://cloud259.com/2014/07/17/episode-26-christo-landry-joins-the-a-list/" class="pull-right">Podcast</a>
+					<a style="padding-bottom:5px;" data-toggle="modal" href="http://cloud259.com/2014/07/17/episode-26-christo-landry-joins-the-a-list/" class="media-pull-right">Podcast</a>
 				</div>
 			</div>
         </li>
@@ -175,10 +352,11 @@
 			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
 			<div class="timeline-panel">
 				<div class="timeline-heading">
-					<a href="http://www.ajc.com/gallery/sports/2014-ajc-peachtree-road-race-runners/gCLx4/"><img class="img-responsive" src="images/media/2014-peachtree.jpg"/></a>
+					<a href="http://www.ajc.com/gallery/sports/2014-ajc-peachtree-road-race-runners/gCLx4/"><img class="img-responsive" src="images/media/2014-peachtree.png"/></a>
 				</div>
 				<div class="timeline-body" style="padding:20px; margin-bottom:0;">
 					<h4 style="margin:0;">Landry wins Peachtree, 10k national title</h4>
+					
 					</br>
 					Christo Landry gambled in the final mile and won The Atlanta Journal-Constitution Peachtree Road Race to become the U.S. 10K champion Friday.
 					</br></br>
@@ -186,18 +364,18 @@
 					</br></br>
 					“I figured the easiest way to break away is to make that one hard move,” said Landry, who was draped in a U.S. flag after the race. “If he didn’t make a split-second decision on an uphill, I was going to be able to get a big step on him, and it would be pretty hard to catch me.”
 				</div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>July 4, 2014</i>
-					<a data-toggle="modal" href="http://www.ajc.com/news/sports/landry-wins-peachtree-10k-national-title/ngY7S/#cmComments" class="pull-right">Continue Reading</a>
+					<a data-toggle="modal" href="http://www.ajc.com/news/sports/landry-wins-peachtree-10k-national-title/ngY7S/#cmComments" class="media-pull-right">Continue Reading</a>
 					</br></br>
 					<i>July 4, 2014</i>
-					<a data-toggle="modal" href="http://www.ajc.com/gallery/sports/2014-ajc-peachtree-road-race-runners/gCLx4/#5610246" class="pull-right">Photo Gallery</a>
+					<a data-toggle="modal" href="http://www.ajc.com/gallery/sports/2014-ajc-peachtree-road-race-runners/gCLx4/#5610246" class="media-pull-right">Photo Gallery</a>
 					</br></br>
 					<i>July 4, 2014</i>
-					<a data-toggle="modal" href="http://www.letsrun.com/news/2014/07/christo-landry-amy-hastings-win-2014-ajc-peachtree-road-race-usa-10-k-titles/" class="pull-right">Story by RRW</a>	
+					<a data-toggle="modal" href="http://www.letsrun.com/news/2014/07/christo-landry-amy-hastings-win-2014-ajc-peachtree-road-race-usa-10-k-titles/" class="media-pull-right">Story by RRW</a>	
 					</br></br>
 					<i>July 4, 2014</i>
-					<a data-toggle="modal" href="http://www.11alive.com/videos/news/2014/07/04/12212025/" class="pull-right">Post-Race Interview</a>				
+					<a data-toggle="modal" href="http://www.11alive.com/videos/news/2014/07/04/12212025/" class="media-pull-right">Post-Race Interview</a>				
 				</div>
 			</div>
         </li>
@@ -206,18 +384,18 @@
 			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
 			<div class="timeline-panel">
 				<div class="timeline-heading">					
-					<img class="img-responsive" src="images/media/2014-peachtree2.jpg"/>
+					<img class="img-responsive" src="images/media/2014-peachtree-2.jpg">
 				</div>
 				<div class="timeline-body" style="padding:20px; margin-bottom:0;">
 					<h4 style="margin:0;">Christo Landry hopes to win his 3rd US road title of year at Peachtree</h4></br>
 					For 28-year-old Christo Landry, Friday’s Atlanta Journal Constitution Peachtree Road Race presents a rare opportunity. The College of William & Mary alum is going for his third national road racing title in a row, hoping to add a USA 10-K Championship to the USA 10-Mile and 25-K crowns earned earlier this year.
 				</div>        
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>July 3, 2014</i>
-					<a data-toggle="modal" href="http://roads.runnerspace.com/gprofile.php?mgroup_id=90&do=videos&video_id=120896" class="pull-right">Pre-Race Interview</a>
+					<a data-toggle="modal" href="http://roads.runnerspace.com/gprofile.php?mgroup_id=90&do=videos&video_id=120896" class="media-pull-right">Pre-Race Interview</a>
 					</br></br>
 					<i>July 2, 2014</i>
-					<a data-toggle="modal" href="http://www.letsrun.com/news/2014/07/christo-landry-hopes-win-3rd-us-road-title-year-peachtree/" class="pull-right">Continue Reading</a>
+					<a data-toggle="modal" href="http://www.letsrun.com/news/2014/07/christo-landry-hopes-win-3rd-us-road-title-year-peachtree/" class="media-pull-right">Continue Reading</a>
 				</div>
 			</div>
         </li>
@@ -227,9 +405,7 @@
 			<div class="timeline-panel">
 				<div class="timeline-heading"></div>
 				<div class="timeline-body">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1Ws_I_6bScI"></iframe>
-					</div>
+					<iframe style="width:100%; height:300px;" src="https://www.youtube.com/embed/1Ws_I_6bScI" frameborder="0" allowfullscreen></iframe>
 					<div style="padding:20px;">
 						<h4 style="margin:0;">Christo Landry the top American finisher at River Bank Run, but, oh, for just one more second</h4></br>
 						Christo Landry said the day before the Fifth Third River Bank Run that he needed to cover the late surges to achieve his goal of winning or finishing as the top American.
@@ -237,9 +413,9 @@
 						He did that Saturday, though he wishes he did it with a second to spare.
 					</div>
 				</div>        
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>May 10, 2014</i>
-					<a data-toggle="modal" href="http://www.mlive.com/sports/grand-rapids/index.ssf/2014/05/christo_landry_the_top_america.html" class="pull-right">Continue Reading</a>
+					<a data-toggle="modal" href="http://www.mlive.com/sports/grand-rapids/index.ssf/2014/05/christo_landry_the_top_america.html" class="media-pull-right">Continue Reading</a>
 				</div>
 			</div>
         </li>
@@ -248,7 +424,7 @@
 			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
 			<div class="timeline-panel">
 				<div class="timeline-heading">
-				<img class="img-responsive" src="images/media/2014-25km.jpg"/>
+				<img class="img-responsive" src="images/media/2014-25km.png">
 				</div>
 				<div class="timeline-body" style="padding:20px; margin-bottom:0;">
 					<h4 style="margin:0;">River Bank Run elite field: Christo Landry has been close to winning, now looks to cover final surge</h4></br>
@@ -257,12 +433,12 @@
 					</br></br>
 					The 27-year-old Ann Arbor resident finished fifth overall a year ago - the third American behind Mo Trafeh and Matt Tegenkamp, - with an improved time by 47 seconds over his 2012 finish of one hour, 15 minutes and 47 seconds when he was the second American and third overall.
 				</div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>May 9, 2014</i>
-					<a data-toggle="modal" href="http://www.mlive.com/sports/grand-rapids/index.ssf/2014/05/river_bank_run_elite_field_chr.html" class="pull-right">Continue Reading</a>
+					<a data-toggle="modal" href="http://www.mlive.com/sports/grand-rapids/index.ssf/2014/05/river_bank_run_elite_field_chr.html" class="media-pull-right">Continue Reading</a>
 					</br></br>
 					<i>May 9, 2014</i>
-					<a data-toggle="modal" href="http://www.usatf.tv/gprofile.php?mgroup_id=45365&do=videos&video_id=114194" class="pull-right">Pre-Race Interview</a>
+					<a data-toggle="modal" href="http://www.usatf.tv/gprofile.php?mgroup_id=45365&do=videos&video_id=114194" class="media-pull-right">Pre-Race Interview</a>
 				</div>
 			</div>
         </li>
@@ -276,9 +452,9 @@
 				<div class="timeline-body">
 			
 				</div>
-				<div class="timeline-footer">
-					<i>Date</i>
-					<a data-toggle="modal" href="http://tuesday-tips.runnerspace.com/gprofile.php?mgroup_id=35291&do=videos&video_id=112120" class="pull-right">Watch Video</a>
+				<div class="timeline-footer mediaLink">
+					<i>April 15, 2014</i>
+					<a data-toggle="modal" href="http://tuesday-tips.runnerspace.com/gprofile.php?mgroup_id=35291&do=videos&video_id=112120" class="media-pull-right">Watch Video</a>
 				</div>
 			</div>
         </li>
@@ -293,15 +469,15 @@
 					<h4 style="margin:0;">Falls Church native captures first national title at Cherry Blossom</h4></br>
 					Chasing Greg Meyer’s American record put Christo Landry in contention at the Cherry Blossom Ten Mile, and though he fell short of the 46:13 standard, the Falls Church native came away with his first national championship in 46:41. His finish put him sixth overall.
 				</div>        
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>April 7, 2014</i>
-					<a data-toggle="modal" href="http://www.runwashington.com/2014/04/07/falls-church-native-captures-first-national-title-cherry-blossom/" class="pull-right">Continue Reading</a>
+					<a data-toggle="modal" href="http://www.runwashington.com/2014/04/07/falls-church-native-captures-first-national-title-cherry-blossom/" class="media-pull-right">Continue Reading</a>
 					</br></br>
 					<i>April 6, 2014</i>
-					<a data-toggle="modal" href="http://usa-10mile.runnerspace.com/eprofile.php?event_id=2520&do=videos&video_id=111206" class="pull-right">Post-Race Interview</a>
+					<a data-toggle="modal" href="http://usa-10mile.runnerspace.com/eprofile.php?event_id=2520&do=videos&video_id=111206" class="media-pull-right">Post-Race Interview</a>
 					</br></br>					
 					<i>April 5, 2014</i>
-					<a data-toggle="modal" href="http://usa-10mile.runnerspace.com/eprofile.php?event_id=2520&do=videos&video_id=110748" class="pull-right">Pre-Race Interview</a>
+					<a data-toggle="modal" href="http://usa-10mile.runnerspace.com/eprofile.php?event_id=2520&do=videos&video_id=110748" class="media-pull-right">Pre-Race Interview</a>
 				</div>
 			</div>
         </li>
@@ -315,9 +491,9 @@
 				<div class="timeline-body">
 			
 				</div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>November 17, 2013</i>
-					<a data-toggle="modal" href="http://www.usatf.tv/gprofile.php?mgroup_id=45365&do=videos&video_id=101187" class="pull-right">Post-Race Interview</a>
+					<a data-toggle="modal" href="http://www.usatf.tv/gprofile.php?mgroup_id=45365&do=videos&video_id=101187" class="media-pull-right">Post-Race Interview</a>
 				</div>
 			</div>
         </li>
@@ -331,9 +507,13 @@
 				<div class="timeline-body">
      
 				</div>        
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
+					<i>October 6, 2013</i>
+					<a data-toggle="modal" href="http://www.mtecresults.com/runner/show?rid=6&race=1760" class="media-pull-right">Marathon Splits</a>
+					
+					</br></br>
 					<i>October 5, 2013</i>
-					<a data-toggle="modal" href="http://www.runnerspace.com/video.php?video_id=99929-Christo-Landry-Pre-Race-USA-Marathon-Championships-2013" class="pull-right">Pre-Race Interview</a>
+					<a data-toggle="modal" href="http://www.runnerspace.com/video.php?video_id=99929-Christo-Landry-Pre-Race-USA-Marathon-Championships-2013" class="media-pull-right">Pre-Race Interview</a>	
 				</div>
 			</div>
         </li>
@@ -342,7 +522,7 @@
 			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
 			<div class="timeline-panel">
 				<div class="timeline-heading">
-				<img class="img-responsive" src="images/media/2013-25km.jpg"/>
+				<img class="img-responsive" src="images/media/2013-25km.png">
 				</div>
 				<div class="timeline-body" style="padding:20px; margin-bottom:0;">
 					<h4 style="margin:0;">Ann Arbor runner Christo Landry finds mixed results at Fifth Third River Bank Run</h4></br>
@@ -350,15 +530,15 @@
 					</br></br>
 					The Ann Arbor resident hung with the lead pack in Saturday’s race only to fade late and finish fifth in 1 hour, 15 minutes even. That was two places lower but 47 seconds faster than last year in Grand Rapids.
 				</div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>May 11, 2013</i>
-					<a data-toggle="modal" href="http://www.mlive.com/sports/grand-rapids/index.ssf/2013/05/ann_arbor_runner_christo_landr.html" class="pull-right">Continue Reading</a>
+					<a data-toggle="modal" href="http://www.mlive.com/sports/grand-rapids/index.ssf/2013/05/ann_arbor_runner_christo_landr.html" class="media-pull-right">Continue Reading</a>
 					</br></br>
 					<i>May 11, 2013</i>
-					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2514&do=videos&video_id=88042" class="pull-right">Post Race Interview</a>
+					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2514&do=videos&video_id=88042" class="media-pull-right">Post Race Interview</a>
 					</br></br>
 					<i>May 10, 2013</i>
-					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2514&do=videos&video_id=88023" class="pull-right">Pre-Race Interview</a>
+					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2514&do=videos&video_id=88023" class="media-pull-right">Pre-Race Interview</a>
 				</div>
 			</div>
         </li>
@@ -373,12 +553,12 @@
 					<h4 style="margin:0;">Christo Landry and Craig Curley place 5th and 7th at the USA 15k National Championships</h4></br>
 					Billed as the largest 15K (9.3 miles) in the United States (over 17,000 registered runners with 15,569 finishers), Mizuno Racing Team Members, Christo Landry and Craig Curley opened up their 2013 competitive road race campaigns with very solid efforts, as Christo placed 5th with a time of 43:46 (4:42 per mile) and Craig Curley was 7th in 44:04 (4:44 per mile).
 				</div>        
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>March 9, 2013</i>
-					<a data-toggle="modal" href="http://www.mizunousa.com/running/blog/christo-landry-and-craig-curley-place-5th-and-7th-at-usa-15k-national-championships/" class="pull-right">Continue Reading</a>
+					<a data-toggle="modal" href="http://www.mizunousa.com/running/blog/christo-landry-and-craig-curley-place-5th-and-7th-at-usa-15k-national-championships/" class="media-pull-right">Continue Reading</a>
 					</br></br>
 					<i>March 9, 2013</i>
-					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2512&do=videos&video_id=81507&act=search&title_desc=landry&" class="pull-right">Post-Race Interview</a>
+					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2512&do=videos&video_id=81507&act=search&title_desc=landry&" class="media-pull-right">Post-Race Interview</a>
 				</div>
 			</div>
         </li>
@@ -392,9 +572,9 @@
 				<div class="timeline-body">
 			
 				</div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>January, 2013</i>
-					<a data-toggle="modal" href="http://issuu.com/michiganrunner/docs/mr0113" class="pull-right">Michigan Runner of the Year pg 11</a>
+					<a data-toggle="modal" href="http://issuu.com/michiganrunner/docs/mr0113" class="media-pull-right">Michigan Runner of the Year pg 11</a>
 				</div>
 			</div>
         </li>
@@ -407,9 +587,9 @@
 				</div>
 				<div class="timeline-body">    
 				</div>        
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>October 7, 2012</i>
-					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2520&do=videos&video_id=76037" class="pull-right">USARC Co-Champion Interview</a>
+					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2520&do=videos&video_id=76037" class="media-pull-right">USARC Champion Interview</a>
 				</div>
 			</div>
         </li>
@@ -423,9 +603,9 @@
 				<div class="timeline-body">
 			
 				</div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>October 6, 2012</i>
-					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2520&do=videos&video_id=75981" class="pull-right">Pre-Race Interview</a>
+					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2520&do=videos&video_id=75981" class="media-pull-right">Pre-Race Interview</a>
 				</div>
 			</div>
         </li>
@@ -439,12 +619,12 @@
 				<div class="timeline-body">
      
 				</div>        
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>September 16, 2012</i>
-					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2519&do=videos&video_id=75374" class="pull-right">Post-Race Interview</a>
+					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2519&do=videos&video_id=75374" class="media-pull-right">Post-Race Interview</a>
 					</br></br>
 					<i>September 15, 2012</i>
-					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2519&do=videos&video_id=75327" class="pull-right">Pre-Race Interview</a>
+					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2519&do=videos&video_id=75327" class="media-pull-right">Pre-Race Interview</a>
 				</div>
 			</div>
         </li>
@@ -453,14 +633,14 @@
 			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
 			<div class="timeline-panel">
 				<div class="timeline-heading">
-				<img class="img-responsive" src="images/media/2014-20km.jpg"/>
+				<img class="img-responsive" src="images/media/2014-20km1.jpg"/>
 				</div>
 				<div class="timeline-body">
 			
 				</div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>September 5, 2012</i>
-					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2518&do=videos&video_id=75023" class="pull-right">Post-Race Interview</a>
+					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2518&do=videos&video_id=75023" class="media-pull-right">Post-Race Interview</a>
 				</div>
 			</div>
         </li>
@@ -475,9 +655,9 @@
 					<h4 style="margin:0;">Christo Landry '08 17th in Men's 10K at the Olympic Trials</h4></br>
 					The U.S. Olympic Trials for track and field got off to a rainy start Friday, and two men with William and Mary ties took their shot at earning a trip to the London Olympics.  Leading the way was Christo Landry '08, who finished 17th in the 10,000m, while Patrick Roach J.D. '12 bowed in the 800m quarterfinals.
 				</div>        
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>June 22, 2012</i>
-					<a data-toggle="modal" href="" class="pull-right">Continue Reading</a>
+					<a data-toggle="modal" href="" class="media-pull-right">Continue Reading</a>
 				</div>
 			</div>
         </li>
@@ -491,12 +671,12 @@
 				<div class="timeline-body">
 			
 				</div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>May 12, 2012</i>
-					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2514&do=videos&video_id=67058" class="pull-right">Post-Race Interview</a>
+					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2514&do=videos&video_id=67058" class="media-pull-right">Post-Race Interview</a>
 					</br></br>
 					<i>May 11, 2012</i>
-					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2514&do=videos&video_id=66916" class="pull-right">Pre-Race Interview</a>
+					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2514&do=videos&video_id=66916" class="media-pull-right">Pre-Race Interview</a>
 				</div>
 			</div>
         </li>
@@ -510,9 +690,9 @@
 				<div class="timeline-body">
      
 				</div>        
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>March 10, 2012</i>
-					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2512&do=videos&video_id=61250&act=search&title_desc=landry&" class="pull-right">Post-Race Interview</a>
+					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2512&do=videos&video_id=61250&act=search&title_desc=landry&" class="media-pull-right">Post-Race Interview</a>
 				</div>
 			</div>
         </li>
@@ -527,9 +707,9 @@
 					<h4 style="margin:0;">Tribe Alums Lead U.S. Team to Best-Ever Finish at Izumo Ekiden Relay</h4></br>
 					At the start of the Japanese University Ekiden relay season, it was a team of U.S. post-grads who stole the show led by two of William and Mary's former greats, Christo Landry '08 and Jon Grey '11.  The 44.5-kilometer Izumo Ekiden traditionally pits 20 university teams from Japan against a team put together from Ivy League alums, but the American pool was widened this season to include athletes from all schools.  Responding to the challenge, the University Select team claimed it's first-ever top-10 finish, taking eighth just four minutes behind the winners.
 				</div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>October 11, 2011</i>
-					<a data-toggle="modal" href="http://www.tribeathletics.com/ViewArticle.dbml?DB_OEM_ID=25100&ATCLID=205314615" class="pull-right">Continue Reading</a>
+					<a data-toggle="modal" href="http://www.tribeathletics.com/ViewArticle.dbml?DB_OEM_ID=25100&ATCLID=205314615" class="media-pull-right">Continue Reading</a>
 				</div>
 			</div>
         </li>
@@ -543,9 +723,9 @@
 				<div class="timeline-body" style="padding:20px; margin-bottom:0;">
      
 				</div>        
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>September 18, 2011</i>
-					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2519&do=videos&video_id=53900" class="pull-right">Post-Race Interview</a>
+					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2519&do=videos&video_id=53900" class="media-pull-right">Post-Race Interview</a>
 				</div>
 			</div>
         </li>
@@ -554,14 +734,14 @@
 			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
 			<div class="timeline-panel">
 				<div class="timeline-heading">
-				<img class="img-responsive" src="images/media/2014-20km.jpg">
+				<img class="img-responsive" src="images/media/2011-20km.jpg">
 				</div>
 				<div class="timeline-body" style="padding:20px; margin-bottom:0;">
 			
 				</div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>September 18, 2011</i>
-					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2518&do=videos&video_id=53626" class="pull-right">Post-Race Interview</a>
+					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2518&do=videos&video_id=53626" class="media-pull-right">Post-Race Interview</a>
 				</div>
 			</div>
         </li>
@@ -570,14 +750,14 @@
 			<div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" ></i></a></div>
 			<div class="timeline-panel">
 				<div class="timeline-heading">
-					<img class="img-responsive" src="images/media/2011-10km.jpg"/>
+					<img class="img-responsive" src="images/media/2011-10km.png">
 				</div>
 				<div class="timeline-body">
      
 				</div>        
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>July 4, 2011</i>
-					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2515&do=videos&video_id=51131" class="pull-right">Post-Race Interview</a>
+					<a data-toggle="modal" href="http://www.runnerspace.com/eprofile.php?event_id=2515&do=videos&video_id=51131" class="media-pull-right">Post-Race Interview</a>
 				</div>
 			</div>
         </li>
@@ -591,9 +771,9 @@
 				<div class="timeline-body" style="padding:20px; margin-bottom:0;">
 			
 				</div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>Date</i>
-					<a data-toggle="modal" href="" class="pull-right">Continue Reading</a>
+					<a data-toggle="modal" href="" class="media-pull-right">Continue Reading</a>
 				</div>
 			</div>
         </li>
@@ -607,9 +787,9 @@
 				<div class="timeline-body" style="padding:20px; margin-bottom:0;">
      
 				</div>        
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>Date</i>
-					<a data-toggle="modal" href="" class="pull-right">Continue Reading</a>
+					<a data-toggle="modal" href="" class="media-pull-right">Continue Reading</a>
 				</div>
 			</div>
         </li>
@@ -623,9 +803,9 @@
 				<div class="timeline-body" style="padding:20px; margin-bottom:0;">
 			
 				</div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>Date</i>
-					<a data-toggle="modal" href="" class="pull-right">Continue Reading</a>
+					<a data-toggle="modal" href="" class="media-pull-right">Continue Reading</a>
 				</div>
 			</div>
         </li>
@@ -639,9 +819,9 @@
 				<div class="timeline-body" style="padding:20px; margin-bottom:0;">
      
 				</div>        
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>Date</i>
-					<a data-toggle="modal" href="" class="pull-right">Continue Reading</a>
+					<a data-toggle="modal" href="" class="media-pull-right">Continue Reading</a>
 				</div>
 			</div>
         </li>
@@ -655,9 +835,9 @@
 				<div class="timeline-body" style="padding:20px; margin-bottom:0;">
 			
 				</div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>Date</i>
-					<a data-toggle="modal" href="" class="pull-right">Continue Reading</a>
+					<a data-toggle="modal" href="" class="media-pull-right">Continue Reading</a>
 				</div>
 			</div>
         </li>
@@ -671,9 +851,9 @@
 				<div class="timeline-body" style="padding:20px; margin-bottom:0;">
      
 				</div>        
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>Date</i>
-					<a data-toggle="modal" href="" class="pull-right">Continue Reading</a>
+					<a data-toggle="modal" href="" class="media-pull-right">Continue Reading</a>
 				</div>
 			</div>
         </li>
@@ -687,9 +867,9 @@
 				<div class="timeline-body" style="padding:20px; margin-bottom:0;">
 			
 				</div>
-				<div class="timeline-footer">
+				<div class="timeline-footer mediaLink">
 					<i>Date</i>
-					<a data-toggle="modal" href="" class="pull-right">Continue Reading</a>
+					<a data-toggle="modal" href="" class="media-pull-right">Continue Reading</a>
 				</div>
 			</div>
         </li>
@@ -697,7 +877,14 @@
 		<li class="clearfix" style="float: none;"></li>
     </ul>
 </div>
-
+	
+	<!-- Start of footer -->
+	<footer>
+		<div class="container" style="height:51px !important;">
+			<p>Crafted by <a href="mailto:contact@christolandry.com">Christo Landry</a></p>
+		</div>
+	</footer>
+	<!-- End of footer ---->
 
 
 
@@ -706,7 +893,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/docs.min.js"></script>
+    <!--<script src="js/docs.min.js"></script>-->
 	<!-- Christo Added -->
 	<script src="js/timeline.js">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

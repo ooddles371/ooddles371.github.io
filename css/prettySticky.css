@@ -1,0 +1,88 @@
+nav {
+	position:fixed;
+	background:none;
+	z-index:10000;
+	width:100%;
+	font-size:20px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+nav.navScroll {
+	background:rgba(0,0,0,0.7);
+	font-size:14px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+	transition: all 0.5s;
+	color: #fff;
+}
+
+img.logo {
+	float:left;
+	display:none;
+	transition: all 0.5s;
+}
+
+img.logoScroll {
+	display:inline;
+	width:50px;
+	padding:5px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+	transition:all 0.5s;
+}
+
+.menu ui {
+	margin-top:14px;
+	margin-bottom: 14px;
+	
+}
+
+div.menu {
+	text-align:center;
+	font-weight: bold;
+}
+
+div.menuScroll {
+/*	float:right;*/
+}
+
+li.TopNav{
+	display:inline;
+	text-decoration:none;
+	padding-left:15px;
+	font-size: 20px;
+}
+	li.TopNav a {
+		list-style-type: none;
+		text-decoration:none;
+		color:#fff;/*change color of header text here*/
+		text-shadow:0.5px 0 0 rgba(255,255,255,0.5);
+	}
+
+	li.TopNav a:hover {
+		color: #F0C0A8;
+	}
+
+
+li.PrettyStickyNav {
+	display:inline;
+	text-decoration:none;
+	padding-left:15px;
+}
+
+	li.PrettyStickyNav a {
+		list-style-type: none;
+		text-decoration:none;
+		color:#fff;/*change color of header text here*/
+		text-shadow:0.5px 0 0 rgba(255,255,255,0.5);
+	}
+
+	li.PrettyStickyNav a:hover {
+		color: #F0C0A8;
+	}
+
+.navScroll a.selected {
+	color: #F0C0A8;
+}
