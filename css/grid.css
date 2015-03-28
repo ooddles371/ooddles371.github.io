@@ -142,7 +142,7 @@ a {
 	display: block;
 	position: relative;
 }
-
+/*
 .og-grid li.og-expanded > a::after {
 	top: auto;
 	border: solid transparent;
@@ -156,7 +156,7 @@ a {
 	left: 50%;
 	margin: -20px 0 0 -15px;
 }
-
+*/
 .og-expander {
 	position: absolute;
 	background: #ddd;
@@ -243,7 +243,7 @@ a {
 	line-height: 22px;
 	color: #999;
 }
-
+/*
 .og-details a {
 	font-weight: 700;
 	font-size: 16px;
@@ -267,7 +267,7 @@ a {
 	border-color: #999;
 	color: #999;
 }
-
+*/
 .og-loading {
 	width: 20px;
 	height: 20px;

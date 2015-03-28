@@ -148,20 +148,28 @@ li.TopNav{
 
 /* Start of three div wide */
 .block1{
-	height:400px;
+	height:405px;
 	background-color: lightblue;
 	padding: 0px;
 }
 
 .block2{
-	height:400px;
+	height:405px;
 	background-color: #3B3B3B;
 	padding: 0px;
 }
 
 .block3{
-	height:400px;
+	height:405px;
 	background-color: lightblue;
+}
+/*
+.block3::-webkit-scrollbar {
+	display: none;
+}
+
+.block3::-moz-scrollbar {
+	overflow: -moz-scrollbars-none;
 }
 /* End of three div wide */
 footer {
