@@ -166,7 +166,7 @@ a {
 	margin-top: 10px;
 	text-align: left;
 	height: 0;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 .og-expander-inner {

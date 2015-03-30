@@ -309,7 +309,10 @@ var Grid = (function() {
 			}
 			// same row
 			else {
+				//preview.insertClass ($item);//christo added.
+				//preview.trimHeight();//christo added
 				preview.update( $item );
+				preview.trimHeight();//christo added
 				return false;
 			}
 			
@@ -368,6 +371,8 @@ var Grid = (function() {
 			// if already expanded remove class "og-expanded" from current item and add it to new item
 			if( current !== -1 ) {
 				var $currentItem = $items.eq( current );
+				console.log("currentItem");
+				console.log($currentItem);
 				$currentItem.removeClass( 'og-expanded' );
 				this.$item.addClass( 'og-expanded' );
 				// position the preview correctly
@@ -390,9 +395,9 @@ var Grid = (function() {
 			this.$title.html( eldata.title );
 			this.$description.html(function() {
 				var content = $("#" + eldata.idfinder).clone();
-				return content;
+				return content;//Christo added
 			});
-			//this.$href.attr( 'href', eldata.href );
+			//this.$href.attr( 'href', eldata.href ); //Christo added
 
 			var self = this;
 			
@@ -427,6 +432,32 @@ var Grid = (function() {
 			}, this ), 25 );
 
 		},
+		
+		insertClass : function() {
+			this.$item.addClass( 'newClass' );
+			var $expandedItem = $items.eq( this.expandedIdx );
+			$expandedItem.css( 'height', 250); //change this to be a formula not a number.
+		},
+		
+		trimHeight : function() {
+			//this.setHeights();
+			//this.$previewEl.css( 'height', 0);
+			//var $expandedItem = $items.eq( this.expandedIdx );
+			//$expandedItem.css( 'height', 250); //change this to be a formula not a number.
+			//var printout = $expandedItem;
+			//console.log("trimHeight - expandedItem");
+			//console.log(printout);
+			//var printout2 = this.expandedIdx;
+			//console.log("trimHeight - this.expandedIdx");
+			//console.log(printout2);
+			
+			this.calcHeight();
+			this.$previewEl.css( 'height', this.height );
+			//this.$item.css( 'height', this.itemHeight ).on( transEndEventName, onEndFn );
+			var $expandedItem = $items.eq( this.expandedIdx );
+			$expandedItem.css( 'height', this.itemHeight); //change this to be a formula not a number.
+		},
+		
 		close : function() {
 
 			var self = this,
@@ -440,19 +471,28 @@ var Grid = (function() {
 
 			setTimeout( $.proxy( function() {
 
-				if( typeof this.$largeImg !== 'undefined' ) {
-					this.$largeImg.fadeOut( 'fast' );
-				}
+				//if( typeof this.$largeImg !== 'undefined' ) {
+				//	this.$largeImg.fadeOut( 'fast' );
+				//}
 				this.$previewEl.css( 'height', 0 );
 				// the current expanded item (might be different from this.$item)
 				var $expandedItem = $items.eq( this.expandedIdx );
 				$expandedItem.css( 'height', $expandedItem.data( 'height' ) ).on( transEndEventName, onEndFn );
-
+				console.log("support");
+				console.log(support);
 				if( !support ) {
 					onEndFn.call();
 				}
 
 			}, this ), 25 );
+			
+			var $expandedItem = $items.eq( this.expandedIdx );
+			var printout = $expandedItem;
+			var printout2 = $expandedItem.data('height');
+			console.log("close - expandedItem");
+			console.log(printout);
+			console.log("close - expandedItem.data('height')");
+			console.log(printout2);
 			
 			return false;
 
@@ -467,9 +507,18 @@ var Grid = (function() {
 				itemHeight = settings.minHeight + this.$item.data( 'height' ) + marginExpanded;
 			}
 
-			this.height = heightPreview;
-			this.itemHeight = itemHeight;
-
+			//this.height = heightPreview;
+			//this.itemHeight = itemHeight;
+			this.height = $("#marker").height() + 267;
+			this.itemHeight = this.height + 260;
+			
+			console.log("heightPreview");
+			console.log(heightPreview);
+			console.log("itemHeight");
+			console.log(itemHeight);
+			var result = $("#marker").height();
+			console.log("#marker");
+			console.log(result);
 		},
 		setHeights : function() {
 
@@ -517,4 +566,5 @@ var Grid = (function() {
 		addItems : addItems
 	};
 
+	
 })();

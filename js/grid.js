@@ -310,6 +310,7 @@ var Grid = (function() {
 			// same row
 			else {
 				preview.update( $item );
+				preview.trimHeight();//Christo added
 				return false;
 			}
 			
@@ -342,8 +343,8 @@ var Grid = (function() {
 	Preview.prototype = {
 		create : function() {
 			// create Preview structure:
-			this.$title = $( '<h3></h3>' );
-			this.$description = $( '<p id="marker"></p>' );
+			this.$title = $( '<h3 style="max-width: 1080px; margin-left:auto; margin-right: auto;"></h3>' );
+			this.$description = $( '<p id="marker" style="max-width: 1080px; margin-left:auto; margin-right: auto;"></p>' );
 			//this.$href = $( '<a href="#">Visit website</a>' );  christo changed - takes out link
 			//this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
 			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description);
@@ -427,6 +428,12 @@ var Grid = (function() {
 			}, this ), 25 );
 
 		},
+		trimHeight : function () { //christo added
+			this.calcHeight();
+			this.$previewEl.css( 'height', this.height ); //changes grey space
+			var $expandedItem = $items.eq( this.expandedIdx );
+			$expandedItem.css( 'height', this.itemHeight);  //changes white space
+		},
 		close : function() {
 
 			var self = this,
@@ -459,17 +466,18 @@ var Grid = (function() {
 		},
 		calcHeight : function() {
 
-			var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
-				itemHeight = winsize.height;
+			//var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
+			//	itemHeight = winsize.height;
 
-			if( heightPreview < settings.minHeight ) {
-				heightPreview = settings.minHeight;
-				itemHeight = settings.minHeight + this.$item.data( 'height' ) + marginExpanded;
-			}
+			//if( heightPreview < settings.minHeight ) {
+			//	heightPreview = settings.minHeight;
+			//	itemHeight = settings.minHeight + this.$item.data( 'height' ) + marginExpanded;
+			//}
 
-			this.height = heightPreview;
-			this.itemHeight = itemHeight;
-
+			//this.height = heightPreview;
+			//this.itemHeight = itemHeight;
+			this.height = $("#marker").height() + 267;
+			this.itemHeight = this.height + 260;
 		},
 		setHeights : function() {
 
