@@ -23,45 +23,28 @@
 
     <!-- Custom styles for this template -->
 	<link href="css/test.css" rel="stylesheet">
-	<link href="css/gridder-ajax.css" rel="stylesheet">
-	<link href="css/demo.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	 <script type="text/javascript" src="easy-comment/jquery.easy-comment.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function(){
+		$("#test-page").EasyComment();
+	});
+	</script>
 	</head>
 	<body>
 	
+	<div id="test-page"></div>
 
-	<div class="gridder-list">
-		<li class="item  item_1">
-			<a href="item_4" title="Item 4" class="link">
-				<img src="http://lorempixel.com/300/200/food/?date=6">
-				<span class="title">Item 4</span>
-				<span class="description">A small Description</span>
-			</a>
-			<span class="selectedBox"></span>
-		</li>
-	</div>
 
   
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
 	<!--<script src="js/docs.min.js"></script>-->
 	<!-- Chrsito added -->
-	<script src="js/gridder-ajax.js"></script>
-	<script>
 
-            jQuery(document).ready(function ($) {
-                // Call Gridder Ajax
-
-                $('.gridder-list').GridderAjax({
-					scrollOffset: 200,
-					rootUrl: "/gridder-ajax/"
-				});
-            });
-        
-
-	</script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--<script src="js/ie10-viewport-bug-workaround.js"></script>-->
   </body>

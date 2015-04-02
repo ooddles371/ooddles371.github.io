@@ -23,6 +23,14 @@
 
     <!-- Custom styles for this template -->
     <link href="css/christoCustom.css" rel="stylesheet" type="text/css"><!-- All me bud -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="easy-comment/jquery.easy-comment.min.js"></script>
+	<script>
+	jQuery(document).ready(function(){
+		$("#my-comment").EasyComment();
+	});
+	</script>
   </head>
 	<!-- navbar ---------------->
 		<div class="TopNav" id="bigNavBar"><!-- Navbar for screen widths over 767 -->
@@ -219,6 +227,7 @@
 				</br></br>Email: <a href="mailto:Contact@ChristoLandry.com" style="color:inherit; text-decoration: none;">Contact@ChristoLandry.com</a>
 			</div><!-- ./col -->
 		</div><!-- ./row -->
+		<div id="my-comment"></div>
 	</div><!-- ./container marketing -->
   
 	<!-- Start of footer -->
@@ -233,10 +242,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!--<script src="js/docs.min.js"></script>-->
+    
+    <!--<script src="easy-comment/jquery.easy-comment.min.js"></script>-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+	
   </body>
 </html>
